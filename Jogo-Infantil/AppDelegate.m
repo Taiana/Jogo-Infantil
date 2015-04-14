@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Jogo-Infantil
 //
-//  Created by Dantas on 13/04/15.
+//  Created by Taiana on 13/04/15.
 //  Copyright (c) 2015 Home. All rights reserved.
 //
 

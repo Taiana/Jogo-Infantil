@@ -2,7 +2,7 @@
 //  ViewController.m
 //  Jogo-Infantil
 //
-//  Created by Dantas on 13/04/15.
+//  Created by Taiana on 13/04/15.
 //  Copyright (c) 2015 Home. All rights reserved.
 //
 
@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
