@@ -23,17 +23,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szz-jl-t7M">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szz-jl-t7M" userLabel="somButton">
                                 <rect key="frame" x="87" y="457" width="72" height="72"/>
                                 <state key="normal" image="som">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLs-ux-3Xa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLs-ux-3Xa" userLabel="playButton">
                                 <rect key="frame" x="449" y="465" width="64" height="64"/>
                                 <state key="normal" image="icon-play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5WI-P7-HXi" kind="show" id="OfQ-2t-DIy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -50,8 +53,137 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--categoriasVC-->
+        <scene sceneID="LUS-Yq-iV9">
+            <objects>
+                <viewController id="5WI-P7-HXi" userLabel="categoriasVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UbL-Nm-Ner"/>
+                        <viewControllerLayoutGuide type="bottom" id="pLv-yy-6rV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zy4-bt-TYE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnf-pm-hQC" userLabel="animaisButton">
+                                <rect key="frame" x="102" y="162" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="RSz-BJ-o8F"/>
+                                    <constraint firstAttribute="width" constant="64" id="a1W-WW-QfE"/>
+                                </constraints>
+                                <state key="normal" image="icon-animais">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Y6-w5-Qr3" userLabel="floresButton">
+                                <rect key="frame" x="290" y="162" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="M0N-U0-Mc0"/>
+                                    <constraint firstAttribute="width" constant="64" id="etc-CU-Nbw"/>
+                                </constraints>
+                                <state key="normal" image="icon-flores">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brE-9S-IWQ" userLabel="carrosButton">
+                                <rect key="frame" x="471" y="162" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="7ac-ad-RX9"/>
+                                    <constraint firstAttribute="width" constant="64" id="J8V-52-787"/>
+                                </constraints>
+                                <state key="normal" image="icon-carros">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-tm-IgK" userLabel="letrasButton">
+                                <rect key="frame" x="102" y="274" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="D0z-Yz-Ptw"/>
+                                    <constraint firstAttribute="width" constant="64" id="VdT-a3-l3a"/>
+                                </constraints>
+                                <state key="normal" image="icon-letras">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfq-GC-Z1z" userLabel="numerosButton">
+                                <rect key="frame" x="290" y="274" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Oj3-NZ-cy2"/>
+                                    <constraint firstAttribute="width" constant="64" id="laX-Ct-LYc"/>
+                                </constraints>
+                                <state key="normal" image="icon-numeros">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBv-HT-7VY" userLabel="formasButton">
+                                <rect key="frame" x="471" y="274" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="3Gt-Tc-zbp"/>
+                                    <constraint firstAttribute="width" constant="64" id="otC-PZ-955"/>
+                                </constraints>
+                                <state key="normal" image="icon-geométricas">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCt-OG-znM" userLabel="sairButton">
+                                <rect key="frame" x="47" y="52" width="46" height="30"/>
+                                <state key="normal" title="Sair">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="CI6-FN-x2C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qfq-GC-Z1z" firstAttribute="top" secondItem="5Y6-w5-Qr3" secondAttribute="bottom" constant="48" id="28U-q4-iVz"/>
+                            <constraint firstAttribute="centerX" secondItem="5Y6-w5-Qr3" secondAttribute="centerX" id="471-xv-b8X"/>
+                            <constraint firstAttribute="centerX" secondItem="qfq-GC-Z1z" secondAttribute="centerX" id="6yX-Fp-qkq"/>
+                            <constraint firstItem="5Y6-w5-Qr3" firstAttribute="leading" secondItem="Pnf-pm-hQC" secondAttribute="trailing" constant="124" id="9fo-Nv-kjS"/>
+                            <constraint firstItem="brE-9S-IWQ" firstAttribute="top" secondItem="UbL-Nm-Ner" secondAttribute="bottom" constant="142" id="CGh-fb-qSe"/>
+                            <constraint firstItem="5Y6-w5-Qr3" firstAttribute="top" secondItem="UbL-Nm-Ner" secondAttribute="bottom" constant="142" id="DxE-xJ-40n"/>
+                            <constraint firstItem="brE-9S-IWQ" firstAttribute="leading" secondItem="5Y6-w5-Qr3" secondAttribute="trailing" constant="117" id="F0P-5y-vg6"/>
+                            <constraint firstItem="LCt-OG-znM" firstAttribute="top" secondItem="UbL-Nm-Ner" secondAttribute="bottom" constant="32" id="T6E-q5-HOb"/>
+                            <constraint firstItem="XBv-HT-7VY" firstAttribute="leading" secondItem="qfq-GC-Z1z" secondAttribute="trailing" constant="117" id="TPJ-Oz-xhJ"/>
+                            <constraint firstItem="XBv-HT-7VY" firstAttribute="top" secondItem="brE-9S-IWQ" secondAttribute="bottom" constant="48" id="XA9-Eh-U6d"/>
+                            <constraint firstItem="LCt-OG-znM" firstAttribute="leading" secondItem="Zy4-bt-TYE" secondAttribute="leadingMargin" constant="31" id="bpA-Zv-4R3"/>
+                            <constraint firstItem="qfq-GC-Z1z" firstAttribute="leading" secondItem="8uJ-tm-IgK" secondAttribute="trailing" constant="124" id="n9N-Uz-QH0"/>
+                            <constraint firstItem="Pnf-pm-hQC" firstAttribute="top" secondItem="UbL-Nm-Ner" secondAttribute="bottom" constant="142" id="oD3-7m-00a"/>
+                            <constraint firstItem="8uJ-tm-IgK" firstAttribute="top" secondItem="Pnf-pm-hQC" secondAttribute="bottom" constant="48" id="oIb-Wv-mlo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTY-bl-CLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="365"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tqa-Lp-d5J">
+            <objects>
+                <viewController id="Bt1-tk-0tc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9qI-bF-lSk"/>
+                        <viewControllerLayoutGuide type="bottom" id="0EI-Bh-bED"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w4F-7i-Yuz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mw7-AL-xge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644" y="-267"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="icon-animais" width="64" height="64"/>
+        <image name="icon-carros" width="128" height="128"/>
+        <image name="icon-flores" width="75" height="75"/>
+        <image name="icon-geométricas" width="51" height="51"/>
+        <image name="icon-letras" width="51" height="51"/>
+        <image name="icon-numeros" width="106" height="80"/>
         <image name="icon-play" width="64" height="64"/>
         <image name="som" width="72" height="72"/>
     </resources>
