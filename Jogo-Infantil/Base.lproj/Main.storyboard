@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,36 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clique em play" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7K-V5-8rl">
-                                <rect key="frame" x="243" y="136" width="115" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szz-jl-t7M" userLabel="somButton">
-                                <rect key="frame" x="87" y="457" width="72" height="72"/>
-                                <state key="normal" image="som">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLs-ux-3Xa" userLabel="playButton">
-                                <rect key="frame" x="449" y="465" width="64" height="64"/>
-                                <state key="normal" image="icon-play">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_tela_inicio" translatesAutoresizingMaskIntoConstraints="NO" id="PeB-Xx-o11">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nome_jogo" translatesAutoresizingMaskIntoConstraints="NO" id="Ikg-cW-84B">
+                                <rect key="frame" x="180" y="57" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLs-ux-3Xa" userLabel="playButton">
+                                <rect key="frame" x="152" y="345" width="296" height="105"/>
+                                <state key="normal" image="botao_inicio">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="5WI-P7-HXi" kind="show" id="OfQ-2t-DIy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szz-jl-t7M" userLabel="somButton">
+                                <rect key="frame" x="152" y="501" width="296" height="105"/>
+                                <state key="normal" image="botao_som">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Szz-jl-t7M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="68R-OB-HHM"/>
-                            <constraint firstItem="O7K-V5-8rl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="116" id="6kF-1F-XQY"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Szz-jl-t7M" secondAttribute="bottom" constant="71" id="DBx-7z-9BB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wLs-ux-3Xa" secondAttribute="trailing" constant="71" id="TwI-re-HJG"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wLs-ux-3Xa" secondAttribute="bottom" constant="71" id="ajH-3d-1nL"/>
-                            <constraint firstAttribute="centerX" secondItem="O7K-V5-8rl" secondAttribute="centerX" id="dji-Zu-IwQ"/>
+                            <constraint firstAttribute="centerX" secondItem="Ikg-cW-84B" secondAttribute="centerX" id="21X-cg-X33"/>
+                            <constraint firstItem="PeB-Xx-o11" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4iZ-bt-pia"/>
+                            <constraint firstItem="wLs-ux-3Xa" firstAttribute="top" secondItem="Ikg-cW-84B" secondAttribute="bottom" constant="160" id="6vw-BS-cuZ"/>
+                            <constraint firstItem="Szz-jl-t7M" firstAttribute="top" secondItem="wLs-ux-3Xa" secondAttribute="bottom" constant="51" id="TWl-cv-9kS"/>
+                            <constraint firstAttribute="centerX" secondItem="wLs-ux-3Xa" secondAttribute="centerX" id="fqc-dx-GbV"/>
+                            <constraint firstItem="PeB-Xx-o11" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="hhl-WW-wym"/>
+                            <constraint firstItem="Ikg-cW-84B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="ihe-5z-na7"/>
+                            <constraint firstItem="PeB-Xx-o11" firstAttribute="centerX" secondItem="Ikg-cW-84B" secondAttribute="centerX" id="ouZ-Ha-8qJ"/>
+                            <constraint firstAttribute="centerX" secondItem="Szz-jl-t7M" secondAttribute="centerX" id="wPV-fn-b31"/>
+                            <constraint firstItem="PeB-Xx-o11" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xeG-B7-0j3"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -388,16 +392,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="botao_inicio" width="296" height="105"/>
+        <image name="botao_som" width="289" height="100"/>
+        <image name="fundo_tela_inicio" width="640" height="1136"/>
         <image name="icon-animais" width="64" height="64"/>
         <image name="icon-carros" width="128" height="128"/>
         <image name="icon-flores" width="75" height="75"/>
         <image name="icon-geométricas" width="51" height="51"/>
         <image name="icon-letras" width="51" height="51"/>
         <image name="icon-numeros" width="106" height="80"/>
-        <image name="icon-play" width="64" height="64"/>
-        <image name="som" width="72" height="72"/>
+        <image name="nome_jogo" width="441" height="174"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bck-b2-Dqc"/>
+        <segue reference="OfQ-2t-DIy"/>
     </inferredMetricsTieBreakers>
 </document>
