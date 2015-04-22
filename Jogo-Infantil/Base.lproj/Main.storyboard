@@ -37,13 +37,22 @@
                                 <state key="normal" image="botao_som">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="doSwitchSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJH-X7-kQa"/>
+                                </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="noimageview" image="botao_sem_som" translatesAutoresizingMaskIntoConstraints="NO" id="DYh-0W-Utb">
+                                <rect key="frame" x="154" y="506" width="86" height="84"/>
+                                <accessibility key="accessibilityConfiguration" label="noimageview"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DYh-0W-Utb" firstAttribute="top" secondItem="wLs-ux-3Xa" secondAttribute="bottom" constant="56" id="06X-ga-oig"/>
                             <constraint firstAttribute="centerX" secondItem="Ikg-cW-84B" secondAttribute="centerX" id="21X-cg-X33"/>
                             <constraint firstItem="PeB-Xx-o11" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4iZ-bt-pia"/>
                             <constraint firstItem="wLs-ux-3Xa" firstAttribute="top" secondItem="Ikg-cW-84B" secondAttribute="bottom" constant="160" id="6vw-BS-cuZ"/>
+                            <constraint firstItem="DYh-0W-Utb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="218" id="JVO-J5-a0t"/>
                             <constraint firstItem="Szz-jl-t7M" firstAttribute="top" secondItem="wLs-ux-3Xa" secondAttribute="bottom" constant="51" id="TWl-cv-9kS"/>
                             <constraint firstAttribute="centerX" secondItem="wLs-ux-3Xa" secondAttribute="centerX" id="fqc-dx-GbV"/>
                             <constraint firstItem="PeB-Xx-o11" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="hhl-WW-wym"/>
@@ -53,6 +62,9 @@
                             <constraint firstItem="PeB-Xx-o11" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xeG-B7-0j3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noSoundImageView" destination="DYh-0W-Utb" id="LDt-fn-IVS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -393,6 +405,7 @@
     </scenes>
     <resources>
         <image name="botao_inicio" width="296" height="105"/>
+        <image name="botao_sem_som" width="86" height="86"/>
         <image name="botao_som" width="289" height="100"/>
         <image name="fundo_tela_inicio" width="640" height="1136"/>
         <image name="icon-animais" width="64" height="64"/>

@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController 
 
+- (IBAction)doSwitchSound:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIImageView *noSoundImageView;
 
 @end
 

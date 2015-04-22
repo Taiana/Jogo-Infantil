@@ -25,4 +25,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)doSwitchSound:(id)sender {
+    
+    if (self.noSoundImageView.hidden) {
+        self.noSoundImageView.hidden = NO;
+    } else {
+        self.noSoundImageView.hidden = YES;
+    }
+}
 @end
