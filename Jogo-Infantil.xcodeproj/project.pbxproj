@@ -16,6 +16,7 @@
 		9A3CCD261ADCA3E6002849AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CCD251ADCA3E6002849AC /* Images.xcassets */; };
 		9A3CCD291ADCA3E6002849AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */; };
 		9A3CCD351ADCA3E7002849AC /* Jogo_InfantilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */; };
+		9A5E49A91AE75F730080D2C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */; };
 		9AD6E8D61AE74AEB0070E494 /* categoriasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */; };
 		9AD6E8D71AE750FF0070E494 /* Hobo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AED42CD1AE733EA00D59228 /* Hobo.ttf */; };
 		9AF2CAFB1AE7168500360F3D /* fail1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2CAFA1AE7168500360F3D /* fail1.mp3 */; };
@@ -47,6 +48,7 @@
 		9A3CCD2E1ADCA3E7002849AC /* Jogo-InfantilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jogo-InfantilTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3CCD331ADCA3E7002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jogo_InfantilTests.m; sourceTree = "<group>"; };
+		9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9AD6E8D41AE74AEB0070E494 /* categoriasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = categoriasViewController.h; sourceTree = "<group>"; };
 		9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = categoriasViewController.m; sourceTree = "<group>"; };
 		9AED42CD1AE733EA00D59228 /* Hobo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hobo.ttf; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5E49A91AE75F730080D2C2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,7 @@
 		9A3CCD0C1ADCA3E6002849AC = {
 			isa = PBXGroup;
 			children = (
+				9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */,
 				9A3CCD171ADCA3E6002849AC /* Jogo-Infantil */,
 				9A3CCD311ADCA3E7002849AC /* Jogo-InfantilTests */,
 				9A3CCD161ADCA3E6002849AC /* Products */,

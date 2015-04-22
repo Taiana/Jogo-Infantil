@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface ViewController : UIViewController 
+@interface ViewController : UIViewController {
+    AVAudioPlayer* sound ;
+}
 
 - (IBAction)doSwitchSound:(id)sender;
 
