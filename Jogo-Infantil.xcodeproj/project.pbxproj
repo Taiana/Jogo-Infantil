@@ -45,6 +45,7 @@
 		9A3CCD2E1ADCA3E7002849AC /* Jogo-InfantilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jogo-InfantilTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3CCD331ADCA3E7002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jogo_InfantilTests.m; sourceTree = "<group>"; };
+		9AED42CD1AE733EA00D59228 /* Hobo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hobo.ttf; sourceTree = "<group>"; };
 		9AF2CAFA1AE7168500360F3D /* fail1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fail1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +106,7 @@
 				9A22517C1AE7157E00486867 /* musica.mp3 */,
 				9A22517B1AE7157E00486867 /* comemoracao.mp3 */,
 				9AF2CAFA1AE7168500360F3D /* fail1.mp3 */,
+				9AED42CD1AE733EA00D59228 /* Hobo.ttf */,
 				9A3CCD191ADCA3E6002849AC /* Info.plist */,
 				9A3CCD1A1ADCA3E6002849AC /* main.m */,
 			);
