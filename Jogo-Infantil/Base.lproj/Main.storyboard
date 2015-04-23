@@ -345,6 +345,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT1-Wx-tMk">
+                                <rect key="frame" x="283" y="296" width="35" height="30"/>
+                                <state key="normal" title="Jogo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ryO-3A-huL" kind="show" id="Adg-DI-PYj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -363,6 +372,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSi-hE-FTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2292" y="363"/>
+        </scene>
+        <!--jogoVC-->
+        <scene sceneID="aSk-IK-M5G">
+            <objects>
+                <viewController id="ryO-3A-huL" userLabel="jogoVC" customClass="jogoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yCv-BP-qSJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="bZi-RK-dO9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m6S-zY-nEu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_tela_categorias" translatesAutoresizingMaskIntoConstraints="NO" id="EIR-1Y-mk3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3w-UY-TCP">
+                                <rect key="frame" x="36" y="28" width="56" height="70"/>
+                                <state key="normal" image="btn-voltar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nome_jogo" translatesAutoresizingMaskIntoConstraints="NO" id="qKS-En-3Dj">
+                                <rect key="frame" x="180" y="77" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="169" id="Cwr-JF-HKn"/>
+                                    <constraint firstAttribute="width" constant="469" id="ypN-1T-lE0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p3w-UY-TCP" firstAttribute="leading" secondItem="m6S-zY-nEu" secondAttribute="leadingMargin" constant="31" id="SlJ-oO-kkO"/>
+                            <constraint firstItem="EIR-1Y-mk3" firstAttribute="top" secondItem="m6S-zY-nEu" secondAttribute="top" id="TxK-1r-yv9"/>
+                            <constraint firstItem="EIR-1Y-mk3" firstAttribute="bottom" secondItem="bZi-RK-dO9" secondAttribute="top" id="XCh-4q-oLU"/>
+                            <constraint firstItem="qKS-En-3Dj" firstAttribute="top" secondItem="yCv-BP-qSJ" secondAttribute="bottom" constant="57" id="fk0-Zz-ycd"/>
+                            <constraint firstItem="EIR-1Y-mk3" firstAttribute="leading" secondItem="m6S-zY-nEu" secondAttribute="leading" id="hd3-SO-ZIf"/>
+                            <constraint firstAttribute="trailing" secondItem="EIR-1Y-mk3" secondAttribute="trailing" id="jbj-IN-Fbh"/>
+                            <constraint firstAttribute="centerX" secondItem="qKS-En-3Dj" secondAttribute="centerX" id="khX-Kh-gb6"/>
+                            <constraint firstItem="p3w-UY-TCP" firstAttribute="top" secondItem="yCv-BP-qSJ" secondAttribute="bottom" constant="38" id="qEZ-EB-Ak2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEv-DC-0z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2986" y="363"/>
         </scene>
         <!--carrosVC-->
         <scene sceneID="5QA-Xu-lsH">
@@ -605,6 +660,6 @@
         <image name="numeros" width="160" height="160"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bck-b2-Dqc"/>
+        <segue reference="Oxz-Dz-zO3"/>
     </inferredMetricsTieBreakers>
 </document>
