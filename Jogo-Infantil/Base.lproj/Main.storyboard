@@ -394,11 +394,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nome_jogo" translatesAutoresizingMaskIntoConstraints="NO" id="qKS-En-3Dj">
-                                <rect key="frame" x="180" y="77" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qKS-En-3Dj">
+                                <rect key="frame" x="172" y="28" width="256" height="256"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="169" id="Cwr-JF-HKn"/>
-                                    <constraint firstAttribute="width" constant="469" id="ypN-1T-lE0"/>
+                                    <constraint firstAttribute="height" constant="256" id="Cwr-JF-HKn"/>
+                                    <constraint firstAttribute="width" constant="256" id="ypN-1T-lE0"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFw-91-vH8" userLabel="redButton">
@@ -516,6 +516,14 @@
                                 </state>
                                 <connections>
                                     <action selector="whiteColor:" destination="ryO-3A-huL" eventType="touchUpInside" id="nts-Ca-oQT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afn-Ad-Gas">
+                                <rect key="frame" x="16" y="132" width="47" height="47"/>
+                                <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="limpaTabuleiro:" destination="ryO-3A-huL" eventType="touchUpInside" id="qfr-UO-Jw4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -792,6 +800,7 @@
         <image name="botao_som" width="289" height="100"/>
         <image name="btn-voltar" width="56" height="70"/>
         <image name="carros" width="162" height="162"/>
+        <image name="clear" width="64" height="64"/>
         <image name="flores" width="161" height="159"/>
         <image name="formas" width="161" height="161"/>
         <image name="fundo_tela_categorias" width="640" height="1136"/>
@@ -799,6 +808,7 @@
         <image name="letras" width="163" height="159"/>
         <image name="nome_jogo" width="489" height="168"/>
         <image name="numeros" width="160" height="160"/>
+        <image name="placeholder" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Oxz-Dz-zO3"/>
