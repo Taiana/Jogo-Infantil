@@ -518,8 +518,12 @@
                                     <action selector="whiteColor:" destination="ryO-3A-huL" eventType="touchUpInside" id="nts-Ca-oQT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afn-Ad-Gas">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afn-Ad-Gas" userLabel="cleanButton">
                                 <rect key="frame" x="16" y="132" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="DDj-yf-6WS"/>
+                                    <constraint firstAttribute="width" constant="47" id="lsm-7M-u2J"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                 <state key="normal" image="clear"/>
                                 <connections>
@@ -538,6 +542,7 @@
                             <constraint firstItem="GlR-g1-GfE" firstAttribute="top" secondItem="5bn-iH-28i" secondAttribute="bottom" id="Cxv-er-woy"/>
                             <constraint firstItem="YpP-Ib-017" firstAttribute="leading" secondItem="lFw-91-vH8" secondAttribute="leading" id="IfE-e0-6S5"/>
                             <constraint firstItem="5bn-iH-28i" firstAttribute="leading" secondItem="m6S-zY-nEu" secondAttribute="leadingMargin" constant="5" id="JNK-lI-3r9"/>
+                            <constraint firstItem="5bn-iH-28i" firstAttribute="top" secondItem="afn-Ad-Gas" secondAttribute="bottom" constant="11" id="Lm9-lp-xdG"/>
                             <constraint firstItem="Vcg-M9-rsz" firstAttribute="top" secondItem="lMZ-ZY-Syc" secondAttribute="bottom" id="M2B-Ww-afd"/>
                             <constraint firstItem="HPE-77-3s8" firstAttribute="leading" secondItem="lMZ-ZY-Syc" secondAttribute="leading" id="Qz1-dz-A0f"/>
                             <constraint firstItem="YpP-Ib-017" firstAttribute="leading" secondItem="HPE-77-3s8" secondAttribute="leading" id="RDR-rq-Dhb"/>
@@ -560,6 +565,7 @@
                             <constraint firstItem="5bn-iH-28i" firstAttribute="leading" secondItem="GlR-g1-GfE" secondAttribute="leading" id="sP6-m6-w7P"/>
                             <constraint firstItem="YpP-Ib-017" firstAttribute="top" secondItem="lFw-91-vH8" secondAttribute="bottom" id="sqf-xs-aeO"/>
                             <constraint firstItem="HPE-77-3s8" firstAttribute="top" secondItem="YpP-Ib-017" secondAttribute="bottom" id="wts-39-I9m"/>
+                            <constraint firstItem="afn-Ad-Gas" firstAttribute="leading" secondItem="m6S-zY-nEu" secondAttribute="leadingMargin" id="yCS-Jg-9kP"/>
                             <constraint firstItem="tkO-oh-nIu" firstAttribute="top" secondItem="rvn-bw-zjJ" secondAttribute="bottom" id="zkw-hv-eSZ"/>
                         </constraints>
                     </view>
