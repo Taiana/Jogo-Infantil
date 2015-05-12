@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9A22517D1AE7157E00486867 /* comemoracao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A22517B1AE7157E00486867 /* comemoracao.mp3 */; };
 		9A22517E1AE7157E00486867 /* musica.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A22517C1AE7157E00486867 /* musica.mp3 */; };
-		9A34321F1AE89FF400600DA3 /* jogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A34321E1AE89FF400600DA3 /* jogoViewController.m */; };
 		9A3CCD1B1ADCA3E6002849AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD1A1ADCA3E6002849AC /* main.m */; };
 		9A3CCD1E1ADCA3E6002849AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD1D1ADCA3E6002849AC /* AppDelegate.m */; };
 		9A3CCD211ADCA3E6002849AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD201ADCA3E6002849AC /* ViewController.m */; };
@@ -18,6 +17,7 @@
 		9A3CCD291ADCA3E6002849AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */; };
 		9A3CCD351ADCA3E7002849AC /* Jogo_InfantilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */; };
 		9A5E49A91AE75F730080D2C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */; };
+		9A9B39C31B0283FE000F2688 /* jogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B39C21B0283FE000F2688 /* jogoViewController.m */; };
 		9AD6E8D61AE74AEB0070E494 /* categoriasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */; };
 		9AD6E8D71AE750FF0070E494 /* Hobo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AED42CD1AE733EA00D59228 /* Hobo.ttf */; };
 		9AF2CAFB1AE7168500360F3D /* fail1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2CAFA1AE7168500360F3D /* fail1.mp3 */; };
@@ -36,8 +36,6 @@
 /* Begin PBXFileReference section */
 		9A22517B1AE7157E00486867 /* comemoracao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comemoracao.mp3; sourceTree = "<group>"; };
 		9A22517C1AE7157E00486867 /* musica.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica.mp3; sourceTree = "<group>"; };
-		9A34321D1AE89FF400600DA3 /* jogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jogoViewController.h; path = "../../../Desktop/Jogo Infantil/jogoViewController.h"; sourceTree = "<group>"; };
-		9A34321E1AE89FF400600DA3 /* jogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = jogoViewController.m; path = "../../../Desktop/Jogo Infantil/jogoViewController.m"; sourceTree = "<group>"; };
 		9A3CCD151ADCA3E6002849AC /* Jogo-Infantil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jogo-Infantil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3CCD191ADCA3E6002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3CCD1A1ADCA3E6002849AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,6 +50,8 @@
 		9A3CCD331ADCA3E7002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jogo_InfantilTests.m; sourceTree = "<group>"; };
 		9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9A9B39C11B0283FE000F2688 /* jogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jogoViewController.h; sourceTree = "<group>"; };
+		9A9B39C21B0283FE000F2688 /* jogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jogoViewController.m; sourceTree = "<group>"; };
 		9AD6E8D41AE74AEB0070E494 /* categoriasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = categoriasViewController.h; sourceTree = "<group>"; };
 		9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = categoriasViewController.m; sourceTree = "<group>"; };
 		9AED42CD1AE733EA00D59228 /* Hobo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hobo.ttf; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 				9A3CCD201ADCA3E6002849AC /* ViewController.m */,
 				9AD6E8D41AE74AEB0070E494 /* categoriasViewController.h */,
 				9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */,
-				9A34321D1AE89FF400600DA3 /* jogoViewController.h */,
-				9A34321E1AE89FF400600DA3 /* jogoViewController.m */,
+				9A9B39C11B0283FE000F2688 /* jogoViewController.h */,
+				9A9B39C21B0283FE000F2688 /* jogoViewController.m */,
 				9A3CCD221ADCA3E6002849AC /* Main.storyboard */,
 				9A3CCD251ADCA3E6002849AC /* Images.xcassets */,
 				9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */,
@@ -250,8 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3CCD211ADCA3E6002849AC /* ViewController.m in Sources */,
-				9A34321F1AE89FF400600DA3 /* jogoViewController.m in Sources */,
 				9A3CCD1E1ADCA3E6002849AC /* AppDelegate.m in Sources */,
+				9A9B39C31B0283FE000F2688 /* jogoViewController.m in Sources */,
 				9AD6E8D61AE74AEB0070E494 /* categoriasViewController.m in Sources */,
 				9A3CCD1B1ADCA3E6002849AC /* main.m in Sources */,
 			);
