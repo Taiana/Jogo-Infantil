@@ -16,16 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-//    SystemSoundID soundID;
-//    NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]                                                                                                               pathForResource:@"musica" ofType:@"mp3"]];
-//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)musicFile, &soundID);
-//    AudioServicesPlaySystemSound (soundID);
+    
+    globals = [GlobalVars sharedInstance];
 
-    NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]                                                                                                               pathForResource:@"musica" ofType:@"mp3"]];
-    sound = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile  error:nil];
-    sound.numberOfLoops = -1;
-    [sound play];
+    if (globals.playSound) {
+        if (![globals.sound isPlaying]){
+            [globals.sound play];
+        }
+    } else {
+        self.noSoundImageView.hidden = NO;
+    }
     
 }
 
@@ -37,12 +37,14 @@
 
 - (IBAction)doSwitchSound:(id)sender {
     
-    if (self.noSoundImageView.hidden) {
+    if (globals.playSound) {
         self.noSoundImageView.hidden = NO;
-        [sound stop];
+        [globals.sound stop];
+        globals.playSound = false;
     } else {
         self.noSoundImageView.hidden = YES;
-        [sound play];
+        [globals.sound play];
+        globals.playSound = true;
     }
     
     

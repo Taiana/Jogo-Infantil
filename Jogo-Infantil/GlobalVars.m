@@ -12,6 +12,12 @@
 
 @synthesize vcOrigem = _vcOrigem;
 
+@synthesize playSound = _playSound;
+
+@synthesize sound = _sound;
+
+NSURL* musicFile;
+
 + (GlobalVars *)sharedInstance {
     static dispatch_once_t onceToken;
     static GlobalVars *instance = nil;
@@ -26,6 +32,10 @@
     if (self) {
         // Note these aren't allocated as [[NSString alloc] init] doesn't provide a useful object
         _vcOrigem = nil;
+        _playSound = true;
+        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]                                                                                                               pathForResource:@"musica" ofType:@"mp3"]];
+        _sound = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile  error:nil];
+        _sound.numberOfLoops = -1;
     }
     return self;
 }

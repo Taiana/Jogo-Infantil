@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import "globalVars.h"
+
+GlobalVars *globals;
 
 @interface ViewController : UIViewController {
-    AVAudioPlayer* sound ;
+//    AVAudioPlayer* sound ;
 }
 
 - (IBAction)doSwitchSound:(id)sender;
