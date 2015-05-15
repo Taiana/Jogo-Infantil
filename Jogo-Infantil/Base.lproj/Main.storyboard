@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,7 +19,7 @@
         <!--inicioVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="inicioVC" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inicioVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="inicioVC" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -83,7 +83,7 @@
         <!--categoriasVC-->
         <scene sceneID="LUS-Yq-iV9">
             <objects>
-                <viewController id="5WI-P7-HXi" userLabel="categoriasVC" customClass="categoriasViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="categoriasVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5WI-P7-HXi" userLabel="categoriasVC" customClass="categoriasViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UbL-Nm-Ner"/>
                         <viewControllerLayoutGuide type="bottom" id="pLv-yy-6rV"/>
@@ -250,12 +250,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTY-bl-CLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015" y="333"/>
+            <point key="canvasLocation" x="1113" y="269"/>
         </scene>
         <!--floresVC-->
         <scene sceneID="t3l-XQ-cx6">
             <objects>
-                <viewController id="kt4-DO-Pi0" userLabel="floresVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="floresVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kt4-DO-Pi0" userLabel="floresVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W6Q-5w-Skp"/>
                         <viewControllerLayoutGuide type="bottom" id="uqw-yB-qhz"/>
@@ -306,12 +306,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iT-mT-Hh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="363"/>
+            <point key="canvasLocation" x="1813" y="363"/>
         </scene>
         <!--numerosVC-->
         <scene sceneID="4ub-o9-xgr">
             <objects>
-                <viewController id="ufu-ot-6Ku" userLabel="numerosVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="numerosVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ufu-ot-6Ku" userLabel="numerosVC" customClass="numerosViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3kk-kN-6PT"/>
                         <viewControllerLayoutGuide type="bottom" id="Qww-AJ-2sj"/>
@@ -371,12 +371,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSi-hE-FTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="363"/>
+            <point key="canvasLocation" x="2464" y="363"/>
         </scene>
         <!--jogoVC-->
         <scene sceneID="aSk-IK-M5G">
             <objects>
-                <viewController id="ryO-3A-huL" userLabel="jogoVC" customClass="jogoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="jogoVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ryO-3A-huL" userLabel="jogoVC" customClass="jogoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yCv-BP-qSJ"/>
                         <viewControllerLayoutGuide type="bottom" id="bZi-RK-dO9"/>
@@ -393,6 +393,9 @@
                                 <state key="normal" image="btn-voltar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="voltar:" destination="ryO-3A-huL" eventType="touchUpInside" id="Ef6-jo-1rp"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qKS-En-3Dj">
                                 <rect key="frame" x="172" y="28" width="256" height="256"/>
@@ -530,6 +533,18 @@
                                     <action selector="limpaTabuleiro:" destination="ryO-3A-huL" eventType="touchUpInside" id="qfr-UO-Jw4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View Anterior" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ag-B6-c49">
+                                <rect key="frame" x="482" y="77" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6D-D7-kZd" userLabel="view">
+                                <rect key="frame" x="428" y="106" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -569,15 +584,20 @@
                             <constraint firstItem="tkO-oh-nIu" firstAttribute="top" secondItem="rvn-bw-zjJ" secondAttribute="bottom" id="zkw-hv-eSZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="viewAnterior" destination="v6D-D7-kZd" id="3B5-kW-V5g"/>
+                        <segue destination="ufu-ot-6Ku" kind="show" identifier="numerosSegue" id="nxo-J4-sKc"/>
+                        <segue destination="Bt1-tk-0tc" kind="show" identifier="animaisSegue" id="1Vw-xp-geA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uEv-DC-0z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2986" y="363"/>
+            <point key="canvasLocation" x="3167" y="363"/>
         </scene>
         <!--carrosVC-->
         <scene sceneID="5QA-Xu-lsH">
             <objects>
-                <viewController id="Lod-wa-hfB" userLabel="carrosVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="carrosVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lod-wa-hfB" userLabel="carrosVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X38-Kd-l2A"/>
                         <viewControllerLayoutGuide type="bottom" id="XnS-Jn-d0o"/>
@@ -628,12 +648,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uD2-8Q-cB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="1031"/>
+            <point key="canvasLocation" x="1813" y="1031"/>
         </scene>
         <!--formasVC-->
         <scene sceneID="BCc-JY-G6k">
             <objects>
-                <viewController id="vhq-Hl-vJb" userLabel="formasVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="formasVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vhq-Hl-vJb" userLabel="formasVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XrG-WF-eNi"/>
                         <viewControllerLayoutGuide type="bottom" id="rsT-mP-ghi"/>
@@ -684,12 +704,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mC-jL-sbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="1031"/>
+            <point key="canvasLocation" x="2464" y="1031"/>
         </scene>
         <!--animaisVC-->
         <scene sceneID="tqa-Lp-d5J">
             <objects>
-                <viewController id="Bt1-tk-0tc" userLabel="animaisVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="animaisVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bt1-tk-0tc" userLabel="animaisVC" customClass="animaisViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9qI-bF-lSk"/>
                         <viewControllerLayoutGuide type="bottom" id="0EI-Bh-bED"/>
@@ -698,7 +718,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_tela_categorias" translatesAutoresizingMaskIntoConstraints="NO" id="qTw-wf-6qY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_tela_categorias" translatesAutoresizingMaskIntoConstraints="NO" id="qTw-wf-6qY" userLabel="categoriasVC">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVo-pZ-PE3">
@@ -723,6 +743,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlC-zB-GdF">
+                                <rect key="frame" x="283" y="301" width="35" height="30"/>
+                                <state key="normal" title="Jogo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ryO-3A-huL" kind="show" id="ZMk-HC-mKs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -740,12 +769,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mw7-AL-xge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="-297"/>
+            <point key="canvasLocation" x="1813" y="-297"/>
         </scene>
         <!--letrasVC-->
         <scene sceneID="hJM-Lp-4lm">
             <objects>
-                <viewController id="Daz-UZ-0mD" userLabel="letrasVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="letrasVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Daz-UZ-0mD" userLabel="letrasVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WA9-wO-Zkp"/>
                         <viewControllerLayoutGuide type="bottom" id="qG6-XH-8ne"/>
@@ -796,7 +825,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uzp-v5-f4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="-297"/>
+            <point key="canvasLocation" x="2464" y="-297"/>
         </scene>
     </scenes>
     <resources>
@@ -817,6 +846,9 @@
         <image name="placeholder" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oxz-Dz-zO3"/>
+        <segue reference="nxo-J4-sKc"/>
+        <segue reference="Adg-DI-PYj"/>
+        <segue reference="1Vw-xp-geA"/>
+        <segue reference="OfQ-2t-DIy"/>
     </inferredMetricsTieBreakers>
 </document>
