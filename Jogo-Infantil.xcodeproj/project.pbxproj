@@ -17,6 +17,9 @@
 		9A3CCD291ADCA3E6002849AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */; };
 		9A3CCD351ADCA3E7002849AC /* Jogo_InfantilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */; };
 		9A5E49A91AE75F730080D2C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */; };
+		9A88A7561B0574A800322259 /* numerosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88A7551B0574A800322259 /* numerosViewController.m */; };
+		9A88A7591B057F5E00322259 /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88A7581B057F5E00322259 /* GlobalVars.m */; };
+		9A88A75C1B058D6000322259 /* animaisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88A75B1B058D6000322259 /* animaisViewController.m */; };
 		9A9B39C31B0283FE000F2688 /* jogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B39C21B0283FE000F2688 /* jogoViewController.m */; };
 		9AD6E8D61AE74AEB0070E494 /* categoriasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */; };
 		9AD6E8D71AE750FF0070E494 /* Hobo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AED42CD1AE733EA00D59228 /* Hobo.ttf */; };
@@ -50,6 +53,12 @@
 		9A3CCD331ADCA3E7002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jogo_InfantilTests.m; sourceTree = "<group>"; };
 		9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9A88A7541B0574A800322259 /* numerosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numerosViewController.h; sourceTree = "<group>"; };
+		9A88A7551B0574A800322259 /* numerosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = numerosViewController.m; sourceTree = "<group>"; };
+		9A88A7571B057F5E00322259 /* GlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVars.h; sourceTree = "<group>"; };
+		9A88A7581B057F5E00322259 /* GlobalVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVars.m; sourceTree = "<group>"; };
+		9A88A75A1B058D6000322259 /* animaisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animaisViewController.h; sourceTree = "<group>"; };
+		9A88A75B1B058D6000322259 /* animaisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animaisViewController.m; sourceTree = "<group>"; };
 		9A9B39C11B0283FE000F2688 /* jogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jogoViewController.h; sourceTree = "<group>"; };
 		9A9B39C21B0283FE000F2688 /* jogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jogoViewController.m; sourceTree = "<group>"; };
 		9AD6E8D41AE74AEB0070E494 /* categoriasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = categoriasViewController.h; sourceTree = "<group>"; };
@@ -107,6 +116,12 @@
 				9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */,
 				9A9B39C11B0283FE000F2688 /* jogoViewController.h */,
 				9A9B39C21B0283FE000F2688 /* jogoViewController.m */,
+				9A88A7541B0574A800322259 /* numerosViewController.h */,
+				9A88A7551B0574A800322259 /* numerosViewController.m */,
+				9A88A75A1B058D6000322259 /* animaisViewController.h */,
+				9A88A75B1B058D6000322259 /* animaisViewController.m */,
+				9A88A7571B057F5E00322259 /* GlobalVars.h */,
+				9A88A7581B057F5E00322259 /* GlobalVars.m */,
 				9A3CCD221ADCA3E6002849AC /* Main.storyboard */,
 				9A3CCD251ADCA3E6002849AC /* Images.xcassets */,
 				9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */,
@@ -250,10 +265,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A88A7561B0574A800322259 /* numerosViewController.m in Sources */,
 				9A3CCD211ADCA3E6002849AC /* ViewController.m in Sources */,
 				9A3CCD1E1ADCA3E6002849AC /* AppDelegate.m in Sources */,
+				9A88A75C1B058D6000322259 /* animaisViewController.m in Sources */,
 				9A9B39C31B0283FE000F2688 /* jogoViewController.m in Sources */,
 				9AD6E8D61AE74AEB0070E494 /* categoriasViewController.m in Sources */,
+				9A88A7591B057F5E00322259 /* GlobalVars.m in Sources */,
 				9A3CCD1B1ADCA3E6002849AC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
