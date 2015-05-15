@@ -7,10 +7,13 @@
 //
 
 #import "jogoViewController.h"
+#import "GlobalVars.h"
 
 BOOL firstRun = TRUE;
 
 UIColor *selectedColor;
+
+UIViewController *nuVC;
 
 int tamanhoQuadrado = 19;
 
@@ -30,6 +33,11 @@ CGFloat delta_y = 0.0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     selectedColor = [UIColor brownColor];
+    
+    GlobalVars *globals = [GlobalVars sharedInstance];
+    nuVC = globals.vcOrigem;
+    
+    _viewAnterior.text = NSStringFromClass([nuVC class]);
 
 }
 
@@ -90,8 +98,8 @@ CGFloat delta_y = 0.0;
 {
     [button setBackgroundImage:[self imageWithColor:selectedColor] forState:UIControlStateSelected];
     //get touched button
-    int tag = button.tag;
-    int tagPintar;
+    long tag = button.tag;
+    long tagPintar;
     
     // get the touch
     UITouch *touch = [[event touchesForView:button] anyObject];
@@ -139,7 +147,7 @@ CGFloat delta_y = 0.0;
         }
     }
     if (tagPintar <= cols * rows ) {
-        NSLog(@"tag pintar %i", tagPintar);
+        NSLog(@"tag pintar %li", tagPintar);
         newButton = (UIButton *)[self.view viewWithTag:tagPintar];
         [newButton setBackgroundImage:[self imageWithColor:selectedColor] forState:UIControlStateNormal];
     }
@@ -168,6 +176,10 @@ CGFloat delta_y = 0.0;
     UIGraphicsEndImageContext();
     
     return image;
+}
+
+- (IBAction)voltar:(id)sender {
+    [self performSegueWithIdentifier:@"numerosSegue" sender:sender];
 }
 
 - (IBAction)brownColor:(id)sender {

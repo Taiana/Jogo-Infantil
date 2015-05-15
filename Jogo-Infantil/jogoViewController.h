@@ -21,9 +21,13 @@ UITapGestureRecognizer *tapGesture;
 
 @interface jogoViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *viewAnterior;
+
 -(void) cols:(int)numCols rows:(int)numRows;
 
 -(UIImage *)imageWithColor:(UIColor *)color;
+
+- (IBAction)voltar:(id)sender;
 
 - (IBAction)btnTap:(id)sender;
 - (IBAction)brownColor:(id)sender;
