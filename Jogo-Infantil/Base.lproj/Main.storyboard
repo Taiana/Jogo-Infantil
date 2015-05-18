@@ -345,13 +345,49 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT1-Wx-tMk">
-                                <rect key="frame" x="283" y="296" width="35" height="30"/>
-                                <state key="normal" title="Jogo">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCY-kZ-MeL">
+                                <rect key="frame" x="277" y="284" width="32" height="32"/>
+                                <state key="normal" image="2-64x64">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ryO-3A-huL" kind="show" id="Adg-DI-PYj"/>
+                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="t3P-jA-WdB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eb9-j0-xqv">
+                                <rect key="frame" x="108" y="387" width="32" height="32"/>
+                                <state key="normal" image="4-64x64">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="q61-Nc-c1v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNe-b0-JQk">
+                                <rect key="frame" x="263" y="387" width="32" height="32"/>
+                                <state key="normal" image="5-64x64">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="V2P-vs-KmN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrK-0N-wxF">
+                                <rect key="frame" x="429" y="389" width="32" height="32"/>
+                                <state key="normal" image="6-64x64">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="oZj-ak-xjF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-f2-GZA">
+                                <rect key="frame" x="108" y="284" width="32" height="32"/>
+                                <state key="normal" image="1-64x64">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="9Hs-f7-4qq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -368,6 +404,9 @@
                             <constraint firstItem="sSP-Pj-vDL" firstAttribute="top" secondItem="3kk-kN-6PT" secondAttribute="bottom" constant="38" id="oaF-Vd-5Io"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="ryO-3A-huL" kind="show" identifier="numerosParaJogo" id="EoV-3j-9Sa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSi-hE-FTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -533,18 +572,6 @@
                                     <action selector="limpaTabuleiro:" destination="ryO-3A-huL" eventType="touchUpInside" id="qfr-UO-Jw4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View Anterior" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ag-B6-c49">
-                                <rect key="frame" x="482" y="77" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6D-D7-kZd" userLabel="view">
-                                <rect key="frame" x="428" y="106" width="156" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -585,7 +612,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="viewAnterior" destination="v6D-D7-kZd" id="3B5-kW-V5g"/>
+                        <outlet property="topImage" destination="qKS-En-3Dj" id="qE2-kI-k50"/>
                         <segue destination="ufu-ot-6Ku" kind="show" identifier="numerosSegue" id="nxo-J4-sKc"/>
                         <segue destination="Bt1-tk-0tc" kind="show" identifier="animaisSegue" id="1Vw-xp-geA"/>
                     </connections>
@@ -829,6 +856,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1-64x64" width="32" height="32"/>
+        <image name="2-64x64" width="32" height="32"/>
+        <image name="4-64x64" width="32" height="32"/>
+        <image name="5-64x64" width="32" height="32"/>
+        <image name="6-64x64" width="32" height="32"/>
         <image name="animais" width="158" height="158"/>
         <image name="botao_inicio" width="296" height="105"/>
         <image name="botao_sem_som" width="86" height="86"/>
@@ -846,9 +878,9 @@
         <image name="placeholder" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Oxz-Dz-zO3"/>
         <segue reference="nxo-J4-sKc"/>
-        <segue reference="Adg-DI-PYj"/>
+        <segue reference="EoV-3j-9Sa"/>
         <segue reference="1Vw-xp-geA"/>
-        <segue reference="OfQ-2t-DIy"/>
     </inferredMetricsTieBreakers>
 </document>

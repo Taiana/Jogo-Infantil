@@ -15,6 +15,8 @@ UIColor *selectedColor;
 
 UIViewController *nuVC;
 
+GlobalVars *globals;
+
 int tamanhoQuadrado = 19;
 
 CGFloat delta_x = 0.0;
@@ -34,8 +36,12 @@ CGFloat delta_y = 0.0;
     [super viewDidLoad];
     selectedColor = [UIColor brownColor];
     
-    GlobalVars *globals = [GlobalVars sharedInstance];
+    globals = [GlobalVars sharedInstance];
     nuVC = globals.vcOrigem;
+    
+    if (globals.image != nil) {
+        self.topImage.image = (UIImage *)globals.image;
+    }
     
     _viewAnterior.text = NSStringFromClass([nuVC class]);
 
@@ -44,12 +50,12 @@ CGFloat delta_y = 0.0;
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    if (firstRun) {
+    //if (firstRun) {
         
         [self cols:32 rows:32];
         
-        firstRun = FALSE;
-    }
+    //    firstRun = FALSE;
+    //}
 
 }
 

@@ -9,6 +9,8 @@
 #import "numerosViewController.h"
 #import "globalVars.h"
 
+GlobalVars *globals;
+
 @interface numerosViewController ()
 
 @end
@@ -18,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    GlobalVars *globals = [GlobalVars sharedInstance];
+    globals = [GlobalVars sharedInstance];
     globals.vcOrigem = self;
 }
 
@@ -36,5 +38,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)clickButton:(id)sender {
+    globals.image = [[(UIButton *)sender imageView] image];
+    [self performSegueWithIdentifier:@"numerosParaJogo" sender:self];
+}
 
 @end

@@ -10,4 +10,6 @@
 
 @interface numerosViewController : UIViewController
 
+- (IBAction)clickButton:(id)sender;
+
 @end

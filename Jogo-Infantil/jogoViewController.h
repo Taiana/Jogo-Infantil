@@ -25,6 +25,8 @@ UITapGestureRecognizer *tapGesture;
 
 -(void) cols:(int)numCols rows:(int)numRows;
 
+@property (weak, nonatomic) IBOutlet UIImageView *topImage;
+
 -(UIImage *)imageWithColor:(UIColor *)color;
 
 - (IBAction)voltar:(id)sender;

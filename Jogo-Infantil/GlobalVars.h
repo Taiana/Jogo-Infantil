@@ -16,6 +16,8 @@
     UIViewController *vcOrigem;
     bool *playSound;
     AVAudioPlayer *sound;
+    NSString *imageName;
+    UIImage *image;
 }
 
 + (GlobalVars *)sharedInstance;
@@ -25,5 +27,9 @@
 @property(nonatomic, readwrite) bool *playSound;
 
 @property(nonatomic, readwrite) AVAudioPlayer *sound;
+
+@property(strong, nonatomic, readwrite) NSString *imageName;
+
+@property(strong, nonatomic, readwrite) UIImage *image;
 
 @end

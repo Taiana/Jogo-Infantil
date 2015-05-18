@@ -16,6 +16,10 @@
 
 @synthesize sound = _sound;
 
+@synthesize imageName = _imageName;
+
+@synthesize image = _image;
+
 NSURL* musicFile;
 
 + (GlobalVars *)sharedInstance {
@@ -36,6 +40,8 @@ NSURL* musicFile;
         musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]                                                                                                               pathForResource:@"musica" ofType:@"mp3"]];
         _sound = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile  error:nil];
         _sound.numberOfLoops = -1;
+        _imageName = nil;
+        _image = nil;
     }
     return self;
 }
