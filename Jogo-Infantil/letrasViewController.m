@@ -1,27 +1,22 @@
 //
-//  animaisViewController.m
+//  letrasViewController.m
 //  Jogo-Infantil
 //
-//  Created by Jose Dantas on 5/14/15.
+//  Created by Jose Dantas on 5/18/15.
 //  Copyright (c) 2015 Home. All rights reserved.
 //
 
-#import "animaisViewController.h"
-#import "GlobalVars.h"
+#import "letrasViewController.h"
 
-GlobalVars *globals;
-
-@interface animaisViewController ()
+@interface letrasViewController ()
 
 @end
 
-@implementation animaisViewController
+@implementation letrasViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    globals = [GlobalVars sharedInstance];
-    globals.vcOrigem = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,10 +33,5 @@ GlobalVars *globals;
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)clickButton:(id)sender {
-    globals.image = [[(UIButton *)sender imageView] image];
-    [self performSegueWithIdentifier:@"animaisParaJogo" sender:self];
-}
 
 @end
