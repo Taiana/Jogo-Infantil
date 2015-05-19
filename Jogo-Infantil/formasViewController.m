@@ -7,6 +7,9 @@
 //
 
 #import "formasViewController.h"
+#import "globalVars.h"
+
+GlobalVars *globals;
 
 @interface formasViewController ()
 
@@ -17,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    globals = [GlobalVars sharedInstance];
+    globals.vcOrigem = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +38,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)clickButton:(id)sender {
+    globals.image = [[(UIButton *)sender imageView] image];
+    [self performSegueWithIdentifier:@"formasParaJogo" sender:self];
+}
 
 @end

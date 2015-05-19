@@ -289,6 +289,42 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdk-Oh-JWc">
+                                <rect key="frame" x="98" y="300" width="32" height="32"/>
+                                <state key="normal" image="flor2-64x64">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="OtD-Vs-aJf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBs-kC-pmr">
+                                <rect key="frame" x="98" y="394" width="32" height="32"/>
+                                <state key="normal" image="flor4-64x64">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="ZdN-BB-ies"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-Uf-pGu">
+                                <rect key="frame" x="462" y="388" width="32" height="32"/>
+                                <state key="normal" image="flor5-64x64">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="9Ff-od-BTD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1b-FU-eeL">
+                                <rect key="frame" x="462" y="300" width="32" height="32"/>
+                                <state key="normal" image="flor3-64x64">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="wRV-bC-zo8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -303,6 +339,9 @@
                             <constraint firstItem="HYJ-rE-wU7" firstAttribute="leading" secondItem="fAg-VG-EyC" secondAttribute="leadingMargin" constant="31" id="zSQ-5g-4qn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="ryO-3A-huL" kind="show" identifier="floresParaJogo" id="PC7-bP-0JP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iT-mT-Hh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -662,6 +701,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XJ-ew-gkL">
+                                <rect key="frame" x="131" y="296" width="162" height="162"/>
+                                <state key="normal" image="carros">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="Lod-wa-hfB" eventType="touchUpInside" id="eur-2I-DmC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -676,6 +724,9 @@
                             <constraint firstItem="wl4-3b-kJu" firstAttribute="top" secondItem="X38-Kd-l2A" secondAttribute="bottom" constant="38" id="rTd-52-32E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="ryO-3A-huL" kind="show" identifier="carrosParaJogo" id="aW3-Ym-BCx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uD2-8Q-cB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -718,6 +769,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZX-Hb-AOA">
+                                <rect key="frame" x="143" y="324" width="161" height="161"/>
+                                <state key="normal" image="formas">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="vhq-Hl-vJb" eventType="touchUpInside" id="b9G-4L-76W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -732,6 +792,9 @@
                             <constraint firstItem="wS4-MU-OfV" firstAttribute="top" secondItem="gTC-pC-YtV" secondAttribute="top" id="spI-RZ-xGs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="ryO-3A-huL" kind="show" identifier="formasParaJogo" id="gJL-a9-0Xg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mC-jL-sbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -860,6 +923,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GC-i2-SGe">
+                                <rect key="frame" x="128" y="285" width="163" height="159"/>
+                                <state key="normal" image="letras">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="Daz-UZ-0mD" eventType="touchUpInside" id="Vy2-xq-hZU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -874,6 +946,9 @@
                             <constraint firstItem="izf-rV-xXl" firstAttribute="centerX" secondItem="Phb-U6-S7p" secondAttribute="centerX" id="zH6-yU-ojW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="ryO-3A-huL" kind="show" identifier="letrasParaJogo" id="Ya5-4z-ZAC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uzp-v5-f4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -894,6 +969,10 @@
         <image name="btn-voltar" width="56" height="70"/>
         <image name="carros" width="162" height="162"/>
         <image name="clear" width="64" height="64"/>
+        <image name="flor2-64x64" width="32" height="32"/>
+        <image name="flor3-64x64" width="32" height="32"/>
+        <image name="flor4-64x64" width="32" height="32"/>
+        <image name="flor5-64x64" width="32" height="32"/>
         <image name="flores" width="161" height="159"/>
         <image name="formas" width="161" height="161"/>
         <image name="fundo_tela_categorias" width="640" height="1136"/>
@@ -906,13 +985,13 @@
         <image name="tartaruga64x64" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="F5j-yb-e5y"/>
-        <segue reference="q3t-rL-A6E"/>
+        <segue reference="TzM-Gg-BfM"/>
+        <segue reference="aW3-Ym-BCx"/>
         <segue reference="1Vw-xp-geA"/>
         <segue reference="edf-gJ-YkP"/>
-        <segue reference="nV5-WJ-eWI"/>
-        <segue reference="TzM-Gg-BfM"/>
         <segue reference="nxo-J4-sKc"/>
-        <segue reference="bck-b2-Dqc"/>
+        <segue reference="nV5-WJ-eWI"/>
+        <segue reference="F5j-yb-e5y"/>
+        <segue reference="XXC-0C-YCn"/>
     </inferredMetricsTieBreakers>
 </document>

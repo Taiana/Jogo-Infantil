@@ -10,4 +10,6 @@
 
 @interface formasViewController : UIViewController
 
+- (IBAction)clickButton:(id)sender;
+
 @end

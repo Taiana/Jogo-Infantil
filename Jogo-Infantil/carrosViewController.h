@@ -10,4 +10,6 @@
 
 @interface carrosViewController : UIViewController
 
+- (IBAction)clickButton:(id)sender;
+
 @end

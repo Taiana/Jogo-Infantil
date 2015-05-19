@@ -10,4 +10,6 @@
 
 @interface letrasViewController : UIViewController
 
+- (IBAction)clickButton:(id)sender;
+
 @end
