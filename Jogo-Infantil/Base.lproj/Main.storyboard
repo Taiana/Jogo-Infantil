@@ -255,7 +255,7 @@
         <!--floresVC-->
         <scene sceneID="t3l-XQ-cx6">
             <objects>
-                <viewController storyboardIdentifier="floresVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kt4-DO-Pi0" userLabel="floresVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="floresVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kt4-DO-Pi0" userLabel="floresVC" customClass="floresViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W6Q-5w-Skp"/>
                         <viewControllerLayoutGuide type="bottom" id="uqw-yB-qhz"/>
@@ -613,8 +613,12 @@
                     </view>
                     <connections>
                         <outlet property="topImage" destination="qKS-En-3Dj" id="qE2-kI-k50"/>
-                        <segue destination="ufu-ot-6Ku" kind="show" identifier="jogoParaNumeros" id="nxo-J4-sKc"/>
-                        <segue destination="Bt1-tk-0tc" kind="show" identifier="jogoParaAnimais" id="1Vw-xp-geA"/>
+                        <segue destination="ufu-ot-6Ku" kind="show" identifier="numerosViewController" id="nxo-J4-sKc"/>
+                        <segue destination="Bt1-tk-0tc" kind="show" identifier="animaisViewController" id="1Vw-xp-geA"/>
+                        <segue destination="Daz-UZ-0mD" kind="show" identifier="letrasViewController" id="edf-gJ-YkP"/>
+                        <segue destination="kt4-DO-Pi0" kind="show" identifier="floresViewController" id="nV5-WJ-eWI"/>
+                        <segue destination="Lod-wa-hfB" kind="show" identifier="carrosViewController" id="TzM-Gg-BfM"/>
+                        <segue destination="vhq-Hl-vJb" kind="show" identifier="formasViewController" id="F5j-yb-e5y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uEv-DC-0z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -624,7 +628,7 @@
         <!--carrosVC-->
         <scene sceneID="5QA-Xu-lsH">
             <objects>
-                <viewController storyboardIdentifier="carrosVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lod-wa-hfB" userLabel="carrosVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="carrosVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lod-wa-hfB" userLabel="carrosVC" customClass="carrosViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X38-Kd-l2A"/>
                         <viewControllerLayoutGuide type="bottom" id="XnS-Jn-d0o"/>
@@ -680,7 +684,7 @@
         <!--formasVC-->
         <scene sceneID="BCc-JY-G6k">
             <objects>
-                <viewController storyboardIdentifier="formasVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vhq-Hl-vJb" userLabel="formasVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="formasVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vhq-Hl-vJb" userLabel="formasVC" customClass="formasViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XrG-WF-eNi"/>
                         <viewControllerLayoutGuide type="bottom" id="rsT-mP-ghi"/>
@@ -822,7 +826,7 @@
         <!--letrasVC-->
         <scene sceneID="hJM-Lp-4lm">
             <objects>
-                <viewController storyboardIdentifier="letrasVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Daz-UZ-0mD" userLabel="letrasVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="letrasVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Daz-UZ-0mD" userLabel="letrasVC" customClass="letrasViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WA9-wO-Zkp"/>
                         <viewControllerLayoutGuide type="bottom" id="qG6-XH-8ne"/>
@@ -902,9 +906,13 @@
         <image name="tartaruga64x64" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="36k-KX-uGb"/>
-        <segue reference="1Vw-xp-geA"/>
+        <segue reference="F5j-yb-e5y"/>
         <segue reference="q3t-rL-A6E"/>
+        <segue reference="1Vw-xp-geA"/>
+        <segue reference="edf-gJ-YkP"/>
+        <segue reference="nV5-WJ-eWI"/>
+        <segue reference="TzM-Gg-BfM"/>
         <segue reference="nxo-J4-sKc"/>
+        <segue reference="bck-b2-Dqc"/>
     </inferredMetricsTieBreakers>
 </document>

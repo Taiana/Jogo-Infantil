@@ -185,7 +185,7 @@ CGFloat delta_y = 0.0;
 }
 
 - (IBAction)voltar:(id)sender {
-    [self performSegueWithIdentifier:@"numerosSegue" sender:sender];
+    [self performSegueWithIdentifier:NSStringFromClass([nuVC class]) sender:sender];
 }
 
 - (IBAction)brownColor:(id)sender {
