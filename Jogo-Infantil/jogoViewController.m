@@ -43,6 +43,15 @@ CGFloat delta_y = 0.0;
         self.topImage.image = (UIImage *)globals.image;
     }
     
+    if (globals.playSound) {
+        if (![globals.sound isPlaying]){
+            [globals.sound play];
+        }
+        [_btnSound setTitle:globals.soundOff forState:UIControlStateNormal];
+    } else {
+        [_btnSound setTitle:globals.soundOn forState:UIControlStateNormal];
+    }
+    
     _viewAnterior.text = NSStringFromClass([nuVC class]);
 
 }
@@ -50,12 +59,7 @@ CGFloat delta_y = 0.0;
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    //if (firstRun) {
-        
-        [self cols:32 rows:32];
-        
-    //    firstRun = FALSE;
-    //}
+    [self cols:32 rows:32];
 
 }
 
@@ -242,6 +246,20 @@ CGFloat delta_y = 0.0;
     for (int i=1;i<=total;i++) {
         button = (UIButton *)[self.view viewWithTag:i];
         [button setBackgroundImage:[self imageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
+    }
+}
+
+- (IBAction)toggleSound:(id)sender {
+    if (globals.playSound) {
+        //self.noSoundImageView.hidden = NO;
+        [_btnSound setTitle:globals.soundOn forState:UIControlStateNormal];
+        [globals.sound stop];
+        globals.playSound = false;
+    } else {
+        //self.noSoundImageView.hidden = YES;
+        [_btnSound setTitle:globals.soundOff forState:UIControlStateNormal];
+        [globals.sound play];
+        globals.playSound = true;
     }
 }
 

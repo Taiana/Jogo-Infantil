@@ -10,13 +10,8 @@
 
 @interface categoriasViewController : UIViewController
 
-//@property (weak, nonatomic) IBOutlet UILabel *animaisLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *floresLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *carrosLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *letrasLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *numerosLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *formasLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *categoriaLabel;
+- (IBAction)toggleSound:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *btnSound;
 
 @end

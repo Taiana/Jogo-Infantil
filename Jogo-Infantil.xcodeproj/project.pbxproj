@@ -23,6 +23,7 @@
 		9A9B39C31B0283FE000F2688 /* jogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B39C21B0283FE000F2688 /* jogoViewController.m */; };
 		9AD6E8D61AE74AEB0070E494 /* categoriasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */; };
 		9AD6E8D71AE750FF0070E494 /* Hobo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AED42CD1AE733EA00D59228 /* Hobo.ttf */; };
+		9ADF415C1B15512300A5BE55 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF415B1B154EF600A5BE55 /* fontawesome-webfont.ttf */; };
 		9AF2CAFB1AE7168500360F3D /* fail1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2CAFA1AE7168500360F3D /* fail1.mp3 */; };
 		9AFC47A91B0AB34100C5B602 /* letrasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC47A81B0AB34100C5B602 /* letrasViewController.m */; };
 		9AFC47AC1B0AB35E00C5B602 /* formasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC47AB1B0AB35E00C5B602 /* formasViewController.m */; };
@@ -67,6 +68,7 @@
 		9A9B39C21B0283FE000F2688 /* jogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jogoViewController.m; sourceTree = "<group>"; };
 		9AD6E8D41AE74AEB0070E494 /* categoriasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = categoriasViewController.h; sourceTree = "<group>"; };
 		9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = categoriasViewController.m; sourceTree = "<group>"; };
+		9ADF415B1B154EF600A5BE55 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		9AED42CD1AE733EA00D59228 /* Hobo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hobo.ttf; sourceTree = "<group>"; };
 		9AF2CAFA1AE7168500360F3D /* fail1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fail1.mp3; sourceTree = "<group>"; };
 		9AFC47A71B0AB34100C5B602 /* letrasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = letrasViewController.h; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				9A22517C1AE7157E00486867 /* musica.mp3 */,
 				9A22517B1AE7157E00486867 /* comemoracao.mp3 */,
 				9AF2CAFA1AE7168500360F3D /* fail1.mp3 */,
+				9ADF415B1B154EF600A5BE55 /* fontawesome-webfont.ttf */,
 				9AED42CD1AE733EA00D59228 /* Hobo.ttf */,
 				9A3CCD191ADCA3E6002849AC /* Info.plist */,
 				9A3CCD1A1ADCA3E6002849AC /* main.m */,
@@ -266,6 +269,7 @@
 				9AD6E8D71AE750FF0070E494 /* Hobo.ttf in Resources */,
 				9A3CCD291ADCA3E6002849AC /* LaunchScreen.xib in Resources */,
 				9A3CCD261ADCA3E6002849AC /* Images.xcassets in Resources */,
+				9ADF415C1B15512300A5BE55 /* fontawesome-webfont.ttf in Resources */,
 				9A22517E1AE7157E00486867 /* musica.mp3 in Resources */,
 				9A22517D1AE7157E00486867 /* comemoracao.mp3 in Resources */,
 			);

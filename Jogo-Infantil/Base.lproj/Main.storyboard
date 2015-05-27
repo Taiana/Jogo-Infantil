@@ -14,6 +14,16 @@
             <string>Hobo</string>
             <string>Hobo</string>
         </mutableArray>
+        <mutableArray key="fontawesome-webfont.ttf">
+            <string>FontAwesome</string>
+            <string>FontAwesome</string>
+            <string>FontAwesome</string>
+            <string>FontAwesome</string>
+            <string>FontAwesome</string>
+            <string>FontAwesome</string>
+            <string>FontAwesome</string>
+            <string>FontAwesome</string>
+        </mutableArray>
     </customFonts>
     <scenes>
         <!--inicioVC-->
@@ -207,6 +217,18 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1k-cZ-dct">
+                                <rect key="frame" x="33" y="98" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98431372549019602" green="0.34509803921568627" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleSound:" destination="5WI-P7-HXi" eventType="touchUpInside" id="4Mo-Cg-yNd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -247,6 +269,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="XBv-HT-7VY" secondAttribute="trailing" constant="50" id="vlf-Qw-HNZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnSound" destination="k1k-cZ-dct" id="UgP-2C-OPi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTY-bl-CLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -325,6 +350,18 @@
                                     <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="wRV-bC-zo8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYn-VA-heM">
+                                <rect key="frame" x="58" y="106" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleSound:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="kYq-I4-3XY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -340,6 +377,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSound" destination="xYn-VA-heM" id="JAc-xi-qxF"/>
                         <segue destination="ryO-3A-huL" kind="show" identifier="floresParaJogo" id="PC7-bP-0JP"/>
                     </connections>
                 </viewController>
@@ -429,6 +467,18 @@
                                     <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="oZj-ak-xjF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6O-Tq-mjB">
+                                <rect key="frame" x="53" y="106" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleSound:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="YkF-us-lGu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -444,6 +494,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSound" destination="R6O-Tq-mjB" id="4NA-CZ-ASh"/>
                         <segue destination="ryO-3A-huL" kind="show" identifier="numerosParaJogo" id="EoV-3j-9Sa"/>
                     </connections>
                 </viewController>
@@ -611,6 +662,18 @@
                                     <action selector="limpaTabuleiro:" destination="ryO-3A-huL" eventType="touchUpInside" id="qfr-UO-Jw4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62M-5Q-bPf">
+                                <rect key="frame" x="49" y="104" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleSound:" destination="ryO-3A-huL" eventType="touchUpInside" id="i83-ns-H4S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -651,6 +714,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSound" destination="62M-5Q-bPf" id="DLJ-1D-VSY"/>
                         <outlet property="topImage" destination="qKS-En-3Dj" id="qE2-kI-k50"/>
                         <segue destination="ufu-ot-6Ku" kind="show" identifier="numerosViewController" id="nxo-J4-sKc"/>
                         <segue destination="Bt1-tk-0tc" kind="show" identifier="animaisViewController" id="1Vw-xp-geA"/>
@@ -710,6 +774,18 @@
                                     <action selector="clickButton:" destination="Lod-wa-hfB" eventType="touchUpInside" id="eur-2I-DmC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZT-gv-bb6">
+                                <rect key="frame" x="58" y="106" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleSound:" destination="Lod-wa-hfB" eventType="touchUpInside" id="76R-yR-5Mv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -725,6 +801,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSound" destination="jZT-gv-bb6" id="arv-ER-7Q5"/>
                         <segue destination="ryO-3A-huL" kind="show" identifier="carrosParaJogo" id="aW3-Ym-BCx"/>
                     </connections>
                 </viewController>
@@ -778,6 +855,18 @@
                                     <action selector="clickButton:" destination="vhq-Hl-vJb" eventType="touchUpInside" id="b9G-4L-76W"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obf-Wj-Tte">
+                                <rect key="frame" x="49" y="106" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleSound:" destination="vhq-Hl-vJb" eventType="touchUpInside" id="GMM-pj-6EI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -793,6 +882,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSound" destination="obf-Wj-Tte" id="O9X-Ta-yYN"/>
                         <segue destination="ryO-3A-huL" kind="show" identifier="formasParaJogo" id="gJL-a9-0Xg"/>
                     </connections>
                 </viewController>
@@ -864,6 +954,18 @@
                                     <action selector="clickButton:" destination="Bt1-tk-0tc" eventType="touchUpInside" id="TfL-c2-TwP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKg-EU-vDa">
+                                <rect key="frame" x="52" y="106" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleSound:" destination="Bt1-tk-0tc" eventType="touchUpInside" id="I3L-8n-P4y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -879,6 +981,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSound" destination="oKg-EU-vDa" id="VYv-4v-1y6"/>
                         <segue destination="ryO-3A-huL" kind="show" identifier="animaisParaJogo" id="q3t-rL-A6E"/>
                     </connections>
                 </viewController>
@@ -932,6 +1035,18 @@
                                     <action selector="clickButton:" destination="Daz-UZ-0mD" eventType="touchUpInside" id="Vy2-xq-hZU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXM-FJ-jJF">
+                                <rect key="frame" x="61" y="106" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleSound:" destination="Daz-UZ-0mD" eventType="touchUpInside" id="QdZ-Lz-HN1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -947,6 +1062,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSound" destination="NXM-FJ-jJF" id="Irj-3h-2I9"/>
                         <segue destination="ryO-3A-huL" kind="show" identifier="letrasParaJogo" id="Ya5-4z-ZAC"/>
                     </connections>
                 </viewController>
@@ -985,13 +1101,13 @@
         <image name="tartaruga64x64" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TzM-Gg-BfM"/>
-        <segue reference="aW3-Ym-BCx"/>
+        <segue reference="nV5-WJ-eWI"/>
+        <segue reference="EoV-3j-9Sa"/>
+        <segue reference="nxo-J4-sKc"/>
+        <segue reference="Oxz-Dz-zO3"/>
         <segue reference="1Vw-xp-geA"/>
         <segue reference="edf-gJ-YkP"/>
-        <segue reference="nxo-J4-sKc"/>
-        <segue reference="nV5-WJ-eWI"/>
+        <segue reference="TzM-Gg-BfM"/>
         <segue reference="F5j-yb-e5y"/>
-        <segue reference="XXC-0C-YCn"/>
     </inferredMetricsTieBreakers>
 </document>

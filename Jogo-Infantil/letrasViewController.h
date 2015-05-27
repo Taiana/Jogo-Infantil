@@ -12,4 +12,8 @@
 
 - (IBAction)clickButton:(id)sender;
 
+- (IBAction)toggleSound:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnSound;
+
 @end

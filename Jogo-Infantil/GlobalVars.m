@@ -20,6 +20,10 @@
 
 @synthesize image = _image;
 
+@synthesize soundOn = _soundOn;
+
+@synthesize soundOff = _soundOff;
+
 NSURL* musicFile;
 
 + (GlobalVars *)sharedInstance {
@@ -42,6 +46,8 @@ NSURL* musicFile;
         _sound.numberOfLoops = -1;
         _imageName = nil;
         _image = nil;
+        _soundOn = @"";
+        _soundOff = @"";
     }
     return self;
 }

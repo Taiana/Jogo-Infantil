@@ -7,6 +7,9 @@
 //
 
 #import "categoriasViewController.h"
+#import "globalVars.h"
+
+GlobalVars *globals;
 
 @interface categoriasViewController ()
 
@@ -17,6 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    globals = [GlobalVars sharedInstance];
+    
+    if (globals.playSound) {
+        if (![globals.sound isPlaying]){
+            [globals.sound play];
+        }
+        [_btnSound setTitle:globals.soundOff forState:UIControlStateNormal];
+    } else {
+        [_btnSound setTitle:globals.soundOn forState:UIControlStateNormal];
+    }
 
 }
 
@@ -35,4 +49,17 @@
 }
 */
 
+- (IBAction)toggleSound:(id)sender {
+    if (globals.playSound) {
+        //self.noSoundImageView.hidden = NO;
+        [_btnSound setTitle:globals.soundOn forState:UIControlStateNormal];
+        [globals.sound stop];
+        globals.playSound = false;
+    } else {
+        //self.noSoundImageView.hidden = YES;
+        [_btnSound setTitle:globals.soundOff forState:UIControlStateNormal];
+        [globals.sound play];
+        globals.playSound = true;
+    }
+}
 @end

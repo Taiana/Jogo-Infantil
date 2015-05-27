@@ -18,6 +18,8 @@
     AVAudioPlayer *sound;
     NSString *imageName;
     UIImage *image;
+    NSString *soundOn;
+    NSString *soundOff;
 }
 
 + (GlobalVars *)sharedInstance;
@@ -31,5 +33,9 @@
 @property(strong, nonatomic, readwrite) NSString *imageName;
 
 @property(strong, nonatomic, readwrite) UIImage *image;
+
+@property(strong, nonatomic, readwrite) NSString *soundOn;
+
+@property(strong, nonatomic, readwrite) NSString *soundOff;
 
 @end
