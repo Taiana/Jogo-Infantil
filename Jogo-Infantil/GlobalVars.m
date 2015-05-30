@@ -47,7 +47,7 @@ NSURL* musicFile;
         _imageName = nil;
         _image = nil;
         _soundOn = @"";
-        _soundOff = @"";
+        _soundOff = @"";
     }
     return self;
 }

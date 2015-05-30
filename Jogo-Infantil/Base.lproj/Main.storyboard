@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,6 +21,7 @@
             <string>Hobo</string>
         </mutableArray>
         <mutableArray key="fontawesome-webfont.ttf">
+            <string>FontAwesome</string>
             <string>FontAwesome</string>
             <string>FontAwesome</string>
             <string>FontAwesome</string>
@@ -209,9 +210,15 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="CI6-FN-x2C"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1k-cZ-dct">
-                                <rect key="frame" x="41" y="98" width="30" height="30"/>
-                                <state key="normal" title="" backgroundImage="icone-som">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1k-cZ-dct">
+                                <rect key="frame" x="41" y="98" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="GUH-To-zOg"/>
+                                    <constraint firstAttribute="width" constant="35" id="QEA-l1-to6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="33"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="icone-som">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -237,6 +244,7 @@
                             <constraint firstItem="brE-9S-IWQ" firstAttribute="leading" secondItem="Zy4-bt-TYE" secondAttribute="leadingMargin" constant="50" id="Gla-tX-KIZ"/>
                             <constraint firstItem="NMD-kB-jzl" firstAttribute="bottom" secondItem="8uJ-tm-IgK" secondAttribute="top" constant="-8" id="H04-MQ-ZmD"/>
                             <constraint firstItem="vjH-dj-Vb1" firstAttribute="leading" secondItem="Zy4-bt-TYE" secondAttribute="leadingMargin" constant="105" id="Jo1-GQ-gkL"/>
+                            <constraint firstItem="k1k-cZ-dct" firstAttribute="top" secondItem="LCt-OG-znM" secondAttribute="bottom" constant="8" id="KfZ-Mx-484"/>
                             <constraint firstItem="COE-Ge-bkQ" firstAttribute="top" secondItem="5Y6-w5-Qr3" secondAttribute="bottom" constant="100" id="Kiu-5q-509"/>
                             <constraint firstItem="D9t-MP-rjN" firstAttribute="centerX" secondItem="qfq-GC-Z1z" secondAttribute="centerX" id="MAf-E5-nBu"/>
                             <constraint firstItem="D9t-MP-rjN" firstAttribute="top" secondItem="Zy4-bt-TYE" secondAttribute="top" id="RJR-cn-ALg"/>
@@ -245,6 +253,7 @@
                             <constraint firstItem="XBv-HT-7VY" firstAttribute="top" secondItem="gSH-ix-Pca" secondAttribute="bottom" constant="8" id="aXx-hJ-p1p"/>
                             <constraint firstItem="LCt-OG-znM" firstAttribute="leading" secondItem="Zy4-bt-TYE" secondAttribute="leadingMargin" constant="31" id="bpA-Zv-4R3"/>
                             <constraint firstItem="D9t-MP-rjN" firstAttribute="leading" secondItem="Zy4-bt-TYE" secondAttribute="leading" id="bus-me-8Yy"/>
+                            <constraint firstItem="k1k-cZ-dct" firstAttribute="leading" secondItem="Zy4-bt-TYE" secondAttribute="leadingMargin" constant="25" id="dLE-lr-v6B"/>
                             <constraint firstAttribute="centerX" secondItem="qfq-GC-Z1z" secondAttribute="centerX" id="drG-vM-mEB"/>
                             <constraint firstItem="Pnf-pm-hQC" firstAttribute="top" secondItem="cM4-C6-4q9" secondAttribute="bottom" constant="8" id="eIe-Pk-Jiy"/>
                             <constraint firstItem="pLv-yy-6rV" firstAttribute="top" secondItem="XBv-HT-7VY" secondAttribute="bottom" constant="135" id="ecp-I5-jIU"/>
@@ -330,11 +339,15 @@
                                     <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="wRV-bC-zo8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYn-VA-heM">
-                                <rect key="frame" x="58" y="106" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
-                                <state key="normal" title="">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYn-VA-heM">
+                                <rect key="frame" x="41" y="106" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="H1T-dS-wLJ"/>
+                                    <constraint firstAttribute="height" constant="35" id="qSR-uM-np7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="33"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="icone-som">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -351,6 +364,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xYn-VA-heM" firstAttribute="top" secondItem="HYJ-rE-wU7" secondAttribute="bottom" constant="8" id="4Cv-bV-Jye"/>
                             <constraint firstItem="Klq-qU-DI3" firstAttribute="top" secondItem="fAg-VG-EyC" secondAttribute="top" id="KYb-P5-dTd"/>
                             <constraint firstAttribute="trailing" secondItem="Klq-qU-DI3" secondAttribute="trailing" id="MZz-ab-Nrr"/>
                             <constraint firstItem="HYJ-rE-wU7" firstAttribute="top" secondItem="W6Q-5w-Skp" secondAttribute="bottom" constant="38" id="QLY-Vg-Yzm"/>
@@ -358,6 +372,7 @@
                             <constraint firstItem="PpH-G4-Fc0" firstAttribute="top" secondItem="W6Q-5w-Skp" secondAttribute="bottom" constant="133" id="cdY-Ym-USq"/>
                             <constraint firstItem="Klq-qU-DI3" firstAttribute="leading" secondItem="fAg-VG-EyC" secondAttribute="leading" id="fag-eB-sT1"/>
                             <constraint firstItem="Klq-qU-DI3" firstAttribute="bottom" secondItem="uqw-yB-qhz" secondAttribute="top" id="jjw-zN-qTf"/>
+                            <constraint firstItem="xYn-VA-heM" firstAttribute="leading" secondItem="fAg-VG-EyC" secondAttribute="leadingMargin" constant="25" id="neC-mS-q33"/>
                             <constraint firstItem="HYJ-rE-wU7" firstAttribute="leading" secondItem="fAg-VG-EyC" secondAttribute="leadingMargin" constant="31" id="zSQ-5g-4qn"/>
                         </constraints>
                     </view>
@@ -439,11 +454,15 @@
                                     <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="oZj-ak-xjF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6O-Tq-mjB">
-                                <rect key="frame" x="53" y="106" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
-                                <state key="normal" title="">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6O-Tq-mjB">
+                                <rect key="frame" x="41" y="106" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="acP-nI-u8U"/>
+                                    <constraint firstAttribute="width" constant="35" id="i4I-9O-JAr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="33"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="icone-som">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -466,8 +485,10 @@
                             <constraint firstItem="bf5-F6-BSt" firstAttribute="bottom" secondItem="Qww-AJ-2sj" secondAttribute="top" id="Ofq-aC-QR2"/>
                             <constraint firstItem="bf5-F6-BSt" firstAttribute="leading" secondItem="QlX-2o-X5b" secondAttribute="leading" id="P4Y-7C-jLD"/>
                             <constraint firstItem="sSP-Pj-vDL" firstAttribute="leading" secondItem="QlX-2o-X5b" secondAttribute="leadingMargin" constant="31" id="VJq-Th-hty"/>
+                            <constraint firstItem="R6O-Tq-mjB" firstAttribute="top" secondItem="sSP-Pj-vDL" secondAttribute="bottom" constant="8" id="k2A-KA-bzj"/>
                             <constraint firstItem="sSP-Pj-vDL" firstAttribute="top" secondItem="3kk-kN-6PT" secondAttribute="bottom" constant="38" id="oaF-Vd-5Io"/>
                             <constraint firstItem="6hn-Kz-ZK6" firstAttribute="top" secondItem="3kk-kN-6PT" secondAttribute="bottom" constant="133" id="sU7-YV-v2P"/>
+                            <constraint firstItem="R6O-Tq-mjB" firstAttribute="leading" secondItem="QlX-2o-X5b" secondAttribute="leadingMargin" constant="25" id="tfC-Fy-jS0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -639,11 +660,15 @@
                                     <action selector="limpaTabuleiro:" destination="ryO-3A-huL" eventType="touchUpInside" id="qfr-UO-Jw4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62M-5Q-bPf">
-                                <rect key="frame" x="49" y="104" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
-                                <state key="normal" title="">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62M-5Q-bPf">
+                                <rect key="frame" x="41" y="106" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Hi2-jD-MSx"/>
+                                    <constraint firstAttribute="height" constant="35" id="Ln8-8P-fBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="33"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="icone-som">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -661,6 +686,7 @@
                             <constraint firstItem="QJn-pV-TPK" firstAttribute="top" secondItem="GlR-g1-GfE" secondAttribute="bottom" id="B2s-fI-COS"/>
                             <constraint firstItem="lFw-91-vH8" firstAttribute="top" secondItem="QJn-pV-TPK" secondAttribute="bottom" id="CoG-mj-Met"/>
                             <constraint firstItem="GlR-g1-GfE" firstAttribute="top" secondItem="5bn-iH-28i" secondAttribute="bottom" id="Cxv-er-woy"/>
+                            <constraint firstItem="62M-5Q-bPf" firstAttribute="leading" secondItem="m6S-zY-nEu" secondAttribute="leadingMargin" constant="25" id="FKO-eN-XLb"/>
                             <constraint firstItem="YpP-Ib-017" firstAttribute="leading" secondItem="lFw-91-vH8" secondAttribute="leading" id="IfE-e0-6S5"/>
                             <constraint firstItem="5bn-iH-28i" firstAttribute="leading" secondItem="m6S-zY-nEu" secondAttribute="leadingMargin" constant="5" id="JNK-lI-3r9"/>
                             <constraint firstItem="5bn-iH-28i" firstAttribute="top" secondItem="afn-Ad-Gas" secondAttribute="bottom" constant="11" id="Lm9-lp-xdG"/>
@@ -671,6 +697,7 @@
                             <constraint firstItem="bZi-RK-dO9" firstAttribute="top" secondItem="y4P-KX-XIh" secondAttribute="bottom" constant="50" id="SgM-L3-5y9"/>
                             <constraint firstItem="p3w-UY-TCP" firstAttribute="leading" secondItem="m6S-zY-nEu" secondAttribute="leadingMargin" constant="31" id="SlJ-oO-kkO"/>
                             <constraint firstItem="EIR-1Y-mk3" firstAttribute="top" secondItem="m6S-zY-nEu" secondAttribute="top" id="TxK-1r-yv9"/>
+                            <constraint firstItem="62M-5Q-bPf" firstAttribute="top" secondItem="p3w-UY-TCP" secondAttribute="bottom" constant="6" id="U11-sG-9bZ"/>
                             <constraint firstItem="EIR-1Y-mk3" firstAttribute="bottom" secondItem="bZi-RK-dO9" secondAttribute="top" id="XCh-4q-oLU"/>
                             <constraint firstItem="lFw-91-vH8" firstAttribute="leading" secondItem="QJn-pV-TPK" secondAttribute="leading" id="ZGJ-3S-OXk"/>
                             <constraint firstItem="Vcg-M9-rsz" firstAttribute="leading" secondItem="lMZ-ZY-Syc" secondAttribute="leading" id="fPK-wt-73w"/>
@@ -738,11 +765,15 @@
                                     <action selector="clickButton:" destination="Lod-wa-hfB" eventType="touchUpInside" id="eur-2I-DmC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZT-gv-bb6">
-                                <rect key="frame" x="58" y="106" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
-                                <state key="normal" title="">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZT-gv-bb6">
+                                <rect key="frame" x="41" y="106" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="BVM-8v-KsO"/>
+                                    <constraint firstAttribute="height" constant="35" id="ftP-pb-YM4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="33"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="icone-som">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -759,6 +790,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jZT-gv-bb6" firstAttribute="top" secondItem="wl4-3b-kJu" secondAttribute="bottom" constant="8" id="LT0-6v-2zu"/>
                             <constraint firstItem="er1-VW-lt9" firstAttribute="centerX" secondItem="J0y-Vz-ZMQ" secondAttribute="centerX" id="PHV-t7-FP2"/>
                             <constraint firstAttribute="trailing" secondItem="er1-VW-lt9" secondAttribute="trailing" id="VOV-bC-rBz"/>
                             <constraint firstItem="er1-VW-lt9" firstAttribute="leading" secondItem="AgF-GU-KcC" secondAttribute="leading" id="Yb5-mO-8j5"/>
@@ -767,6 +799,7 @@
                             <constraint firstItem="er1-VW-lt9" firstAttribute="top" secondItem="AgF-GU-KcC" secondAttribute="top" id="iBj-65-vKR"/>
                             <constraint firstItem="wl4-3b-kJu" firstAttribute="leading" secondItem="AgF-GU-KcC" secondAttribute="leadingMargin" constant="31" id="lgp-TW-cXl"/>
                             <constraint firstItem="wl4-3b-kJu" firstAttribute="top" secondItem="X38-Kd-l2A" secondAttribute="bottom" constant="38" id="rTd-52-32E"/>
+                            <constraint firstItem="jZT-gv-bb6" firstAttribute="leading" secondItem="AgF-GU-KcC" secondAttribute="leadingMargin" constant="25" id="twa-cl-fD5"/>
                         </constraints>
                     </view>
                     <connections>
@@ -811,11 +844,15 @@
                                     <action selector="clickButton:" destination="vhq-Hl-vJb" eventType="touchUpInside" id="b9G-4L-76W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obf-Wj-Tte">
-                                <rect key="frame" x="49" y="106" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
-                                <state key="normal" title="">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obf-Wj-Tte">
+                                <rect key="frame" x="41" y="106" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="F6D-Yc-cqj"/>
+                                    <constraint firstAttribute="height" constant="35" id="e3X-ci-TaA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="33"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="icone-som">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -837,7 +874,9 @@
                             <constraint firstItem="Kk1-yN-XR3" firstAttribute="top" secondItem="XrG-WF-eNi" secondAttribute="bottom" constant="38" id="Kfe-3Y-Q9n"/>
                             <constraint firstItem="wS4-MU-OfV" firstAttribute="leading" secondItem="gTC-pC-YtV" secondAttribute="leading" id="P8S-tD-gTs"/>
                             <constraint firstAttribute="trailing" secondItem="wS4-MU-OfV" secondAttribute="trailing" id="TQp-9q-Sjw"/>
+                            <constraint firstItem="obf-Wj-Tte" firstAttribute="leading" secondItem="gTC-pC-YtV" secondAttribute="leadingMargin" constant="25" id="an1-2d-Gkg"/>
                             <constraint firstItem="wS4-MU-OfV" firstAttribute="bottom" secondItem="rsT-mP-ghi" secondAttribute="top" id="hDe-fs-Z3K"/>
+                            <constraint firstItem="obf-Wj-Tte" firstAttribute="top" secondItem="Kk1-yN-XR3" secondAttribute="bottom" constant="8" id="lXi-ar-ReE"/>
                             <constraint firstItem="Kk1-yN-XR3" firstAttribute="leading" secondItem="gTC-pC-YtV" secondAttribute="leadingMargin" constant="31" id="pmT-0P-PKx"/>
                             <constraint firstItem="wS4-MU-OfV" firstAttribute="top" secondItem="gTC-pC-YtV" secondAttribute="top" id="spI-RZ-xGs"/>
                         </constraints>
@@ -902,11 +941,15 @@
                                     <action selector="clickButton:" destination="Bt1-tk-0tc" eventType="touchUpInside" id="TfL-c2-TwP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKg-EU-vDa">
-                                <rect key="frame" x="52" y="106" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
-                                <state key="normal" title="">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKg-EU-vDa">
+                                <rect key="frame" x="41" y="106" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="EGV-n7-u5f"/>
+                                    <constraint firstAttribute="height" constant="35" id="NRJ-XC-puU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="33"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="icone-som">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -928,6 +971,8 @@
                             <constraint firstAttribute="trailing" secondItem="qTw-wf-6qY" secondAttribute="trailing" id="7CS-LG-f9J"/>
                             <constraint firstItem="qTw-wf-6qY" firstAttribute="centerX" secondItem="duQ-1m-u4b" secondAttribute="centerX" id="VUA-jf-ulR"/>
                             <constraint firstItem="uVo-pZ-PE3" firstAttribute="top" secondItem="9qI-bF-lSk" secondAttribute="bottom" constant="38" id="Vm5-De-NSD"/>
+                            <constraint firstItem="oKg-EU-vDa" firstAttribute="top" secondItem="uVo-pZ-PE3" secondAttribute="bottom" constant="8" id="YR3-wH-e4w"/>
+                            <constraint firstItem="oKg-EU-vDa" firstAttribute="leading" secondItem="w4F-7i-Yuz" secondAttribute="leadingMargin" constant="25" id="aZm-8Y-bhM"/>
                             <constraint firstItem="uVo-pZ-PE3" firstAttribute="leading" secondItem="w4F-7i-Yuz" secondAttribute="leadingMargin" constant="31" id="gOC-Zq-Qok"/>
                             <constraint firstItem="qTw-wf-6qY" firstAttribute="leading" secondItem="w4F-7i-Yuz" secondAttribute="leading" id="ife-ZG-YDt"/>
                             <constraint firstItem="duQ-1m-u4b" firstAttribute="top" secondItem="9qI-bF-lSk" secondAttribute="bottom" constant="133" id="reT-WW-njx"/>
@@ -975,11 +1020,15 @@
                                     <action selector="clickButton:" destination="Daz-UZ-0mD" eventType="touchUpInside" id="Vy2-xq-hZU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXM-FJ-jJF">
-                                <rect key="frame" x="61" y="106" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="38"/>
-                                <state key="normal" title="">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXM-FJ-jJF">
+                                <rect key="frame" x="41" y="106" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="AIw-eL-9bH"/>
+                                    <constraint firstAttribute="width" constant="35" id="dzD-dV-ufW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="33"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="icone-som">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -998,10 +1047,12 @@
                         <constraints>
                             <constraint firstItem="Phb-U6-S7p" firstAttribute="top" secondItem="WA9-wO-Zkp" secondAttribute="bottom" constant="133" id="4Np-Hi-lhy"/>
                             <constraint firstItem="5tt-5M-RX8" firstAttribute="top" secondItem="WA9-wO-Zkp" secondAttribute="bottom" constant="38" id="FjP-xf-wsV"/>
+                            <constraint firstItem="NXM-FJ-jJF" firstAttribute="top" secondItem="5tt-5M-RX8" secondAttribute="bottom" constant="8" id="JS0-ow-dCg"/>
                             <constraint firstItem="izf-rV-xXl" firstAttribute="leading" secondItem="LIn-Fx-ptO" secondAttribute="leading" id="NQC-7u-9az"/>
                             <constraint firstItem="5tt-5M-RX8" firstAttribute="leading" secondItem="LIn-Fx-ptO" secondAttribute="leadingMargin" constant="31" id="QcF-fr-XS5"/>
                             <constraint firstItem="izf-rV-xXl" firstAttribute="bottom" secondItem="qG6-XH-8ne" secondAttribute="top" id="VvS-Dr-d7L"/>
                             <constraint firstAttribute="trailing" secondItem="izf-rV-xXl" secondAttribute="trailing" id="nIy-Af-HLz"/>
+                            <constraint firstItem="NXM-FJ-jJF" firstAttribute="leading" secondItem="LIn-Fx-ptO" secondAttribute="leadingMargin" constant="25" id="poZ-zM-H93"/>
                             <constraint firstItem="izf-rV-xXl" firstAttribute="top" secondItem="LIn-Fx-ptO" secondAttribute="top" id="zAf-Mr-CPq"/>
                             <constraint firstItem="izf-rV-xXl" firstAttribute="centerX" secondItem="Phb-U6-S7p" secondAttribute="centerX" id="zH6-yU-ojW"/>
                         </constraints>
@@ -1047,13 +1098,13 @@
         <image name="tartaruga64x64" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CA9-Gk-kHC"/>
-        <segue reference="bck-b2-Dqc"/>
-        <segue reference="Sev-GR-rNQ"/>
-        <segue reference="gJL-a9-0Xg"/>
-        <segue reference="2oT-g3-6NQ"/>
-        <segue reference="n1g-qc-hz0"/>
-        <segue reference="1C7-eg-cdy"/>
-        <segue reference="O49-3u-XoO"/>
+        <segue reference="F5j-yb-e5y"/>
+        <segue reference="EoV-3j-9Sa"/>
+        <segue reference="nxo-J4-sKc"/>
+        <segue reference="Oxz-Dz-zO3"/>
+        <segue reference="edf-gJ-YkP"/>
+        <segue reference="1Vw-xp-geA"/>
+        <segue reference="nV5-WJ-eWI"/>
+        <segue reference="TzM-Gg-BfM"/>
     </inferredMetricsTieBreakers>
 </document>
