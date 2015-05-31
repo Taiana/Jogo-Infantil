@@ -20,6 +20,7 @@
     UIImage *image;
     NSString *soundOn;
     NSString *soundOff;
+    NSArray *imagem1;
 }
 
 + (GlobalVars *)sharedInstance;
@@ -37,5 +38,7 @@
 @property(strong, nonatomic, readwrite) NSString *soundOn;
 
 @property(strong, nonatomic, readwrite) NSString *soundOff;
+
+@property(strong, nonatomic, readwrite) NSArray *imagem1;
 
 @end

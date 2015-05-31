@@ -17,6 +17,27 @@ UIView *buttonView;
 
 UITapGestureRecognizer *tapGesture;
 
+NSMutableArray *desenho;
+
+/*
+ Tabela de cores
+ 0=Branco
+ 1=Preto
+ 2=Cinza escuro
+ 3=Cinza claro
+ 4=Verde claro
+ 5=Verde escuro
+ 6=Azul claro
+ 7=Azul escuro
+ 8=Rosa
+ 9=Lilás
+ A=Vermelho
+ B=Amarelo
+ C=Laranja
+ D=Marrom
+*/
+NSString *colorCode;
+
 //UISegmentedControl *seletor;
 
 @interface jogoViewController : UIViewController
@@ -37,10 +58,12 @@ UITapGestureRecognizer *tapGesture;
 - (IBAction)yellowColor:(id)sender;
 - (IBAction)redColor:(id)sender;
 - (IBAction)magentaColor:(id)sender;
+- (IBAction)roseColor:(id)sender;
 - (IBAction)blackColor:(id)sender;
 - (IBAction)blueColor:(id)sender;
 - (IBAction)cianColor:(id)sender;
 - (IBAction)greenColor:(id)sender;
+- (IBAction)darkGreenColor:(id)sender;
 - (IBAction)lightGrayColor:(id)sender;
 - (IBAction)grayColor:(id)sender;
 - (IBAction)whiteColor:(id)sender;
@@ -48,6 +71,8 @@ UITapGestureRecognizer *tapGesture;
 - (IBAction)limpaTabuleiro:(id)sender;
 
 - (IBAction)toggleSound:(id)sender;
+
+- (IBAction)comparaImagem:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnSound;
 

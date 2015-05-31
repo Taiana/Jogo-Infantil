@@ -34,7 +34,15 @@ CGFloat delta_y = 0.0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    desenho = [[NSMutableArray alloc] initWithCapacity:1024];
+    
+    /*
+     Tabela de cores
+     0=Branco - 1=Preto - 2=Cinza escuro - 3=Cinza claro - 4=Verde claro - 5=Verde escuro - 6=Azul claro
+     7=Azul escuro - 8=Rosa - 9=Lilás - A=Vermelho - B=Amarelo - C=Laranja - D=Marrom
+     */
     selectedColor = [UIColor brownColor];
+    colorCode = @"D";
     
     globals = [GlobalVars sharedInstance];
     nuVC = globals.vcOrigem;
@@ -90,6 +98,7 @@ CGFloat delta_y = 0.0;
             [button addTarget:self action:@selector(fingerRelease:) forControlEvents:UIControlEventTouchUpOutside | UIControlEventTouchUpInside];
             [buttonView addSubview: button];
             [_board addObject:button];
+            [desenho insertObject:@"0" atIndex:cont];
             cont++;
         }
     }
@@ -110,6 +119,8 @@ CGFloat delta_y = 0.0;
     //get touched button
     long tag = button.tag;
     long tagPintar;
+    
+    [desenho replaceObjectAtIndex:tag-1 withObject:colorCode];
     
     // get the touch
     UITouch *touch = [[event touchesForView:button] anyObject];
@@ -158,6 +169,7 @@ CGFloat delta_y = 0.0;
     }
     if (tagPintar <= cols * rows ) {
         NSLog(@"tag pintar %li", tagPintar);
+        [desenho replaceObjectAtIndex:tagPintar-1 withObject:colorCode];
         newButton = (UIButton *)[self.view viewWithTag:tagPintar];
         [newButton setBackgroundImage:[self imageWithColor:selectedColor] forState:UIControlStateNormal];
     }
@@ -170,7 +182,9 @@ CGFloat delta_y = 0.0;
 }
 
 - (IBAction)btnTap:(id)sender {
+    UIButton *btn = (UIButton *)sender;
     
+    [desenho replaceObjectAtIndex:[btn tag]-1 withObject:colorCode];
     [(UIButton*)sender setBackgroundImage:[self imageWithColor:selectedColor] forState:UIControlStateNormal];
 }
 
@@ -193,50 +207,100 @@ CGFloat delta_y = 0.0;
 }
 
 - (IBAction)brownColor:(id)sender {
+    //     Tabela de cores
+    //     D=Marrom
+    colorCode=@"D";
     selectedColor = [UIColor brownColor];
 }
 
 - (IBAction)orangeColor:(id)sender {
+    //     Tabela de cores
+    //     C=Laranja
+    colorCode=@"C";
     selectedColor = [UIColor orangeColor];
 }
 
 - (IBAction)yellowColor:(id)sender {
+    //     Tabela de cores
+    //     B=Amarelo
+    colorCode=@"B";
     selectedColor = [UIColor yellowColor];
 }
 
 - (IBAction)redColor:(id)sender {
+    //     Tabela de cores
+    //     A=Vermelho
+    colorCode=@"A";
     selectedColor = [UIColor redColor];
 }
 
 - (IBAction)magentaColor:(id)sender {
+    //     Tabela de cores
+    //     9=Magenta
+    colorCode=@"9";
     selectedColor = [UIColor magentaColor];
 }
 
+- (IBAction)roseColor:(id)sender {
+    //     Tabela de cores
+    //     8=Rosa
+    colorCode=@"8";
+    selectedColor = [UIColor colorWithRed:253.0/255.0 green:151.0/255.0 blue:240.0/255.0 alpha:1.0];
+}
+
 - (IBAction)blackColor:(id)sender {
+    //     Tabela de cores
+    //     1=Preto
+    colorCode=@"1";
     selectedColor = [UIColor blackColor];
 }
 
 - (IBAction)blueColor:(id)sender {
+    //     Tabela de cores
+    //     7=Azul escuro
+    colorCode=@"7";
     selectedColor = [UIColor blueColor];
 }
 
 - (IBAction)cianColor:(id)sender {
+    //     Tabela de cores
+    //     6=Ciano
+    colorCode=@"6";
     selectedColor = [UIColor cyanColor];
 }
 
 - (IBAction)greenColor:(id)sender {
+    //     Tabela de cores
+    //     4=Verde claro
+    colorCode=@"4";
     selectedColor = [UIColor greenColor];
 }
 
+- (IBAction)darkGreenColor:(id)sender {
+    //     Tabela de cores
+    //     5=Verde escuro
+    colorCode=@"5";
+    selectedColor = [UIColor colorWithRed:15.0/255.0 green:115.0/255.0 blue:49.0/255.0 alpha:1.0];
+}
+
 - (IBAction)lightGrayColor:(id)sender {
+    //     Tabela de cores
+    //     3=Cinza claro
+    colorCode=@"3";
     selectedColor = [UIColor colorWithRed:210.0 green:210.0 blue:210.0 alpha:0.5];
 }
 
 - (IBAction)grayColor:(id)sender {
+    //     Tabela de cores
+    //     2=Cinza escuro
+    colorCode=@"2";
     selectedColor = [UIColor colorWithRed:150.0 green:150.0 blue:150.0 alpha:0.0];
 }
 
 - (IBAction)whiteColor:(id)sender {
+    //     Tabela de cores
+    //     0=Branco
+    colorCode=@"0";
     selectedColor = [UIColor whiteColor];
 }
 
@@ -261,6 +325,10 @@ CGFloat delta_y = 0.0;
         [globals.sound play];
         globals.playSound = true;
     }
+}
+
+- (IBAction)comparaImagem:(id)sender {
+    NSLog(@"array: %@", desenho);
 }
 
 /*
