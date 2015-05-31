@@ -21,6 +21,7 @@
     NSString *soundOn;
     NSString *soundOff;
     NSArray *imagem1;
+    NSArray *numeroUm;
 }
 
 + (GlobalVars *)sharedInstance;
@@ -40,5 +41,7 @@
 @property(strong, nonatomic, readwrite) NSString *soundOff;
 
 @property(strong, nonatomic, readwrite) NSArray *imagem1;
+
+@property(strong, nonatomic, readwrite) NSArray *numeroUm;
 
 @end

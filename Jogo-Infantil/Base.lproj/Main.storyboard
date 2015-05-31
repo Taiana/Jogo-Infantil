@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -304,26 +305,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdk-Oh-JWc">
-                                <rect key="frame" x="98" y="300" width="32" height="32"/>
-                                <state key="normal" image="flor2-64x64">
+                                <rect key="frame" x="98" y="254" width="162" height="162"/>
+                                <state key="normal" image="flor2-162x162">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="OtD-Vs-aJf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBs-kC-pmr">
-                                <rect key="frame" x="98" y="394" width="32" height="32"/>
-                                <state key="normal" image="flor4-64x64">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="ZdN-BB-ies"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-Uf-pGu">
-                                <rect key="frame" x="462" y="388" width="32" height="32"/>
-                                <state key="normal" image="flor5-64x64">
+                                <rect key="frame" x="398" y="413" width="162" height="162"/>
+                                <state key="normal" image="flor5-162x162">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -331,8 +323,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1b-FU-eeL">
-                                <rect key="frame" x="462" y="300" width="32" height="32"/>
-                                <state key="normal" image="flor3-64x64">
+                                <rect key="frame" x="398" y="254" width="162" height="162"/>
+                                <state key="normal" image="flor3-162x162">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -361,6 +353,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBs-kC-pmr">
+                                <rect key="frame" x="98" y="413" width="162" height="162"/>
+                                <state key="normal" image="flor4-162x162">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="ZdN-BB-ies"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -409,51 +410,6 @@
                                     <segue destination="5WI-P7-HXi" kind="show" id="Oxz-Dz-zO3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-f2-GZA" userLabel="1">
-                                <rect key="frame" x="108" y="284" width="32" height="32"/>
-                                <state key="normal" image="1-64x64">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="9Hs-f7-4qq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCY-kZ-MeL" userLabel="2">
-                                <rect key="frame" x="277" y="284" width="32" height="32"/>
-                                <state key="normal" image="2-64x64">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="t3P-jA-WdB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eb9-j0-xqv" userLabel="4">
-                                <rect key="frame" x="108" y="387" width="32" height="32"/>
-                                <state key="normal" image="4-64x64">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="q61-Nc-c1v"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNe-b0-JQk" userLabel="5">
-                                <rect key="frame" x="263" y="387" width="32" height="32"/>
-                                <state key="normal" image="5-64x64">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="V2P-vs-KmN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrK-0N-wxF" userLabel="6">
-                                <rect key="frame" x="429" y="389" width="32" height="32"/>
-                                <state key="normal" image="6-64x64">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="oZj-ak-xjF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6O-Tq-mjB">
                                 <rect key="frame" x="41" y="106" width="35" height="35"/>
                                 <constraints>
@@ -476,6 +432,51 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-f2-GZA" userLabel="1">
+                                <rect key="frame" x="52" y="230" width="162" height="162"/>
+                                <state key="normal" image="1-162x162">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="9Hs-f7-4qq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCY-kZ-MeL" userLabel="2">
+                                <rect key="frame" x="221" y="230" width="162" height="162"/>
+                                <state key="normal" image="2-162x162">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="t3P-jA-WdB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eb9-j0-xqv" userLabel="4">
+                                <rect key="frame" x="52" y="391" width="162" height="162"/>
+                                <state key="normal" image="4-162x162">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="q61-Nc-c1v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNe-b0-JQk" userLabel="5">
+                                <rect key="frame" x="221" y="391" width="162" height="162"/>
+                                <state key="normal" image="5-162x162">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="V2P-vs-KmN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrK-0N-wxF" userLabel="6">
+                                <rect key="frame" x="387" y="391" width="162" height="162"/>
+                                <state key="normal" image="6-162x162">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="ufu-ot-6Ku" eventType="touchUpInside" id="oZj-ak-xjF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -986,27 +987,21 @@
                                     <segue destination="5WI-P7-HXi" kind="show" id="36k-KX-uGb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGc-ff-3AM" userLabel="abelha">
-                                <rect key="frame" x="114" y="300" width="32" height="32"/>
-                                <state key="normal" image="abelha64x64">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGc-ff-3AM" userLabel="abelha">
+                                <rect key="frame" x="75" y="266" width="162" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="Lyq-y7-ZhM"/>
+                                </constraints>
+                                <state key="normal" image="abelha162x162">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="clickButton:" destination="Bt1-tk-0tc" eventType="touchUpInside" id="fSK-a3-zDr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA1-gJ-v7b" userLabel="gato">
-                                <rect key="frame" x="277" y="300" width="32" height="32"/>
-                                <state key="normal" image="gato64x64">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickButton:" destination="Bt1-tk-0tc" eventType="touchUpInside" id="MH7-X1-taq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bo-m7-ck5" userLabel="tartaruga">
-                                <rect key="frame" x="456" y="300" width="32" height="32"/>
-                                <state key="normal" image="tartaruga64x64">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bo-m7-ck5" userLabel="tartaruga">
+                                <rect key="frame" x="389" y="266" width="162" height="162"/>
+                                <state key="normal" image="tartaruga162x162">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1035,19 +1030,44 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA1-gJ-v7b" userLabel="gato">
+                                <rect key="frame" x="219" y="266" width="162" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="q4b-uc-Yt9"/>
+                                </constraints>
+                                <state key="normal" image="gato162x162">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="Bt1-tk-0tc" eventType="touchUpInside" id="MH7-X1-taq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qTw-wf-6qY" firstAttribute="bottom" secondItem="0EI-Bh-bED" secondAttribute="top" id="3lo-Ys-uvQ"/>
                             <constraint firstItem="qTw-wf-6qY" firstAttribute="top" secondItem="w4F-7i-Yuz" secondAttribute="top" id="5hF-iZ-svF"/>
                             <constraint firstAttribute="trailing" secondItem="qTw-wf-6qY" secondAttribute="trailing" id="7CS-LG-f9J"/>
+                            <constraint firstItem="LA1-gJ-v7b" firstAttribute="firstBaseline" secondItem="cGc-ff-3AM" secondAttribute="firstBaseline" id="7yy-j2-9OA"/>
+                            <constraint firstItem="cGc-ff-3AM" firstAttribute="top" secondItem="duQ-1m-u4b" secondAttribute="bottom" constant="55" id="AAf-ZT-hqq"/>
+                            <constraint firstItem="cGc-ff-3AM" firstAttribute="leading" secondItem="w4F-7i-Yuz" secondAttribute="leadingMargin" constant="59" id="HZA-Fe-qVU"/>
+                            <constraint firstItem="3Bo-m7-ck5" firstAttribute="leading" secondItem="LA1-gJ-v7b" secondAttribute="trailing" constant="8" symbolic="YES" id="I4h-Kb-wre"/>
+                            <constraint firstItem="3Bo-m7-ck5" firstAttribute="baseline" secondItem="LA1-gJ-v7b" secondAttribute="baseline" id="IqE-44-3ZI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Bo-m7-ck5" secondAttribute="trailing" constant="33" id="P3F-hC-qNr"/>
+                            <constraint firstItem="cGc-ff-3AM" firstAttribute="top" secondItem="LA1-gJ-v7b" secondAttribute="top" id="PMu-pR-Rg4"/>
+                            <constraint firstItem="LA1-gJ-v7b" firstAttribute="centerX" secondItem="duQ-1m-u4b" secondAttribute="centerX" id="PRx-18-XQd"/>
                             <constraint firstItem="qTw-wf-6qY" firstAttribute="centerX" secondItem="duQ-1m-u4b" secondAttribute="centerX" id="VUA-jf-ulR"/>
                             <constraint firstItem="uVo-pZ-PE3" firstAttribute="top" secondItem="9qI-bF-lSk" secondAttribute="bottom" constant="38" id="Vm5-De-NSD"/>
                             <constraint firstItem="oKg-EU-vDa" firstAttribute="top" secondItem="uVo-pZ-PE3" secondAttribute="bottom" constant="8" id="YR3-wH-e4w"/>
                             <constraint firstItem="oKg-EU-vDa" firstAttribute="leading" secondItem="w4F-7i-Yuz" secondAttribute="leadingMargin" constant="25" id="aZm-8Y-bhM"/>
+                            <constraint firstItem="0EI-Bh-bED" firstAttribute="top" secondItem="cGc-ff-3AM" secondAttribute="bottom" constant="172" id="eaK-Le-YqO"/>
                             <constraint firstItem="uVo-pZ-PE3" firstAttribute="leading" secondItem="w4F-7i-Yuz" secondAttribute="leadingMargin" constant="31" id="gOC-Zq-Qok"/>
                             <constraint firstItem="qTw-wf-6qY" firstAttribute="leading" secondItem="w4F-7i-Yuz" secondAttribute="leading" id="ife-ZG-YDt"/>
+                            <constraint firstItem="LA1-gJ-v7b" firstAttribute="firstBaseline" secondItem="3Bo-m7-ck5" secondAttribute="firstBaseline" id="lgQ-qz-YeY"/>
+                            <constraint firstItem="cGc-ff-3AM" firstAttribute="baseline" secondItem="LA1-gJ-v7b" secondAttribute="baseline" id="lny-Rf-EWd"/>
+                            <constraint firstItem="3Bo-m7-ck5" firstAttribute="top" secondItem="9qI-bF-lSk" secondAttribute="bottom" constant="246" id="reR-al-EmX"/>
                             <constraint firstItem="duQ-1m-u4b" firstAttribute="top" secondItem="9qI-bF-lSk" secondAttribute="bottom" constant="133" id="reT-WW-njx"/>
+                            <constraint firstItem="LA1-gJ-v7b" firstAttribute="top" secondItem="3Bo-m7-ck5" secondAttribute="top" id="xbz-xF-K1b"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1140,12 +1160,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1-64x64" width="32" height="32"/>
-        <image name="2-64x64" width="32" height="32"/>
-        <image name="4-64x64" width="32" height="32"/>
-        <image name="5-64x64" width="32" height="32"/>
-        <image name="6-64x64" width="32" height="32"/>
-        <image name="abelha64x64" width="32" height="32"/>
+        <image name="1-162x162" width="81" height="81"/>
+        <image name="2-162x162" width="81" height="81"/>
+        <image name="4-162x162" width="81" height="81"/>
+        <image name="5-162x162" width="81" height="81"/>
+        <image name="6-162x162" width="81" height="81"/>
+        <image name="abelha162x162" width="81" height="81"/>
         <image name="animais" width="158" height="158"/>
         <image name="botao_inicio" width="296" height="105"/>
         <image name="botao_sem_som" width="86" height="86"/>
@@ -1153,30 +1173,30 @@
         <image name="btn-voltar" width="56" height="70"/>
         <image name="carros" width="162" height="162"/>
         <image name="clear" width="64" height="64"/>
-        <image name="flor2-64x64" width="32" height="32"/>
-        <image name="flor3-64x64" width="32" height="32"/>
-        <image name="flor4-64x64" width="32" height="32"/>
-        <image name="flor5-64x64" width="32" height="32"/>
+        <image name="flor2-162x162" width="81" height="81"/>
+        <image name="flor3-162x162" width="81" height="81"/>
+        <image name="flor4-162x162" width="81" height="81"/>
+        <image name="flor5-162x162" width="81" height="81"/>
         <image name="flores" width="161" height="159"/>
         <image name="formas" width="161" height="161"/>
         <image name="fundo_tela_categorias" width="640" height="1136"/>
         <image name="fundo_tela_inicio" width="640" height="1136"/>
-        <image name="gato64x64" width="32" height="32"/>
+        <image name="gato162x162" width="81" height="81"/>
         <image name="icone-som" width="15" height="15"/>
         <image name="letras" width="163" height="159"/>
         <image name="nome_jogo" width="489" height="168"/>
         <image name="numeros" width="160" height="160"/>
         <image name="placeholder" width="128" height="128"/>
-        <image name="tartaruga64x64" width="32" height="32"/>
+        <image name="tartaruga162x162" width="81" height="81"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="F5j-yb-e5y"/>
-        <segue reference="EoV-3j-9Sa"/>
-        <segue reference="nxo-J4-sKc"/>
         <segue reference="Oxz-Dz-zO3"/>
-        <segue reference="edf-gJ-YkP"/>
-        <segue reference="1Vw-xp-geA"/>
-        <segue reference="nV5-WJ-eWI"/>
-        <segue reference="TzM-Gg-BfM"/>
+        <segue reference="1C7-eg-cdy"/>
+        <segue reference="EoV-3j-9Sa"/>
+        <segue reference="Sev-GR-rNQ"/>
+        <segue reference="O49-3u-XoO"/>
+        <segue reference="n1g-qc-hz0"/>
+        <segue reference="CA9-Gk-kHC"/>
+        <segue reference="2oT-g3-6NQ"/>
     </inferredMetricsTieBreakers>
 </document>

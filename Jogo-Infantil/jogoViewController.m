@@ -329,6 +329,21 @@ CGFloat delta_y = 0.0;
 
 - (IBAction)comparaImagem:(id)sender {
     NSLog(@"array: %@", desenho);
+    int *percent = self.comparaArrays;
+    NSLog(@"Número de acertos %li", percent);
+}
+
+- (int)comparaArrays {
+    int *percentual=0;
+    for (int i=0;i<1024;i++) {
+//        NSLog(@"desenho @", [desenho objectAtIndex:i]);
+//        NSLog(@"num1 @", [globals.numeroUm objectAtIndex:i]);
+        
+        if ([[desenho objectAtIndex:i] isEqualToString:[globals.numeroUm objectAtIndex:i]]){
+            percentual++;
+        }
+    }
+    return *percentual;
 }
 
 /*
