@@ -11,6 +11,8 @@
 
 BOOL firstRun = TRUE;
 
+int *percentual=0;
+
 UIColor *selectedColor;
 
 UIViewController *nuVC;
@@ -43,6 +45,7 @@ CGFloat delta_y = 0.0;
      */
     selectedColor = [UIColor brownColor];
     colorCode = @"D";
+    //self.percentualAcerto.text = [[NSNumber numberWithInt:*percentual] stringValue];
     
     globals = [GlobalVars sharedInstance];
     nuVC = globals.vcOrigem;
@@ -329,21 +332,25 @@ CGFloat delta_y = 0.0;
 
 - (IBAction)comparaImagem:(id)sender {
     NSLog(@"array: %@", desenho);
-    int *percent = self.comparaArrays;
-    NSLog(@"Número de acertos %li", percent);
+    self.comparaArrays;
+    percentual = (int)percentual/4;
+//    self.percentualAcerto.text = [[NSNumber numberWithInt:*percentual] stringValue];
+//    NSLog(@"Número de acertos %d", percentual );
 }
 
-- (int)comparaArrays {
-    int *percentual=0;
+//printf("%ld\n", (long)i);
+
+- (void)comparaArrays {
+    percentual=0;
     for (int i=0;i<1024;i++) {
-//        NSLog(@"desenho @", [desenho objectAtIndex:i]);
-//        NSLog(@"num1 @", [globals.numeroUm objectAtIndex:i]);
-        
-        if ([[desenho objectAtIndex:i] isEqualToString:[globals.numeroUm objectAtIndex:i]]){
-            percentual++;
+
+        if (![(NSString *)[desenho objectAtIndex:i] isEqualToString:@"0"]){
+            if ([(NSString *)[desenho objectAtIndex:i] isEqualToString:(NSString *)[globals.numeroUm objectAtIndex:i]]){
+                NSLog(@"Igual");
+                percentual++;
+            }
         }
     }
-    return *percentual;
 }
 
 /*

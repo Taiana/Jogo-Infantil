@@ -13,7 +13,6 @@
 		9A3CCD1E1ADCA3E6002849AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD1D1ADCA3E6002849AC /* AppDelegate.m */; };
 		9A3CCD211ADCA3E6002849AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD201ADCA3E6002849AC /* ViewController.m */; };
 		9A3CCD241ADCA3E6002849AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CCD221ADCA3E6002849AC /* Main.storyboard */; };
-		9A3CCD261ADCA3E6002849AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CCD251ADCA3E6002849AC /* Images.xcassets */; };
 		9A3CCD291ADCA3E6002849AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */; };
 		9A3CCD351ADCA3E7002849AC /* Jogo_InfantilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */; };
 		9A5E49A91AE75F730080D2C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */; };
@@ -21,6 +20,7 @@
 		9A88A7591B057F5E00322259 /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88A7581B057F5E00322259 /* GlobalVars.m */; };
 		9A88A75C1B058D6000322259 /* animaisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88A75B1B058D6000322259 /* animaisViewController.m */; };
 		9A9B39C31B0283FE000F2688 /* jogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B39C21B0283FE000F2688 /* jogoViewController.m */; };
+		9ABD44A81B1C25C500718A26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ABD44A71B1C25C500718A26 /* Images.xcassets */; };
 		9AD6E8D61AE74AEB0070E494 /* categoriasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */; };
 		9AD6E8D71AE750FF0070E494 /* Hobo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AED42CD1AE733EA00D59228 /* Hobo.ttf */; };
 		9ADF415C1B15512300A5BE55 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF415B1B154EF600A5BE55 /* fontawesome-webfont.ttf */; };
@@ -52,7 +52,6 @@
 		9A3CCD1F1ADCA3E6002849AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9A3CCD201ADCA3E6002849AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9A3CCD231ADCA3E6002849AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A3CCD251ADCA3E6002849AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A3CCD281ADCA3E6002849AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9A3CCD2E1ADCA3E7002849AC /* Jogo-InfantilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jogo-InfantilTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3CCD331ADCA3E7002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		9A88A75B1B058D6000322259 /* animaisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animaisViewController.m; sourceTree = "<group>"; };
 		9A9B39C11B0283FE000F2688 /* jogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jogoViewController.h; sourceTree = "<group>"; };
 		9A9B39C21B0283FE000F2688 /* jogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jogoViewController.m; sourceTree = "<group>"; };
+		9ABD44A71B1C25C500718A26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9AD6E8D41AE74AEB0070E494 /* categoriasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = categoriasViewController.h; sourceTree = "<group>"; };
 		9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = categoriasViewController.m; sourceTree = "<group>"; };
 		9ADF415B1B154EF600A5BE55 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 				9A88A7571B057F5E00322259 /* GlobalVars.h */,
 				9A88A7581B057F5E00322259 /* GlobalVars.m */,
 				9A3CCD221ADCA3E6002849AC /* Main.storyboard */,
-				9A3CCD251ADCA3E6002849AC /* Images.xcassets */,
+				9ABD44A71B1C25C500718A26 /* Images.xcassets */,
 				9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */,
 				9A3CCD181ADCA3E6002849AC /* Supporting Files */,
 			);
@@ -265,10 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF2CAFB1AE7168500360F3D /* fail1.mp3 in Resources */,
+				9ABD44A81B1C25C500718A26 /* Images.xcassets in Resources */,
 				9A3CCD241ADCA3E6002849AC /* Main.storyboard in Resources */,
 				9AD6E8D71AE750FF0070E494 /* Hobo.ttf in Resources */,
 				9A3CCD291ADCA3E6002849AC /* LaunchScreen.xib in Resources */,
-				9A3CCD261ADCA3E6002849AC /* Images.xcassets in Resources */,
 				9ADF415C1B15512300A5BE55 /* fontawesome-webfont.ttf in Resources */,
 				9A22517E1AE7157E00486867 /* musica.mp3 in Resources */,
 				9A22517D1AE7157E00486867 /* comemoracao.mp3 in Resources */,

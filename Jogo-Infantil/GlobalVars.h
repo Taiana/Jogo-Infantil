@@ -22,6 +22,11 @@
     NSString *soundOff;
     NSArray *imagem1;
     NSArray *numeroUm;
+    NSArray *letraA;
+    NSArray *abelha;
+    NSArray *flor1;
+    NSArray *gato;
+    NSArray *quadrado;
 }
 
 + (GlobalVars *)sharedInstance;
@@ -43,5 +48,15 @@
 @property(strong, nonatomic, readwrite) NSArray *imagem1;
 
 @property(strong, nonatomic, readwrite) NSArray *numeroUm;
+
+@property(strong, nonatomic, readwrite) NSArray *letraA;
+
+@property(strong, nonatomic, readwrite) NSArray *abelha;
+
+@property(strong, nonatomic, readwrite) NSArray *flor1;
+
+@property(strong, nonatomic, readwrite) NSArray *gato;
+
+@property(strong, nonatomic, readwrite) NSArray *quadrado;
 
 @end
