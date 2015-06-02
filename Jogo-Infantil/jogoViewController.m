@@ -11,7 +11,9 @@
 
 BOOL firstRun = TRUE;
 
-int *percentual=0;
+int contaAcertos=0;
+int contaPontos=0;
+float percentual=0.0;
 
 UIColor *selectedColor;
 
@@ -333,21 +335,27 @@ CGFloat delta_y = 0.0;
 - (IBAction)comparaImagem:(id)sender {
     NSLog(@"array: %@", desenho);
     self.comparaArrays;
-    percentual = (int)percentual/4;
-//    self.percentualAcerto.text = [[NSNumber numberWithInt:*percentual] stringValue];
+    percentual = ((float)contaAcertos/(float)contaPontos)*100;
+    NSLog(@"Número de pontos %d", contaPontos );
+    NSLog(@"Número de acertos %d", contaAcertos );
+    NSLog(@"Percentual de acertos %f", percentual );
+    self.percentualAcerto.text = [NSString stringWithFormat:@"%.02f", percentual];
 //    NSLog(@"Número de acertos %d", percentual );
 }
 
 //printf("%ld\n", (long)i);
 
 - (void)comparaArrays {
-    percentual=0;
+    contaAcertos=0;
+    contaPontos=0;
+    percentual=0.0;
     for (int i=0;i<1024;i++) {
 
-        if (![(NSString *)[desenho objectAtIndex:i] isEqualToString:@"0"]){
+        if (![(NSString *)[globals.numeroUm objectAtIndex:i] isEqualToString:@"Z"]){
+            contaPontos++;
             if ([(NSString *)[desenho objectAtIndex:i] isEqualToString:(NSString *)[globals.numeroUm objectAtIndex:i]]){
                 NSLog(@"Igual");
-                percentual++;
+                contaAcertos++;
             }
         }
     }
