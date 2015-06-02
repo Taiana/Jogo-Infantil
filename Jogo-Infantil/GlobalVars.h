@@ -25,8 +25,10 @@
     NSArray *letraA;
     NSArray *abelha;
     NSArray *flor1;
+    NSArray *carro1;
     NSArray *gato;
     NSArray *quadrado;
+    NSMutableDictionary *imagens;
 }
 
 + (GlobalVars *)sharedInstance;
@@ -55,8 +57,12 @@
 
 @property(strong, nonatomic, readwrite) NSArray *flor1;
 
+@property(strong, nonatomic, readwrite) NSArray *carro1;
+
 @property(strong, nonatomic, readwrite) NSArray *gato;
 
 @property(strong, nonatomic, readwrite) NSArray *quadrado;
+
+@property(strong, nonatomic, readwrite) NSMutableDictionary *imagens;
 
 @end

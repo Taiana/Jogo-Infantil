@@ -50,6 +50,7 @@ GlobalVars *globals;
 
 - (IBAction)clickButton:(id)sender {
     globals.image = [[(UIButton *)sender imageView] image];
+    globals.imageName = [[(UIButton *)sender titleLabel] text];
     [self performSegueWithIdentifier:@"animaisParaJogo" sender:self];
 }
 

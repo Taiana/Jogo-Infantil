@@ -11,6 +11,7 @@
 
 BOOL firstRun = TRUE;
 
+NSArray *selectedImage;
 int contaAcertos=0;
 int contaPontos=0;
 float percentual=0.0;
@@ -47,10 +48,17 @@ CGFloat delta_y = 0.0;
      */
     selectedColor = [UIColor brownColor];
     colorCode = @"D";
-    //self.percentualAcerto.text = [[NSNumber numberWithInt:*percentual] stringValue];
     
     globals = [GlobalVars sharedInstance];
     nuVC = globals.vcOrigem;
+    
+    //=============== TENTANDO PEGAR O ARRAY DA IMAGEM SELECIONADA =================
+    NSMutableDictionary *dic = globals.imagens;
+    NSLog(@"imageName: %@", globals.imageName);
+    selectedImage = [dic objectForKey:globals.imageName];
+    NSLog(@"array escolhido: %@", selectedImage);
+    //                  NÃO ESTÁ VINDO NADA
+    //==============================================================================
     
     if (globals.image != nil) {
         self.topImage.image = (UIImage *)globals.image;
@@ -333,7 +341,7 @@ CGFloat delta_y = 0.0;
 }
 
 - (IBAction)comparaImagem:(id)sender {
-    NSLog(@"array: %@", desenho);
+    //NSLog(@"array: %@", desenho);
     self.comparaArrays;
     percentual = ((float)contaAcertos/(float)contaPontos)*100;
     NSLog(@"Número de pontos %d", contaPontos );
@@ -351,9 +359,9 @@ CGFloat delta_y = 0.0;
     percentual=0.0;
     for (int i=0;i<1024;i++) {
 
-        if (![(NSString *)[globals.numeroUm objectAtIndex:i] isEqualToString:@"Z"]){
+        if (![(NSString *)[selectedImage objectAtIndex:i] isEqualToString:@"Z"]){
             contaPontos++;
-            if ([(NSString *)[desenho objectAtIndex:i] isEqualToString:(NSString *)[globals.numeroUm objectAtIndex:i]]){
+            if ([(NSString *)[desenho objectAtIndex:i] isEqualToString:(NSString *)[selectedImage objectAtIndex:i]]){
                 NSLog(@"Igual");
                 contaAcertos++;
             }

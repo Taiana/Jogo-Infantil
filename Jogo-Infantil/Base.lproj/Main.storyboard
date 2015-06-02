@@ -327,13 +327,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBs-kC-pmr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBs-kC-pmr" userLabel="flor1">
                                 <rect key="frame" x="95" y="254" width="162" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="162" id="JDe-6a-30M"/>
                                     <constraint firstAttribute="height" constant="162" id="Y5Y-1a-xRh"/>
                                 </constraints>
-                                <state key="normal" image="flor4-162x162">
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="flor1" image="flor4-162x162">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -413,9 +414,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-f2-GZA" userLabel="1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-f2-GZA" userLabel="numero1">
                                 <rect key="frame" x="52" y="230" width="162" height="162"/>
-                                <state key="normal" image="1-162x162">
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="numero1" image="1-162x162">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -706,13 +708,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMr-N2-iCb">
                                 <rect key="frame" x="539" y="185" width="30" height="40"/>
                                 <fontDescription key="fontDescription" name="Hobo" family="Hobo" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WH2-zd-RyV" userLabel="acertos">
                                 <rect key="frame" x="460" y="188" width="64" height="33"/>
                                 <fontDescription key="fontDescription" name="Hobo" family="Hobo" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -789,15 +791,6 @@
                                     <segue destination="5WI-P7-HXi" kind="show" id="XXC-0C-YCn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XJ-ew-gkL">
-                                <rect key="frame" x="131" y="296" width="162" height="162"/>
-                                <state key="normal" image="carro162.162">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickButton:" destination="Lod-wa-hfB" eventType="touchUpInside" id="eur-2I-DmC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZT-gv-bb6">
                                 <rect key="frame" x="41" y="106" width="35" height="35"/>
                                 <constraints>
@@ -820,6 +813,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XJ-ew-gkL" userLabel="carro1">
+                                <rect key="frame" x="131" y="296" width="162" height="162"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="carro1" image="carro162.162">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="Lod-wa-hfB" eventType="touchUpInside" id="eur-2I-DmC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -890,9 +893,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZX-Hb-AOA">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZX-Hb-AOA" userLabel="quadrado">
                                 <rect key="frame" x="143" y="324" width="161" height="161"/>
-                                <state key="normal" image="quadrado162x162">
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="quadrado" image="quadrado162x162">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -947,18 +951,6 @@
                                     <segue destination="5WI-P7-HXi" kind="show" id="36k-KX-uGb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGc-ff-3AM" userLabel="abelha">
-                                <rect key="frame" x="75" y="266" width="162" height="162"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="162" id="Lyq-y7-ZhM"/>
-                                </constraints>
-                                <state key="normal" image="abelha162x162">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickButton:" destination="Bt1-tk-0tc" eventType="touchUpInside" id="fSK-a3-zDr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKg-EU-vDa">
                                 <rect key="frame" x="41" y="106" width="35" height="35"/>
                                 <constraints>
@@ -981,6 +973,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGc-ff-3AM" userLabel="abelha">
+                                <rect key="frame" x="75" y="266" width="162" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="Lyq-y7-ZhM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="abelha" image="abelha162x162">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="Bt1-tk-0tc" eventType="touchUpInside" id="fSK-a3-zDr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1032,9 +1037,10 @@
                                     <segue destination="5WI-P7-HXi" kind="show" id="dIk-lF-ac2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GC-i2-SGe">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GC-i2-SGe" userLabel="letraa">
                                 <rect key="frame" x="128" y="285" width="163" height="159"/>
-                                <state key="normal" image="a162x162">
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="letraA" image="a162x162">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1116,10 +1122,10 @@
         <segue reference="bck-b2-Dqc"/>
         <segue reference="F5j-yb-e5y"/>
         <segue reference="gJL-a9-0Xg"/>
-        <segue reference="nxo-J4-sKc"/>
         <segue reference="edf-gJ-YkP"/>
-        <segue reference="1Vw-xp-geA"/>
-        <segue reference="nV5-WJ-eWI"/>
         <segue reference="TzM-Gg-BfM"/>
+        <segue reference="nV5-WJ-eWI"/>
+        <segue reference="nxo-J4-sKc"/>
+        <segue reference="1Vw-xp-geA"/>
     </inferredMetricsTieBreakers>
 </document>
