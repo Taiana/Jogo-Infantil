@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9A22517D1AE7157E00486867 /* comemoracao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A22517B1AE7157E00486867 /* comemoracao.mp3 */; };
-		9A22517E1AE7157E00486867 /* musica.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A22517C1AE7157E00486867 /* musica.mp3 */; };
+		9A22FB611B1EC1640015C3CD /* soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A22FB601B1EC1640015C3CD /* soundtrack.mp3 */; };
 		9A3CCD1B1ADCA3E6002849AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD1A1ADCA3E6002849AC /* main.m */; };
 		9A3CCD1E1ADCA3E6002849AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD1D1ADCA3E6002849AC /* AppDelegate.m */; };
 		9A3CCD211ADCA3E6002849AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD201ADCA3E6002849AC /* ViewController.m */; };
@@ -56,7 +56,7 @@
 
 /* Begin PBXFileReference section */
 		9A22517B1AE7157E00486867 /* comemoracao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comemoracao.mp3; sourceTree = "<group>"; };
-		9A22517C1AE7157E00486867 /* musica.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica.mp3; sourceTree = "<group>"; };
+		9A22FB601B1EC1640015C3CD /* soundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundtrack.mp3; sourceTree = "<group>"; };
 		9A3CCD151ADCA3E6002849AC /* Jogo-Infantil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jogo-Infantil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3CCD191ADCA3E6002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3CCD1A1ADCA3E6002849AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -195,8 +195,8 @@
 		9A3CCD181ADCA3E6002849AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9A22FB601B1EC1640015C3CD /* soundtrack.mp3 */,
 				9AD8F1661B1EA9D30018248E /* desenhos.json */,
-				9A22517C1AE7157E00486867 /* musica.mp3 */,
 				9A22517B1AE7157E00486867 /* comemoracao.mp3 */,
 				9AF2CAFA1AE7168500360F3D /* fail1.mp3 */,
 				9ADF415B1B154EF600A5BE55 /* fontawesome-webfont.ttf */,
@@ -341,10 +341,10 @@
 				9AD8F1671B1EA9D30018248E /* desenhos.json in Resources */,
 				9ABD44A81B1C25C500718A26 /* Images.xcassets in Resources */,
 				9A3CCD241ADCA3E6002849AC /* Main.storyboard in Resources */,
+				9A22FB611B1EC1640015C3CD /* soundtrack.mp3 in Resources */,
 				9AD6E8D71AE750FF0070E494 /* Hobo.ttf in Resources */,
 				9A3CCD291ADCA3E6002849AC /* LaunchScreen.xib in Resources */,
 				9ADF415C1B15512300A5BE55 /* fontawesome-webfont.ttf in Resources */,
-				9A22517E1AE7157E00486867 /* musica.mp3 in Resources */,
 				9A22517D1AE7157E00486867 /* comemoracao.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

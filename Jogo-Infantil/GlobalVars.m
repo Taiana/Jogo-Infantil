@@ -46,7 +46,7 @@ NSURL* musicFile;
         // Note these aren't allocated as [[NSString alloc] init] doesn't provide a useful object
         _vcOrigem = nil;
         _playSound = true;
-        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]                                                                                                               pathForResource:@"musica" ofType:@"mp3"]];
+        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]                                                                                                               pathForResource:@"soundtrack" ofType:@"mp3"]];
         _sound = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile  error:nil];
         _sound.numberOfLoops = -1;
         _imageName = nil;
