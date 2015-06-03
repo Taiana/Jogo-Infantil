@@ -21,14 +21,7 @@
     NSString *soundOn;
     NSString *soundOff;
     NSArray *imagem1;
-    NSArray *numeroUm;
-    NSArray *letraA;
-    NSArray *abelha;
-    NSArray *flor1;
-    NSArray *carro1;
-    NSArray *gato;
-    NSArray *quadrado;
-    NSMutableDictionary *imagens;
+    NSDictionary *imagens;
 }
 
 + (GlobalVars *)sharedInstance;
@@ -49,20 +42,6 @@
 
 @property(strong, nonatomic, readwrite) NSArray *imagem1;
 
-@property(strong, nonatomic, readwrite) NSArray *numeroUm;
-
-@property(strong, nonatomic, readwrite) NSArray *letraA;
-
-@property(strong, nonatomic, readwrite) NSArray *abelha;
-
-@property(strong, nonatomic, readwrite) NSArray *flor1;
-
-@property(strong, nonatomic, readwrite) NSArray *carro1;
-
-@property(strong, nonatomic, readwrite) NSArray *gato;
-
-@property(strong, nonatomic, readwrite) NSArray *quadrado;
-
-@property(strong, nonatomic, readwrite) NSMutableDictionary *imagens;
+@property(strong, nonatomic, readwrite) NSDictionary *imagens;
 
 @end

@@ -53,11 +53,10 @@ CGFloat delta_y = 0.0;
     nuVC = globals.vcOrigem;
     
     //=============== TENTANDO PEGAR O ARRAY DA IMAGEM SELECIONADA =================
-    NSMutableDictionary *dic = globals.imagens;
-    NSLog(@"imageName: %@", globals.imageName);
-    selectedImage = [dic objectForKey:globals.imageName];
-    NSLog(@"array escolhido: %@", selectedImage);
-    //                  NÃO ESTÁ VINDO NADA
+    NSDictionary *dic = globals.imagens;
+//    NSLog(@"imageName: %@", globals.imageName);
+    selectedImage = [dic valueForKey:globals.imageName];
+//    NSLog(@"array escolhido: %@", selectedImage);
     //==============================================================================
     
     if (globals.image != nil) {
