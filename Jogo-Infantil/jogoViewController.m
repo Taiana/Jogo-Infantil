@@ -159,8 +159,8 @@ CGFloat delta_y = 0.0;
     int horizontal = (int)floorf(delta_x/tamanhoQuadrado);
     int vertical = (int)floorf(delta_y/tamanhoQuadrado);
     
-    NSLog(@"Horizontal %i", horizontal);
-    NSLog(@"Vertical %i", vertical);
+//    NSLog(@"Horizontal %i", horizontal);
+//    NSLog(@"Vertical %i", vertical);
 
     if(location.x > previousLocation.x) {
         if (location.y > previousLocation.y){
@@ -180,7 +180,7 @@ CGFloat delta_y = 0.0;
         }
     }
     if (tagPintar <= cols * rows ) {
-        NSLog(@"tag pintar %li", tagPintar);
+//        NSLog(@"tag pintar %li", tagPintar);
         [desenho replaceObjectAtIndex:tagPintar-1 withObject:colorCode];
         newButton = (UIButton *)[self.view viewWithTag:tagPintar];
         [newButton setBackgroundImage:[self imageWithColor:selectedColor] forState:UIControlStateNormal];
