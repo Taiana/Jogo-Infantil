@@ -18,6 +18,8 @@ int contaAcertos=0;
 int contaPontos=0;
 float percentual=0.0;
 
+bool pausaSom = false;
+
 UIColor *selectedColor;
 
 UIViewController *nuVC;
@@ -365,6 +367,14 @@ CGFloat delta_y = 0.0;
     NSLog(@"Percentual de acertos %f", percentual );
     self.percentualAcerto.text = [NSString stringWithFormat:@"%.02f", percentual];
     
+    // para a musica se estiver tocando
+    if (globals.playSound) {
+        pausaSom = true;
+        [globals.sound pause];
+    } else {
+        pausaSom = false;
+    }
+    
     [self showPopupWithStyle:CNPPopupStyleCentered];
 
 //    NSLog(@"Número de acertos %d", percentual );
@@ -443,8 +453,16 @@ CGFloat delta_y = 0.0;
     };
     
     if (passou) {
+        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]                                                                                                               pathForResource:@"comemoracao" ofType:@"mp3"]];
+        sound = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile  error:nil];
+        sound.play;
+        
         self.popupController = [[CNPPopupController alloc] initWithTitle:title contents:@[lineOne, icon, lineTwo] buttonItems:@[buttonItem] destructiveButtonItem:nil];
     } else {
+        musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]                                                                                                               pathForResource:@"fail1" ofType:@"mp3"]];
+        sound = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile  error:nil];
+        sound.play;
+        
         self.popupController = [[CNPPopupController alloc] initWithTitle:title contents:@[lineOne, icon, lineTwo] buttonItems:@[buttonItem, buttonItem2] destructiveButtonItem:nil];
     }
     
@@ -454,6 +472,7 @@ CGFloat delta_y = 0.0;
     self.popupController.theme.presentationStyle = CNPPopupPresentationStyleFadeIn;
     [self.popupController presentPopupControllerAnimated:YES];
 }
+
 
 /*
 #pragma mark - Navigation
@@ -472,8 +491,14 @@ CGFloat delta_y = 0.0;
     
     if ([@"Sair" isEqualToString:title] || [@"Jogue novamente" isEqualToString:title]) {
         NSLog(@"Volta para a tela de início");
+        if (pausaSom) {
+            [globals.sound play];
+        }
         [self performSegueWithIdentifier:@"categoriasViewController" sender:self];
     } else {
+        if (pausaSom) {
+            [globals.sound play];
+        }
         NSLog(@"Fica no desenho");
     }
 }

@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 NSArray* colors;
+
+AVAudioPlayer *sound;
+AVAudioPlayer *soundWin;
+AVAudioPlayer *soundLose;
+NSURL* musicFile;
 
 int cols;
 int rows;
