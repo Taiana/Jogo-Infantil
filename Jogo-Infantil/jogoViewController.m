@@ -385,36 +385,55 @@ CGFloat delta_y = 0.0;
     NSString *msgAcerto = [NSString stringWithFormat:@"Você acertou %@%@", [NSString stringWithFormat:@"%.02f", percentual], @"%"];
     
     UIImage *icon;
+    NSString *imgIcon;
     NSString *msgTopo;
     NSString *msgCompl;
-    NSString *msgBotao;
-    if (percentual > 50.0) {
-        icon = [UIImage imageNamed:@"happy"];
+    NSString *msgBotaoTentar;
+    NSString *msgBotaoSair;
+    bool passou = percentual > 50.0 ? true : false;
+    
+    if (passou) {
+        imgIcon = @"happy";
         msgTopo = @"Parabéns!";
         msgCompl = @"Você conseguiu";
-        msgBotao = @"Jogue novamente";
+        msgBotaoTentar = @"Jogue novamente";
+        msgBotaoSair = @"Sair";
     } else {
-        icon = [UIImage imageNamed:@"sad"];
+        imgIcon = @"sad";
         msgTopo = @"ooops ...";
         msgCompl = @"Não foi dessa vez";
-        msgBotao = @"Tente novamente";
+        msgBotaoTentar = @"Tente novamente";
+        msgBotaoSair = @"Sair";
     }
     
     NSAttributedString *title = [[NSAttributedString alloc] initWithString:msgTopo attributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:24], NSParagraphStyleAttributeName : paragraphStyle}];
     
     NSAttributedString *lineOne = [[NSAttributedString alloc] initWithString:msgCompl attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:18], NSParagraphStyleAttributeName : paragraphStyle}];
     
+    icon = [UIImage imageNamed:imgIcon];
     
     NSAttributedString *lineTwo = [[NSAttributedString alloc] initWithString:msgAcerto attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:28], NSForegroundColorAttributeName : [UIColor colorWithRed:0.46 green:0.8 blue:1.0 alpha:1.0], NSParagraphStyleAttributeName : paragraphStyle}];
     
-    NSAttributedString *buttonTitle = [[NSAttributedString alloc] initWithString:msgBotao attributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18], NSForegroundColorAttributeName : [UIColor whiteColor], NSParagraphStyleAttributeName : paragraphStyle}];
+    NSAttributedString *buttonTitle = [[NSAttributedString alloc] initWithString:msgBotaoTentar attributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18], NSForegroundColorAttributeName : [UIColor whiteColor], NSParagraphStyleAttributeName : paragraphStyle}];
+    
+    NSAttributedString *buttonSair = [[NSAttributedString alloc] initWithString:msgBotaoSair attributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18], NSForegroundColorAttributeName : [UIColor whiteColor], NSParagraphStyleAttributeName : paragraphStyle}];
     
     CNPPopupButtonItem *buttonItem = [CNPPopupButtonItem defaultButtonItemWithTitle:buttonTitle backgroundColor:[UIColor colorWithRed:0.46 green:0.8 blue:1.0 alpha:1.0]];
+    CNPPopupButtonItem *buttonItem2 = [CNPPopupButtonItem defaultButtonItemWithTitle:buttonSair backgroundColor:[UIColor colorWithRed:0.46 green:0.8 blue:1.0 alpha:1.0]];
+    
     buttonItem.selectionHandler = ^(CNPPopupButtonItem *item){
         NSLog(@"Block for button: %@", item.buttonTitle.string);
     };
+    buttonItem2.selectionHandler = ^(CNPPopupButtonItem *item){
+        NSLog(@"Block for button: %@", item.buttonTitle.string);
+    };
     
-    self.popupController = [[CNPPopupController alloc] initWithTitle:title contents:@[lineOne, icon, lineTwo] buttonItems:@[buttonItem] destructiveButtonItem:nil];
+    if (passou) {
+        self.popupController = [[CNPPopupController alloc] initWithTitle:title contents:@[lineOne, icon, lineTwo] buttonItems:@[buttonItem] destructiveButtonItem:nil];
+    } else {
+        self.popupController = [[CNPPopupController alloc] initWithTitle:title contents:@[lineOne, icon, lineTwo] buttonItems:@[buttonItem, buttonItem2] destructiveButtonItem:nil];
+    }
+    
     self.popupController.theme = [CNPPopupTheme defaultTheme];
     self.popupController.theme.popupStyle = popupStyle;
     self.popupController.delegate = self;
@@ -436,6 +455,12 @@ CGFloat delta_y = 0.0;
 
 - (void)popupController:(CNPPopupController *)controller didDismissWithButtonTitle:(NSString *)title {
     NSLog(@"Saiu pelo botão: %@", title);
+    
+    if ([@"Sair" isEqualToString:title] || [@"Jogue novamente" isEqualToString:title]) {
+        NSLog(@"Volta para a tela de início");
+    } else {
+        NSLog(@"Volta para o desenho");
+    }
 }
 
 - (void)popupControllerDidPresent:(CNPPopupController *)controller {
