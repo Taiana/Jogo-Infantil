@@ -402,7 +402,7 @@ CGFloat delta_y = 0.0;
         imgIcon = @"sad";
         msgTopo = @"ooops ...";
         msgCompl = @"Não foi dessa vez";
-        msgBotaoTentar = @"Tente novamente";
+        msgBotaoTentar = @"Continue o desenho";
         msgBotaoSair = @"Sair";
     }
     
@@ -458,8 +458,9 @@ CGFloat delta_y = 0.0;
     
     if ([@"Sair" isEqualToString:title] || [@"Jogue novamente" isEqualToString:title]) {
         NSLog(@"Volta para a tela de início");
+        [self performSegueWithIdentifier:@"categoriasViewController" sender:self];
     } else {
-        NSLog(@"Volta para o desenho");
+        NSLog(@"Fica no desenho");
     }
 }
 

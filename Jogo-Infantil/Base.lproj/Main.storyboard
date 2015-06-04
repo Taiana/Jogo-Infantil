@@ -774,6 +774,7 @@
                         <segue destination="kt4-DO-Pi0" kind="show" identifier="floresViewController" id="nV5-WJ-eWI"/>
                         <segue destination="Lod-wa-hfB" kind="show" identifier="carrosViewController" id="TzM-Gg-BfM"/>
                         <segue destination="vhq-Hl-vJb" kind="show" identifier="formasViewController" id="F5j-yb-e5y"/>
+                        <segue destination="5WI-P7-HXi" kind="show" identifier="categoriasViewController" id="MdE-1y-FWg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uEv-DC-0z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1150,13 +1151,13 @@
         <image name="quadrado162x162" width="81" height="81"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1Vw-xp-geA"/>
+        <segue reference="O49-3u-XoO"/>
+        <segue reference="MdE-1y-FWg"/>
         <segue reference="PC7-bP-0JP"/>
-        <segue reference="nV5-WJ-eWI"/>
-        <segue reference="LXG-7h-KwZ"/>
-        <segue reference="edf-gJ-YkP"/>
-        <segue reference="TzM-Gg-BfM"/>
-        <segue reference="F5j-yb-e5y"/>
         <segue reference="nxo-J4-sKc"/>
+        <segue reference="1Vw-xp-geA"/>
+        <segue reference="F5j-yb-e5y"/>
+        <segue reference="CA9-Gk-kHC"/>
+        <segue reference="2oT-g3-6NQ"/>
     </inferredMetricsTieBreakers>
 </document>
