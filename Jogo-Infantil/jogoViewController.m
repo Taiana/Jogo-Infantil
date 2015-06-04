@@ -384,15 +384,30 @@ CGFloat delta_y = 0.0;
     
     NSString *msgAcerto = [NSString stringWithFormat:@"Você acertou %@%@", [NSString stringWithFormat:@"%.02f", percentual], @"%"];
     
-    NSAttributedString *title = [[NSAttributedString alloc] initWithString:@"Parabéns!" attributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:24], NSParagraphStyleAttributeName : paragraphStyle}];
+    UIImage *icon;
+    NSString *msgTopo;
+    NSString *msgCompl;
+    NSString *msgBotao;
+    if (percentual > 50.0) {
+        icon = [UIImage imageNamed:@"happy"];
+        msgTopo = @"Parabéns!";
+        msgCompl = @"Você conseguiu";
+        msgBotao = @"Jogue novamente";
+    } else {
+        icon = [UIImage imageNamed:@"sad"];
+        msgTopo = @"ooops ...";
+        msgCompl = @"Não foi dessa vez";
+        msgBotao = @"Tente novamente";
+    }
     
-    NSAttributedString *lineOne = [[NSAttributedString alloc] initWithString:@"" attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:18], NSParagraphStyleAttributeName : paragraphStyle}];
+    NSAttributedString *title = [[NSAttributedString alloc] initWithString:msgTopo attributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:24], NSParagraphStyleAttributeName : paragraphStyle}];
     
-    UIImage *icon = [UIImage imageNamed:@"icon"];
+    NSAttributedString *lineOne = [[NSAttributedString alloc] initWithString:msgCompl attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:18], NSParagraphStyleAttributeName : paragraphStyle}];
+    
     
     NSAttributedString *lineTwo = [[NSAttributedString alloc] initWithString:msgAcerto attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:28], NSForegroundColorAttributeName : [UIColor colorWithRed:0.46 green:0.8 blue:1.0 alpha:1.0], NSParagraphStyleAttributeName : paragraphStyle}];
     
-    NSAttributedString *buttonTitle = [[NSAttributedString alloc] initWithString:@"Fechar" attributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18], NSForegroundColorAttributeName : [UIColor whiteColor], NSParagraphStyleAttributeName : paragraphStyle}];
+    NSAttributedString *buttonTitle = [[NSAttributedString alloc] initWithString:msgBotao attributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18], NSForegroundColorAttributeName : [UIColor whiteColor], NSParagraphStyleAttributeName : paragraphStyle}];
     
     CNPPopupButtonItem *buttonItem = [CNPPopupButtonItem defaultButtonItemWithTitle:buttonTitle backgroundColor:[UIColor colorWithRed:0.46 green:0.8 blue:1.0 alpha:1.0]];
     buttonItem.selectionHandler = ^(CNPPopupButtonItem *item){
