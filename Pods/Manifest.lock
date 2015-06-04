@@ -1,0 +1,10 @@
+PODS:
+  - CNPPopupController (0.1.2)
+
+DEPENDENCIES:
+  - CNPPopupController
+
+SPEC CHECKSUMS:
+  CNPPopupController: 8ce4ccd90287320aaa716c7c06caabda31b844ed
+
+COCOAPODS: 0.37.2

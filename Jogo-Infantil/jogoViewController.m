@@ -347,6 +347,8 @@ CGFloat delta_y = 0.0;
     NSLog(@"Número de acertos %d", contaAcertos );
     NSLog(@"Percentual de acertos %f", percentual );
     self.percentualAcerto.text = [NSString stringWithFormat:@"%.02f", percentual];
+    
+
 //    NSLog(@"Número de acertos %d", percentual );
 }
 
