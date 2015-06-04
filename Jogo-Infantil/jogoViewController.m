@@ -9,6 +9,7 @@
 #import "jogoViewController.h"
 #import "GlobalVars.h"
 #import "CNPPopupController.h"
+#import <Foundation/Foundation.h>
 
 BOOL firstRun = TRUE;
 
@@ -20,6 +21,8 @@ float percentual=0.0;
 UIColor *selectedColor;
 
 UIViewController *nuVC;
+
+NSError *error;
 
 GlobalVars *globals;
 
@@ -130,63 +133,72 @@ CGFloat delta_y = 0.0;
 
 - (void)btnTap:(UIButton *)button withEvent:(UIEvent *)event
 {
-    [button setBackgroundImage:[self imageWithColor:selectedColor] forState:UIControlStateSelected];
-    //get touched button
-    long tag = button.tag;
-    long tagPintar;
-    
-    [desenho replaceObjectAtIndex:tag-1 withObject:colorCode];
-    
-    // get the touch
-    UITouch *touch = [[event touchesForView:button] anyObject];
-    
-    // get delta
-    CGPoint previousLocation = [touch previousLocationInView:button];
-    CGPoint location = [touch locationInView:button];
-    if(location.x > previousLocation.x) {
-        delta_x = delta_x + (location.x - previousLocation.x);
-    } else {
-        delta_x = delta_x - (location.x - previousLocation.x);
-    }
-    if(location.y > previousLocation.y) {
-        delta_y = delta_y + (location.y - previousLocation.y);
-    } else {
-        delta_y = delta_y - (location.y - previousLocation.y);
-    }
-    
-    //NSLog(@"delta x = %f", delta_x);
-    //NSLog(@"delta y = %f", delta_y);
-    
-    UIButton *newButton;
-    // Calcula o número de quadrados a andar na verticar ou na horizontal
-    int horizontal = (int)floorf(delta_x/tamanhoQuadrado);
-    int vertical = (int)floorf(delta_y/tamanhoQuadrado);
-    
-//    NSLog(@"Horizontal %i", horizontal);
-//    NSLog(@"Vertical %i", vertical);
+    @try {
+        [button setBackgroundImage:[self imageWithColor:selectedColor] forState:UIControlStateSelected];
+        //get touched button
+        long tag = button.tag;
+        long tagPintar;
+        
+        if (tag < cols * rows ) {
+            [desenho replaceObjectAtIndex:tag-1 withObject:colorCode];
+        }
+        
+        // get the touch
+        UITouch *touch = [[event touchesForView:button] anyObject];
+        
+        // get delta
+        CGPoint previousLocation = [touch previousLocationInView:button];
+        CGPoint location = [touch locationInView:button];
+        if(location.x > previousLocation.x) {
+            delta_x = delta_x + (location.x - previousLocation.x);
+        } else {
+            delta_x = delta_x - (location.x - previousLocation.x);
+        }
+        if(location.y > previousLocation.y) {
+            delta_y = delta_y + (location.y - previousLocation.y);
+        } else {
+            delta_y = delta_y - (location.y - previousLocation.y);
+        }
+        
+        //NSLog(@"delta x = %f", delta_x);
+        //NSLog(@"delta y = %f", delta_y);
+        
+        UIButton *newButton;
+        // Calcula o número de quadrados a andar na verticar ou na horizontal
+        int horizontal = (int)floorf(delta_x/tamanhoQuadrado);
+        int vertical = (int)floorf(delta_y/tamanhoQuadrado);
+        
+    //    NSLog(@"Horizontal %i", horizontal);
+    //    NSLog(@"Vertical %i", vertical);
 
-    if(location.x > previousLocation.x) {
-        if (location.y > previousLocation.y){
-            //newButton = (UIButton *)[self.view viewWithTag:tag+i+(32*vertical)];
-            tagPintar = tag+(horizontal)+(rows*vertical);
+        if(location.x > previousLocation.x) {
+            if (location.y > previousLocation.y){
+                //newButton = (UIButton *)[self.view viewWithTag:tag+i+(32*vertical)];
+                tagPintar = tag+(horizontal)+(rows*vertical);
+            } else {
+                //newButton = (UIButton *)[self.view viewWithTag:tag+i-(32*vertical)];
+                tagPintar = tag+(horizontal)-(rows*vertical);
+            }
         } else {
-            //newButton = (UIButton *)[self.view viewWithTag:tag+i-(32*vertical)];
-            tagPintar = tag+(horizontal)-(rows*vertical);
+            if (location.y > previousLocation.y){
+                //newButton = (UIButton *)[self.view viewWithTag:tag-i+(32*vertical)];
+                tagPintar = tag-(horizontal)+(rows*vertical);
+            } else {
+                //newButton = (UIButton *)[self.view viewWithTag:tag-i-(32*vertical)];
+                tagPintar = tag-(horizontal)-(rows*vertical);
+            }
         }
-    } else {
-        if (location.y > previousLocation.y){
-            //newButton = (UIButton *)[self.view viewWithTag:tag-i+(32*vertical)];
-            tagPintar = tag-(horizontal)+(rows*vertical);
-        } else {
-            //newButton = (UIButton *)[self.view viewWithTag:tag-i-(32*vertical)];
-            tagPintar = tag-(horizontal)-(rows*vertical);
+        if (tagPintar < cols * rows ) {
+    //        NSLog(@"tag pintar %li", tagPintar);
+            [desenho replaceObjectAtIndex:tagPintar-1 withObject:colorCode];
+            newButton = (UIButton *)[self.view viewWithTag:tagPintar];
+            [newButton setBackgroundImage:[self imageWithColor:selectedColor] forState:UIControlStateNormal];
         }
-    }
-    if (tagPintar <= cols * rows ) {
-//        NSLog(@"tag pintar %li", tagPintar);
-        [desenho replaceObjectAtIndex:tagPintar-1 withObject:colorCode];
-        newButton = (UIButton *)[self.view viewWithTag:tagPintar];
-        [newButton setBackgroundImage:[self imageWithColor:selectedColor] forState:UIControlStateNormal];
+    } @catch(NSException *ex) {
+        NSLog(@"Deu excessão!");
+        return;
+    } @finally {
+        NSLog(@"Deu excessão!");
     }
 
 }
@@ -199,7 +211,9 @@ CGFloat delta_y = 0.0;
 - (IBAction)btnTap:(id)sender {
     UIButton *btn = (UIButton *)sender;
     
-    [desenho replaceObjectAtIndex:[btn tag]-1 withObject:colorCode];
+    if ([btn tag] < cols * rows ) {
+        [desenho replaceObjectAtIndex:[btn tag]-1 withObject:colorCode];
+    }
     [(UIButton*)sender setBackgroundImage:[self imageWithColor:selectedColor] forState:UIControlStateNormal];
 }
 
