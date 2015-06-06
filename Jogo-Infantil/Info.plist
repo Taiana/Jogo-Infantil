@@ -28,8 +28,6 @@
 		<string>Hobo.ttf</string>
 		<string>fontawesome-webfont.ttf</string>
 	</array>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -45,6 +45,7 @@
 		9AFC47AC1B0AB35E00C5B602 /* formasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC47AB1B0AB35E00C5B602 /* formasViewController.m */; };
 		9AFC47AF1B0AB37D00C5B602 /* carrosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC47AE1B0AB37D00C5B602 /* carrosViewController.m */; };
 		9AFC47B21B0AB3A300C5B602 /* floresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC47B11B0AB3A200C5B602 /* floresViewController.m */; };
+		E349C0C51B239AA100992A76 /* splashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E349C0C41B239AA100992A76 /* splashViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,8 @@
 		9AFC47AE1B0AB37D00C5B602 /* carrosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = carrosViewController.m; sourceTree = "<group>"; };
 		9AFC47B01B0AB3A200C5B602 /* floresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = floresViewController.h; sourceTree = "<group>"; };
 		9AFC47B11B0AB3A200C5B602 /* floresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = floresViewController.m; sourceTree = "<group>"; };
+		E349C0C31B239AA100992A76 /* splashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = splashViewController.h; sourceTree = "<group>"; };
+		E349C0C41B239AA100992A76 /* splashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = splashViewController.m; sourceTree = "<group>"; };
 		F1E62E9923BED59361EB2B90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +197,8 @@
 				9AD8F1681B1EAF610018248E /* JSON */,
 				9A3CCD1C1ADCA3E6002849AC /* AppDelegate.h */,
 				9A3CCD1D1ADCA3E6002849AC /* AppDelegate.m */,
+				E349C0C31B239AA100992A76 /* splashViewController.h */,
+				E349C0C41B239AA100992A76 /* splashViewController.m */,
 				9A3CCD1F1ADCA3E6002849AC /* ViewController.h */,
 				9A3CCD201ADCA3E6002849AC /* ViewController.m */,
 				9AD6E8D41AE74AEB0070E494 /* categoriasViewController.h */,
@@ -439,6 +444,7 @@
 				9AFC47AC1B0AB35E00C5B602 /* formasViewController.m in Sources */,
 				9AD8F1891B1EAF790018248E /* SBJsonStreamWriterAccumulator.m in Sources */,
 				9A3CCD1E1ADCA3E6002849AC /* AppDelegate.m in Sources */,
+				E349C0C51B239AA100992A76 /* splashViewController.m in Sources */,
 				9AD8F18B1B1EAF790018248E /* SBJsonTokeniser.m in Sources */,
 				9AD8F1821B1EAF790018248E /* NSObject+SBJson.m in Sources */,
 				9AD8F1861B1EAF790018248E /* SBJsonStreamParserAdapter.m in Sources */,
