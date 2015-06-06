@@ -30,7 +30,7 @@
                                              nil];
     
     // all frames will execute in 1.75 seconds
-    _splashImageView.animationDuration = 7;
+    _splashImageView.animationDuration = 4;
     // repeat the annimation forever
     _splashImageView.animationRepeatCount = 0;
     // start animating
@@ -38,7 +38,7 @@
     // add the animation view to the main window
     [self.view addSubview:_splashImageView];
     
-    [NSTimer scheduledTimerWithTimeInterval:7.0f target:self selector:@selector(Gotomainmenuview:) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:4.0f target:self selector:@selector(Gotomainmenuview:) userInfo:nil repeats:NO];
 
     
     [super viewDidLoad];
