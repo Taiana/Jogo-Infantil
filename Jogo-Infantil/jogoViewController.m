@@ -359,12 +359,12 @@ CGFloat delta_y = 0.0;
 }
 
 - (IBAction)comparaImagem:(id)sender {
-    //NSLog(@"array: %@", desenho);
+    NSLog(@"array: %@", desenho);
     self.comparaArrays;
     percentual = ((float)contaAcertos/(float)contaPontos)*100;
-    NSLog(@"Número de pontos %d", contaPontos );
-    NSLog(@"Número de acertos %d", contaAcertos );
-    NSLog(@"Percentual de acertos %f", percentual );
+//    NSLog(@"Número de pontos %d", contaPontos );
+//    NSLog(@"Número de acertos %d", contaAcertos );
+//    NSLog(@"Percentual de acertos %f", percentual );
     self.percentualAcerto.text = [NSString stringWithFormat:@"%.02f", percentual];
     
     // para a musica se estiver tocando
