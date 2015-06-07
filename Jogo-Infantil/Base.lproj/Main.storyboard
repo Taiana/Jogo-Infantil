@@ -751,7 +751,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQT-b8-gSF" userLabel="checkButton">
-                                <rect key="frame" x="9" y="31" width="45" height="45"/>
+                                <rect key="frame" x="9" y="40" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="kQ3-nz-0jX"/>
                                     <constraint firstAttribute="width" constant="45" id="ogO-Xl-acU"/>
@@ -763,11 +763,11 @@
                                     <action selector="comparaImagem:" destination="ryO-3A-huL" eventType="touchUpInside" id="iKk-xe-y69"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyJ-zp-bPs">
-                                <rect key="frame" x="500" y="109" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyJ-zp-bPs" userLabel="tipButton">
+                                <rect key="frame" x="6" y="-12" width="45" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="P04-oA-U5G"/>
-                                    <constraint firstAttribute="height" constant="50" id="ay2-JT-M6f"/>
+                                    <constraint firstAttribute="height" constant="45" id="4Rh-di-N30"/>
+                                    <constraint firstAttribute="width" constant="45" id="Otu-iS-aQY"/>
                                 </constraints>
                                 <state key="normal" image="lampada">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -780,6 +780,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="e6e-JI-iMW" firstAttribute="top" secondItem="YpP-Ib-017" secondAttribute="bottom" id="0zB-zE-dSp"/>
+                            <constraint firstItem="bQT-b8-gSF" firstAttribute="top" secondItem="SyJ-zp-bPs" secondAttribute="bottom" constant="25" id="615-RV-efT"/>
                             <constraint firstItem="rvn-bw-zjJ" firstAttribute="top" secondItem="YtJ-tJ-yZ3" secondAttribute="bottom" id="6fP-rJ-KQ6"/>
                             <constraint firstItem="Vcg-M9-rsz" firstAttribute="top" secondItem="lMZ-ZY-Syc" secondAttribute="bottom" id="8tQ-XX-U6C"/>
                             <constraint firstItem="lMZ-ZY-Syc" firstAttribute="top" secondItem="HPE-77-3s8" secondAttribute="bottom" id="BHH-ko-aD2"/>
@@ -795,7 +796,6 @@
                             <constraint firstItem="EIR-1Y-mk3" firstAttribute="top" secondItem="m6S-zY-nEu" secondAttribute="top" id="TxK-1r-yv9"/>
                             <constraint firstItem="62M-5Q-bPf" firstAttribute="top" secondItem="p3w-UY-TCP" secondAttribute="bottom" constant="6" id="U11-sG-9bZ"/>
                             <constraint firstItem="EIR-1Y-mk3" firstAttribute="bottom" secondItem="bZi-RK-dO9" secondAttribute="top" id="XCh-4q-oLU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SyJ-zp-bPs" secondAttribute="trailing" constant="34" id="XeJ-6r-6Xd"/>
                             <constraint firstItem="GlR-g1-GfE" firstAttribute="top" secondItem="5bn-iH-28i" secondAttribute="bottom" id="Xfp-VL-C7l"/>
                             <constraint firstItem="HPE-77-3s8" firstAttribute="top" secondItem="e6e-JI-iMW" secondAttribute="bottom" id="Yqo-Va-k9m"/>
                             <constraint firstItem="gMr-N2-iCb" firstAttribute="leading" secondItem="WH2-zd-RyV" secondAttribute="trailing" constant="10" id="aeQ-C4-fO4"/>
@@ -809,6 +809,7 @@
                             <constraint firstItem="lFw-91-vH8" firstAttribute="top" secondItem="QJn-pV-TPK" secondAttribute="bottom" id="l0Z-ML-KJd"/>
                             <constraint firstItem="YpP-Ib-017" firstAttribute="top" secondItem="lFw-91-vH8" secondAttribute="bottom" id="m7V-hZ-yQN"/>
                             <constraint firstItem="p3w-UY-TCP" firstAttribute="top" secondItem="yCv-BP-qSJ" secondAttribute="bottom" constant="38" id="qEZ-EB-Ak2"/>
+                            <constraint firstItem="SyJ-zp-bPs" firstAttribute="leading" secondItem="m6S-zY-nEu" secondAttribute="leadingMargin" constant="-10" id="xE0-pc-cye"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1199,14 +1200,14 @@
         <image name="quadrado162x162" width="81" height="81"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nxo-J4-sKc"/>
-        <segue reference="PC7-bP-0JP"/>
-        <segue reference="O49-3u-XoO"/>
-        <segue reference="OfQ-2t-DIy"/>
         <segue reference="OZe-yp-jGq"/>
-        <segue reference="CA9-Gk-kHC"/>
-        <segue reference="2oT-g3-6NQ"/>
-        <segue reference="F5j-yb-e5y"/>
+        <segue reference="MdE-1y-FWg"/>
+        <segue reference="PC7-bP-0JP"/>
+        <segue reference="nV5-WJ-eWI"/>
         <segue reference="1Vw-xp-geA"/>
+        <segue reference="nxo-J4-sKc"/>
+        <segue reference="edf-gJ-YkP"/>
+        <segue reference="F5j-yb-e5y"/>
+        <segue reference="TzM-Gg-BfM"/>
     </inferredMetricsTieBreakers>
 </document>
