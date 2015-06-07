@@ -81,6 +81,8 @@ NSString *colorCode;
 
 - (IBAction)comparaImagem:(id)sender;
 
+- (IBAction)mostraImagem:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UILabel *percentualAcerto;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnSound;
