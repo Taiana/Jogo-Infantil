@@ -341,6 +341,51 @@ CGFloat delta_y = 0.0;
     for (int i=1;i<=total;i++) {
         button = (UIButton *)[self.view viewWithTag:i];
         [button setBackgroundImage:[self imageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
+        [button setAlpha:1.0];
+    }
+}
+
+- (IBAction)voltaTabuleiro:(id)sender {
+    
+    int total = cols * rows;
+    UIButton *button;
+    /*
+     Tabela de cores
+     0=Branco - 1=Preto - 2=Cinza escuro - 3=Cinza claro - 4=Verde claro - 5=Verde escuro - 6=Azul claro
+     7=Azul escuro - 8=Rosa - 9=Lilás - A=Vermelho - B=Amarelo - C=Laranja - D=Marrom
+     */
+    for (int i=1;i<=total;i++) {
+        button = (UIButton *)[self.view viewWithTag:i];
+        [button setAlpha:1.0];
+        if ([@"0" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
+        } else if ([@"1" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor blackColor]] forState:UIControlStateNormal];
+        } else if ([@"2" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor colorWithRed:150.0 green:150.0 blue:150.0 alpha:0.0]] forState:UIControlStateNormal];
+        } else if ([@"3" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor grayColor]] forState:UIControlStateNormal];
+        } else if ([@"4" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor greenColor]] forState:UIControlStateNormal];
+        } else if ([@"5" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor colorWithRed:15.0/255.0 green:115.0/255.0 blue:49.0/255.0 alpha:1.0]] forState:UIControlStateNormal];
+        } else if ([@"6" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor cyanColor]] forState:UIControlStateNormal];
+        } else if ([@"7" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor blueColor]] forState:UIControlStateNormal];
+        } else if ([@"8" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor colorWithRed:253.0/255.0 green:151.0/255.0 blue:240.0/255.0 alpha:1.0]] forState:UIControlStateNormal];
+        } else if ([@"9" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor magentaColor]] forState:UIControlStateNormal];
+        } else if ([@"A" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor redColor]] forState:UIControlStateNormal];
+        } else if ([@"B" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor yellowColor]] forState:UIControlStateNormal];
+        } else if ([@"C" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor orangeColor]] forState:UIControlStateNormal];
+        } else if ([@"D" isEqualToString:desenho[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor brownColor]] forState:UIControlStateNormal];
+        }
     }
 }
 
@@ -380,7 +425,51 @@ CGFloat delta_y = 0.0;
 //    NSLog(@"Número de acertos %d", percentual );
 }
 
-//printf("%ld\n", (long)i);
+- (IBAction)mostraImagem:(id)sender {
+    int total = cols * rows;
+    UIButton *button;
+    /*
+     Tabela de cores
+     0=Branco - 1=Preto - 2=Cinza escuro - 3=Cinza claro - 4=Verde claro - 5=Verde escuro - 6=Azul claro
+     7=Azul escuro - 8=Rosa - 9=Lilás - A=Vermelho - B=Amarelo - C=Laranja - D=Marrom
+     */
+    for (int i=1;i<=total;i++) {
+        button = (UIButton *)[self.view viewWithTag:i];
+        
+        if ([@"Z" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
+        } else if ([@"1" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor blackColor]] forState:UIControlStateNormal];
+        } else if ([@"2" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor colorWithRed:150.0 green:150.0 blue:150.0 alpha:0.0]] forState:UIControlStateNormal];
+        } else if ([@"3" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor grayColor]] forState:UIControlStateNormal];
+        } else if ([@"4" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor greenColor]] forState:UIControlStateNormal];
+        } else if ([@"5" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor colorWithRed:15.0/255.0 green:115.0/255.0 blue:49.0/255.0 alpha:1.0]] forState:UIControlStateNormal];
+        } else if ([@"6" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor cyanColor]] forState:UIControlStateNormal];
+        } else if ([@"7" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor blueColor]] forState:UIControlStateNormal];
+        } else if ([@"8" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor colorWithRed:253.0/255.0 green:151.0/255.0 blue:240.0/255.0 alpha:1.0]] forState:UIControlStateNormal];
+        } else if ([@"9" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor magentaColor]] forState:UIControlStateNormal];
+        } else if ([@"A" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor redColor]] forState:UIControlStateNormal];
+        } else if ([@"B" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor yellowColor]] forState:UIControlStateNormal];
+        } else if ([@"C" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor orangeColor]] forState:UIControlStateNormal];
+        } else if ([@"D" isEqualToString:selectedImage[i-1]]) {
+            [button setBackgroundImage:[self imageWithColor:[UIColor brownColor]] forState:UIControlStateNormal];
+        }
+        
+        [button setAlpha:0.50];
+    }
+    [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(voltaTabuleiro:) userInfo:nil repeats:NO];
+}
 
 - (void)comparaArrays {
     contaAcertos=0;

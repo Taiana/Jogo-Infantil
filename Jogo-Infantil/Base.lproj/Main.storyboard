@@ -763,6 +763,19 @@
                                     <action selector="comparaImagem:" destination="ryO-3A-huL" eventType="touchUpInside" id="iKk-xe-y69"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyJ-zp-bPs">
+                                <rect key="frame" x="500" y="109" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="P04-oA-U5G"/>
+                                    <constraint firstAttribute="height" constant="50" id="ay2-JT-M6f"/>
+                                </constraints>
+                                <state key="normal" image="lampada">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mostraImagem:" destination="ryO-3A-huL" eventType="touchUpInside" id="rdB-nf-HAW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -782,6 +795,7 @@
                             <constraint firstItem="EIR-1Y-mk3" firstAttribute="top" secondItem="m6S-zY-nEu" secondAttribute="top" id="TxK-1r-yv9"/>
                             <constraint firstItem="62M-5Q-bPf" firstAttribute="top" secondItem="p3w-UY-TCP" secondAttribute="bottom" constant="6" id="U11-sG-9bZ"/>
                             <constraint firstItem="EIR-1Y-mk3" firstAttribute="bottom" secondItem="bZi-RK-dO9" secondAttribute="top" id="XCh-4q-oLU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SyJ-zp-bPs" secondAttribute="trailing" constant="34" id="XeJ-6r-6Xd"/>
                             <constraint firstItem="GlR-g1-GfE" firstAttribute="top" secondItem="5bn-iH-28i" secondAttribute="bottom" id="Xfp-VL-C7l"/>
                             <constraint firstItem="HPE-77-3s8" firstAttribute="top" secondItem="e6e-JI-iMW" secondAttribute="bottom" id="Yqo-Va-k9m"/>
                             <constraint firstItem="gMr-N2-iCb" firstAttribute="leading" secondItem="WH2-zd-RyV" secondAttribute="trailing" constant="10" id="aeQ-C4-fO4"/>
@@ -1177,6 +1191,7 @@
         <image name="fundo_tela_categorias" width="640" height="1136"/>
         <image name="fundo_tela_inicio" width="640" height="1136"/>
         <image name="icone-som" width="15" height="15"/>
+        <image name="lampada" width="256" height="256"/>
         <image name="letras" width="163" height="159"/>
         <image name="nome_jogo" width="489" height="168"/>
         <image name="numeros" width="160" height="160"/>
