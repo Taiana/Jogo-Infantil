@@ -342,6 +342,7 @@ CGFloat delta_y = 0.0;
         button = (UIButton *)[self.view viewWithTag:i];
         [button setBackgroundImage:[self imageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
         [button setAlpha:1.0];
+        [desenho replaceObjectAtIndex:i-1 withObject:@"0"];
     }
 }
 
