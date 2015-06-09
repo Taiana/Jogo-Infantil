@@ -8,44 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		4480CF216B4C423B4A29A652 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AB9231C3899F006BF4D993 /* libPods.a */; };
-		9A22517D1AE7157E00486867 /* comemoracao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A22517B1AE7157E00486867 /* comemoracao.mp3 */; };
-		9A22FB611B1EC1640015C3CD /* soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A22FB601B1EC1640015C3CD /* soundtrack.mp3 */; };
-		9A3CCD1B1ADCA3E6002849AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD1A1ADCA3E6002849AC /* main.m */; };
-		9A3CCD1E1ADCA3E6002849AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD1D1ADCA3E6002849AC /* AppDelegate.m */; };
-		9A3CCD211ADCA3E6002849AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD201ADCA3E6002849AC /* ViewController.m */; };
-		9A3CCD241ADCA3E6002849AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CCD221ADCA3E6002849AC /* Main.storyboard */; };
-		9A3CCD291ADCA3E6002849AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */; };
-		9A3CCD351ADCA3E7002849AC /* Jogo_InfantilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */; };
 		9A5E49A91AE75F730080D2C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */; };
-		9A88A7561B0574A800322259 /* numerosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88A7551B0574A800322259 /* numerosViewController.m */; };
-		9A88A7591B057F5E00322259 /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88A7581B057F5E00322259 /* GlobalVars.m */; };
-		9A88A75C1B058D6000322259 /* animaisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88A75B1B058D6000322259 /* animaisViewController.m */; };
-		9A8D84751B1FE547001373E6 /* resultado.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A8D84741B1FE547001373E6 /* resultado.xib */; };
 		9A8D84771B1FF828001373E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8D84761B1FF828001373E6 /* QuartzCore.framework */; };
-		9A9B39C31B0283FE000F2688 /* jogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B39C21B0283FE000F2688 /* jogoViewController.m */; };
-		9ABD44A81B1C25C500718A26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ABD44A71B1C25C500718A26 /* Images.xcassets */; };
-		9AD6E8D61AE74AEB0070E494 /* categoriasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */; };
-		9AD6E8D71AE750FF0070E494 /* Hobo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AED42CD1AE733EA00D59228 /* Hobo.ttf */; };
-		9AD8F1671B1EA9D30018248E /* desenhos.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD8F1661B1EA9D30018248E /* desenhos.json */; };
-		9AD8F1821B1EAF790018248E /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F16A1B1EAF790018248E /* NSObject+SBJson.m */; };
-		9AD8F1831B1EAF790018248E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F16D1B1EAF790018248E /* SBJsonParser.m */; };
-		9AD8F1841B1EAF790018248E /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F16F1B1EAF790018248E /* SBJsonStreamParser.m */; };
-		9AD8F1851B1EAF790018248E /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F1711B1EAF790018248E /* SBJsonStreamParserAccumulator.m */; };
-		9AD8F1861B1EAF790018248E /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F1731B1EAF790018248E /* SBJsonStreamParserAdapter.m */; };
-		9AD8F1871B1EAF790018248E /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F1751B1EAF790018248E /* SBJsonStreamParserState.m */; };
-		9AD8F1881B1EAF790018248E /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F1771B1EAF790018248E /* SBJsonStreamWriter.m */; };
-		9AD8F1891B1EAF790018248E /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F1791B1EAF790018248E /* SBJsonStreamWriterAccumulator.m */; };
-		9AD8F18A1B1EAF790018248E /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F17B1B1EAF790018248E /* SBJsonStreamWriterState.m */; };
-		9AD8F18B1B1EAF790018248E /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F17D1B1EAF790018248E /* SBJsonTokeniser.m */; };
-		9AD8F18C1B1EAF790018248E /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F17F1B1EAF790018248E /* SBJsonUTF8Stream.m */; };
-		9AD8F18D1B1EAF790018248E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8F1811B1EAF790018248E /* SBJsonWriter.m */; };
-		9ADF415C1B15512300A5BE55 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADF415B1B154EF600A5BE55 /* fontawesome-webfont.ttf */; };
-		9AF2CAFB1AE7168500360F3D /* fail1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2CAFA1AE7168500360F3D /* fail1.mp3 */; };
-		9AFC47A91B0AB34100C5B602 /* letrasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC47A81B0AB34100C5B602 /* letrasViewController.m */; };
-		9AFC47AC1B0AB35E00C5B602 /* formasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC47AB1B0AB35E00C5B602 /* formasViewController.m */; };
-		9AFC47AF1B0AB37D00C5B602 /* carrosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC47AE1B0AB37D00C5B602 /* carrosViewController.m */; };
-		9AFC47B21B0AB3A300C5B602 /* floresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC47B11B0AB3A200C5B602 /* floresViewController.m */; };
-		E349C0C51B239AA100992A76 /* splashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E349C0C41B239AA100992A76 /* splashViewController.m */; };
+		9AE45AA91B2696EA009D34BB /* animaisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A6E1B2696EA009D34BB /* animaisViewController.m */; };
+		9AE45AAA1B2696EA009D34BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A701B2696EA009D34BB /* AppDelegate.m */; };
+		9AE45AAC1B2696EA009D34BB /* carrosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A731B2696EA009D34BB /* carrosViewController.m */; };
+		9AE45AAD1B2696EA009D34BB /* categoriasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A751B2696EA009D34BB /* categoriasViewController.m */; };
+		9AE45AAE1B2696EA009D34BB /* comemoracao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45A761B2696EA009D34BB /* comemoracao.mp3 */; };
+		9AE45AAF1B2696EA009D34BB /* desenhos.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45A771B2696EA009D34BB /* desenhos.json */; };
+		9AE45AB01B2696EA009D34BB /* fail1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45A781B2696EA009D34BB /* fail1.mp3 */; };
+		9AE45AB11B2696EA009D34BB /* floresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A7A1B2696EA009D34BB /* floresViewController.m */; };
+		9AE45AB21B2696EA009D34BB /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45A7B1B2696EA009D34BB /* fontawesome-webfont.ttf */; };
+		9AE45AB31B2696EA009D34BB /* formasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A7D1B2696EA009D34BB /* formasViewController.m */; };
+		9AE45AB41B2696EA009D34BB /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A7F1B2696EA009D34BB /* GlobalVars.m */; };
+		9AE45AB51B2696EA009D34BB /* Hobo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45A801B2696EA009D34BB /* Hobo.ttf */; };
+		9AE45AB61B2696EA009D34BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45A811B2696EA009D34BB /* Images.xcassets */; };
+		9AE45AB71B2696EA009D34BB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45A821B2696EA009D34BB /* Info.plist */; };
+		9AE45AB81B2696EA009D34BB /* jogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A841B2696EA009D34BB /* jogoViewController.m */; };
+		9AE45AB91B2696EA009D34BB /* letrasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A861B2696EA009D34BB /* letrasViewController.m */; };
+		9AE45ABA1B2696EA009D34BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A871B2696EA009D34BB /* main.m */; };
+		9AE45ABB1B2696EA009D34BB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A891B2696EA009D34BB /* NSObject+SBJson.m */; };
+		9AE45ABC1B2696EA009D34BB /* numerosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A8B1B2696EA009D34BB /* numerosViewController.m */; };
+		9AE45ABE1B2696EA009D34BB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A8F1B2696EA009D34BB /* SBJsonParser.m */; };
+		9AE45ABF1B2696EA009D34BB /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A911B2696EA009D34BB /* SBJsonStreamParser.m */; };
+		9AE45AC01B2696EA009D34BB /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A931B2696EA009D34BB /* SBJsonStreamParserAccumulator.m */; };
+		9AE45AC11B2696EA009D34BB /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A951B2696EA009D34BB /* SBJsonStreamParserAdapter.m */; };
+		9AE45AC21B2696EA009D34BB /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A971B2696EA009D34BB /* SBJsonStreamParserState.m */; };
+		9AE45AC31B2696EA009D34BB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A991B2696EA009D34BB /* SBJsonStreamWriter.m */; };
+		9AE45AC41B2696EA009D34BB /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A9B1B2696EA009D34BB /* SBJsonStreamWriterAccumulator.m */; };
+		9AE45AC51B2696EA009D34BB /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A9D1B2696EA009D34BB /* SBJsonStreamWriterState.m */; };
+		9AE45AC61B2696EA009D34BB /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45A9F1B2696EA009D34BB /* SBJsonTokeniser.m */; };
+		9AE45AC71B2696EA009D34BB /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45AA11B2696EA009D34BB /* SBJsonUTF8Stream.m */; };
+		9AE45AC81B2696EA009D34BB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45AA31B2696EA009D34BB /* SBJsonWriter.m */; };
+		9AE45AC91B2696EA009D34BB /* soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45AA41B2696EA009D34BB /* soundtrack.mp3 */; };
+		9AE45ACA1B2696EA009D34BB /* splashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45AA61B2696EA009D34BB /* splashViewController.m */; };
+		9AE45ACB1B2696EA009D34BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45AA81B2696EA009D34BB /* ViewController.m */; };
+		9AE45AD01B2697BB009D34BB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45ACF1B2697BB009D34BB /* Info.plist */; };
+		9AE45AD31B2698FA009D34BB /* Jogo_InfantilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE45AD21B2698FA009D34BB /* Jogo_InfantilTests.m */; };
+		9AE45ADE1B269B18009D34BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45ADA1B269B18009D34BB /* LaunchScreen.xib */; };
+		9AE45ADF1B269B18009D34BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE45ADC1B269B18009D34BB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,73 +62,72 @@
 /* Begin PBXFileReference section */
 		0F14ED0382390131378A8687 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		28AB9231C3899F006BF4D993 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A22517B1AE7157E00486867 /* comemoracao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comemoracao.mp3; sourceTree = "<group>"; };
-		9A22FB601B1EC1640015C3CD /* soundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundtrack.mp3; sourceTree = "<group>"; };
 		9A3CCD151ADCA3E6002849AC /* ArtKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A3CCD191ADCA3E6002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A3CCD1A1ADCA3E6002849AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9A3CCD1C1ADCA3E6002849AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9A3CCD1D1ADCA3E6002849AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9A3CCD1F1ADCA3E6002849AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9A3CCD201ADCA3E6002849AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9A3CCD231ADCA3E6002849AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A3CCD281ADCA3E6002849AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9A3CCD2E1ADCA3E7002849AC /* ArtKidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtKidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A3CCD331ADCA3E7002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jogo_InfantilTests.m; sourceTree = "<group>"; };
 		9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		9A88A7541B0574A800322259 /* numerosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numerosViewController.h; sourceTree = "<group>"; };
-		9A88A7551B0574A800322259 /* numerosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = numerosViewController.m; sourceTree = "<group>"; };
-		9A88A7571B057F5E00322259 /* GlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVars.h; sourceTree = "<group>"; };
-		9A88A7581B057F5E00322259 /* GlobalVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVars.m; sourceTree = "<group>"; };
-		9A88A75A1B058D6000322259 /* animaisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animaisViewController.h; sourceTree = "<group>"; };
-		9A88A75B1B058D6000322259 /* animaisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animaisViewController.m; sourceTree = "<group>"; };
-		9A8D84741B1FE547001373E6 /* resultado.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = resultado.xib; sourceTree = "<group>"; };
 		9A8D84761B1FF828001373E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		9A9B39C11B0283FE000F2688 /* jogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jogoViewController.h; sourceTree = "<group>"; };
-		9A9B39C21B0283FE000F2688 /* jogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jogoViewController.m; sourceTree = "<group>"; };
-		9ABD44A71B1C25C500718A26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9AD6E8D41AE74AEB0070E494 /* categoriasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = categoriasViewController.h; sourceTree = "<group>"; };
-		9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = categoriasViewController.m; sourceTree = "<group>"; };
-		9AD8F1661B1EA9D30018248E /* desenhos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = desenhos.json; sourceTree = "<group>"; };
-		9AD8F1691B1EAF790018248E /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
-		9AD8F16A1B1EAF790018248E /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
-		9AD8F16B1B1EAF790018248E /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
-		9AD8F16C1B1EAF790018248E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
-		9AD8F16D1B1EAF790018248E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
-		9AD8F16E1B1EAF790018248E /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
-		9AD8F16F1B1EAF790018248E /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
-		9AD8F1701B1EAF790018248E /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
-		9AD8F1711B1EAF790018248E /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
-		9AD8F1721B1EAF790018248E /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
-		9AD8F1731B1EAF790018248E /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
-		9AD8F1741B1EAF790018248E /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
-		9AD8F1751B1EAF790018248E /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
-		9AD8F1761B1EAF790018248E /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
-		9AD8F1771B1EAF790018248E /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
-		9AD8F1781B1EAF790018248E /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
-		9AD8F1791B1EAF790018248E /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
-		9AD8F17A1B1EAF790018248E /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
-		9AD8F17B1B1EAF790018248E /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
-		9AD8F17C1B1EAF790018248E /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
-		9AD8F17D1B1EAF790018248E /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
-		9AD8F17E1B1EAF790018248E /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
-		9AD8F17F1B1EAF790018248E /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
-		9AD8F1801B1EAF790018248E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		9AD8F1811B1EAF790018248E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		9ADF415B1B154EF600A5BE55 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
-		9AED42CD1AE733EA00D59228 /* Hobo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hobo.ttf; sourceTree = "<group>"; };
-		9AF2CAFA1AE7168500360F3D /* fail1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fail1.mp3; sourceTree = "<group>"; };
-		9AFC47A71B0AB34100C5B602 /* letrasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = letrasViewController.h; sourceTree = "<group>"; };
-		9AFC47A81B0AB34100C5B602 /* letrasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = letrasViewController.m; sourceTree = "<group>"; };
-		9AFC47AA1B0AB35E00C5B602 /* formasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formasViewController.h; sourceTree = "<group>"; };
-		9AFC47AB1B0AB35E00C5B602 /* formasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = formasViewController.m; sourceTree = "<group>"; };
-		9AFC47AD1B0AB37D00C5B602 /* carrosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = carrosViewController.h; sourceTree = "<group>"; };
-		9AFC47AE1B0AB37D00C5B602 /* carrosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = carrosViewController.m; sourceTree = "<group>"; };
-		9AFC47B01B0AB3A200C5B602 /* floresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = floresViewController.h; sourceTree = "<group>"; };
-		9AFC47B11B0AB3A200C5B602 /* floresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = floresViewController.m; sourceTree = "<group>"; };
-		E349C0C31B239AA100992A76 /* splashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = splashViewController.h; sourceTree = "<group>"; };
-		E349C0C41B239AA100992A76 /* splashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = splashViewController.m; sourceTree = "<group>"; };
+		9AE45A6D1B2696EA009D34BB /* animaisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = animaisViewController.h; path = ArtKids/animaisViewController.h; sourceTree = SOURCE_ROOT; };
+		9AE45A6E1B2696EA009D34BB /* animaisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = animaisViewController.m; path = ArtKids/animaisViewController.m; sourceTree = SOURCE_ROOT; };
+		9AE45A6F1B2696EA009D34BB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ArtKids/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		9AE45A701B2696EA009D34BB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ArtKids/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		9AE45A721B2696EA009D34BB /* carrosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = carrosViewController.h; path = ArtKids/carrosViewController.h; sourceTree = SOURCE_ROOT; };
+		9AE45A731B2696EA009D34BB /* carrosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = carrosViewController.m; path = ArtKids/carrosViewController.m; sourceTree = SOURCE_ROOT; };
+		9AE45A741B2696EA009D34BB /* categoriasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = categoriasViewController.h; path = ArtKids/categoriasViewController.h; sourceTree = SOURCE_ROOT; };
+		9AE45A751B2696EA009D34BB /* categoriasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = categoriasViewController.m; path = ArtKids/categoriasViewController.m; sourceTree = SOURCE_ROOT; };
+		9AE45A761B2696EA009D34BB /* comemoracao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = comemoracao.mp3; path = ArtKids/comemoracao.mp3; sourceTree = SOURCE_ROOT; };
+		9AE45A771B2696EA009D34BB /* desenhos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = desenhos.json; path = ArtKids/desenhos.json; sourceTree = SOURCE_ROOT; };
+		9AE45A781B2696EA009D34BB /* fail1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fail1.mp3; path = ArtKids/fail1.mp3; sourceTree = SOURCE_ROOT; };
+		9AE45A791B2696EA009D34BB /* floresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = floresViewController.h; path = ArtKids/floresViewController.h; sourceTree = SOURCE_ROOT; };
+		9AE45A7A1B2696EA009D34BB /* floresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = floresViewController.m; path = ArtKids/floresViewController.m; sourceTree = SOURCE_ROOT; };
+		9AE45A7B1B2696EA009D34BB /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.ttf"; path = "ArtKids/fontawesome-webfont.ttf"; sourceTree = SOURCE_ROOT; };
+		9AE45A7C1B2696EA009D34BB /* formasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = formasViewController.h; path = ArtKids/formasViewController.h; sourceTree = SOURCE_ROOT; };
+		9AE45A7D1B2696EA009D34BB /* formasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = formasViewController.m; path = ArtKids/formasViewController.m; sourceTree = SOURCE_ROOT; };
+		9AE45A7E1B2696EA009D34BB /* GlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalVars.h; path = ArtKids/GlobalVars.h; sourceTree = SOURCE_ROOT; };
+		9AE45A7F1B2696EA009D34BB /* GlobalVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalVars.m; path = ArtKids/GlobalVars.m; sourceTree = SOURCE_ROOT; };
+		9AE45A801B2696EA009D34BB /* Hobo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Hobo.ttf; path = ArtKids/Hobo.ttf; sourceTree = SOURCE_ROOT; };
+		9AE45A811B2696EA009D34BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ArtKids/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		9AE45A821B2696EA009D34BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ArtKids/Info.plist; sourceTree = SOURCE_ROOT; };
+		9AE45A831B2696EA009D34BB /* jogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jogoViewController.h; path = ArtKids/jogoViewController.h; sourceTree = SOURCE_ROOT; };
+		9AE45A841B2696EA009D34BB /* jogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = jogoViewController.m; path = ArtKids/jogoViewController.m; sourceTree = SOURCE_ROOT; };
+		9AE45A851B2696EA009D34BB /* letrasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = letrasViewController.h; path = ArtKids/letrasViewController.h; sourceTree = SOURCE_ROOT; };
+		9AE45A861B2696EA009D34BB /* letrasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = letrasViewController.m; path = ArtKids/letrasViewController.m; sourceTree = SOURCE_ROOT; };
+		9AE45A871B2696EA009D34BB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ArtKids/main.m; sourceTree = SOURCE_ROOT; };
+		9AE45A881B2696EA009D34BB /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "ArtKids/NSObject+SBJson.h"; sourceTree = SOURCE_ROOT; };
+		9AE45A891B2696EA009D34BB /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "ArtKids/NSObject+SBJson.m"; sourceTree = SOURCE_ROOT; };
+		9AE45A8A1B2696EA009D34BB /* numerosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = numerosViewController.h; path = ArtKids/numerosViewController.h; sourceTree = SOURCE_ROOT; };
+		9AE45A8B1B2696EA009D34BB /* numerosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = numerosViewController.m; path = ArtKids/numerosViewController.m; sourceTree = SOURCE_ROOT; };
+		9AE45A8D1B2696EA009D34BB /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = ArtKids/SBJson.h; sourceTree = SOURCE_ROOT; };
+		9AE45A8E1B2696EA009D34BB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = ArtKids/SBJsonParser.h; sourceTree = SOURCE_ROOT; };
+		9AE45A8F1B2696EA009D34BB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = ArtKids/SBJsonParser.m; sourceTree = SOURCE_ROOT; };
+		9AE45A901B2696EA009D34BB /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = ArtKids/SBJsonStreamParser.h; sourceTree = SOURCE_ROOT; };
+		9AE45A911B2696EA009D34BB /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = ArtKids/SBJsonStreamParser.m; sourceTree = SOURCE_ROOT; };
+		9AE45A921B2696EA009D34BB /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = ArtKids/SBJsonStreamParserAccumulator.h; sourceTree = SOURCE_ROOT; };
+		9AE45A931B2696EA009D34BB /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = ArtKids/SBJsonStreamParserAccumulator.m; sourceTree = SOURCE_ROOT; };
+		9AE45A941B2696EA009D34BB /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = ArtKids/SBJsonStreamParserAdapter.h; sourceTree = SOURCE_ROOT; };
+		9AE45A951B2696EA009D34BB /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = ArtKids/SBJsonStreamParserAdapter.m; sourceTree = SOURCE_ROOT; };
+		9AE45A961B2696EA009D34BB /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = ArtKids/SBJsonStreamParserState.h; sourceTree = SOURCE_ROOT; };
+		9AE45A971B2696EA009D34BB /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = ArtKids/SBJsonStreamParserState.m; sourceTree = SOURCE_ROOT; };
+		9AE45A981B2696EA009D34BB /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = ArtKids/SBJsonStreamWriter.h; sourceTree = SOURCE_ROOT; };
+		9AE45A991B2696EA009D34BB /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = ArtKids/SBJsonStreamWriter.m; sourceTree = SOURCE_ROOT; };
+		9AE45A9A1B2696EA009D34BB /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = ArtKids/SBJsonStreamWriterAccumulator.h; sourceTree = SOURCE_ROOT; };
+		9AE45A9B1B2696EA009D34BB /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = ArtKids/SBJsonStreamWriterAccumulator.m; sourceTree = SOURCE_ROOT; };
+		9AE45A9C1B2696EA009D34BB /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = ArtKids/SBJsonStreamWriterState.h; sourceTree = SOURCE_ROOT; };
+		9AE45A9D1B2696EA009D34BB /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = ArtKids/SBJsonStreamWriterState.m; sourceTree = SOURCE_ROOT; };
+		9AE45A9E1B2696EA009D34BB /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = ArtKids/SBJsonTokeniser.h; sourceTree = SOURCE_ROOT; };
+		9AE45A9F1B2696EA009D34BB /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = ArtKids/SBJsonTokeniser.m; sourceTree = SOURCE_ROOT; };
+		9AE45AA01B2696EA009D34BB /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonUTF8Stream.h; path = ArtKids/SBJsonUTF8Stream.h; sourceTree = SOURCE_ROOT; };
+		9AE45AA11B2696EA009D34BB /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = ArtKids/SBJsonUTF8Stream.m; sourceTree = SOURCE_ROOT; };
+		9AE45AA21B2696EA009D34BB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = ArtKids/SBJsonWriter.h; sourceTree = SOURCE_ROOT; };
+		9AE45AA31B2696EA009D34BB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = ArtKids/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
+		9AE45AA41B2696EA009D34BB /* soundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = soundtrack.mp3; path = ArtKids/soundtrack.mp3; sourceTree = SOURCE_ROOT; };
+		9AE45AA51B2696EA009D34BB /* splashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = splashViewController.h; path = ArtKids/splashViewController.h; sourceTree = SOURCE_ROOT; };
+		9AE45AA61B2696EA009D34BB /* splashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = splashViewController.m; path = ArtKids/splashViewController.m; sourceTree = SOURCE_ROOT; };
+		9AE45AA71B2696EA009D34BB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ArtKids/ViewController.h; sourceTree = SOURCE_ROOT; };
+		9AE45AA81B2696EA009D34BB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ArtKids/ViewController.m; sourceTree = SOURCE_ROOT; };
+		9AE45ACF1B2697BB009D34BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ArtKidsTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		9AE45AD21B2698FA009D34BB /* Jogo_InfantilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jogo_InfantilTests.m; path = ArtKidsTests/Jogo_InfantilTests.m; sourceTree = SOURCE_ROOT; };
+		9AE45ADB1B269B18009D34BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = ArtKids/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		9AE45ADD1B269B18009D34BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ArtKids/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		F1E62E9923BED59361EB2B90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,35 +194,34 @@
 		9A3CCD171ADCA3E6002849AC /* ArtKids */ = {
 			isa = PBXGroup;
 			children = (
-				9AD8F1681B1EAF610018248E /* JSON */,
-				9A3CCD1C1ADCA3E6002849AC /* AppDelegate.h */,
-				9A3CCD1D1ADCA3E6002849AC /* AppDelegate.m */,
-				E349C0C31B239AA100992A76 /* splashViewController.h */,
-				E349C0C41B239AA100992A76 /* splashViewController.m */,
-				9A3CCD1F1ADCA3E6002849AC /* ViewController.h */,
-				9A3CCD201ADCA3E6002849AC /* ViewController.m */,
-				9AD6E8D41AE74AEB0070E494 /* categoriasViewController.h */,
-				9AD6E8D51AE74AEB0070E494 /* categoriasViewController.m */,
-				9A9B39C11B0283FE000F2688 /* jogoViewController.h */,
-				9A9B39C21B0283FE000F2688 /* jogoViewController.m */,
-				9A88A7541B0574A800322259 /* numerosViewController.h */,
-				9A88A7551B0574A800322259 /* numerosViewController.m */,
-				9A88A75A1B058D6000322259 /* animaisViewController.h */,
-				9A88A75B1B058D6000322259 /* animaisViewController.m */,
-				9AFC47A71B0AB34100C5B602 /* letrasViewController.h */,
-				9AFC47A81B0AB34100C5B602 /* letrasViewController.m */,
-				9AFC47AA1B0AB35E00C5B602 /* formasViewController.h */,
-				9AFC47AB1B0AB35E00C5B602 /* formasViewController.m */,
-				9AFC47AD1B0AB37D00C5B602 /* carrosViewController.h */,
-				9AFC47AE1B0AB37D00C5B602 /* carrosViewController.m */,
-				9AFC47B01B0AB3A200C5B602 /* floresViewController.h */,
-				9AFC47B11B0AB3A200C5B602 /* floresViewController.m */,
-				9A88A7571B057F5E00322259 /* GlobalVars.h */,
-				9A88A7581B057F5E00322259 /* GlobalVars.m */,
-				9A3CCD221ADCA3E6002849AC /* Main.storyboard */,
-				9ABD44A71B1C25C500718A26 /* Images.xcassets */,
-				9A8D84741B1FE547001373E6 /* resultado.xib */,
-				9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */,
+				9AE45ACC1B2696FD009D34BB /* JSON */,
+				9AE45A6D1B2696EA009D34BB /* animaisViewController.h */,
+				9AE45A6E1B2696EA009D34BB /* animaisViewController.m */,
+				9AE45A6F1B2696EA009D34BB /* AppDelegate.h */,
+				9AE45A701B2696EA009D34BB /* AppDelegate.m */,
+				9AE45A721B2696EA009D34BB /* carrosViewController.h */,
+				9AE45A731B2696EA009D34BB /* carrosViewController.m */,
+				9AE45A741B2696EA009D34BB /* categoriasViewController.h */,
+				9AE45A751B2696EA009D34BB /* categoriasViewController.m */,
+				9AE45A791B2696EA009D34BB /* floresViewController.h */,
+				9AE45A7A1B2696EA009D34BB /* floresViewController.m */,
+				9AE45A7C1B2696EA009D34BB /* formasViewController.h */,
+				9AE45A7D1B2696EA009D34BB /* formasViewController.m */,
+				9AE45A7E1B2696EA009D34BB /* GlobalVars.h */,
+				9AE45A7F1B2696EA009D34BB /* GlobalVars.m */,
+				9AE45A831B2696EA009D34BB /* jogoViewController.h */,
+				9AE45A841B2696EA009D34BB /* jogoViewController.m */,
+				9AE45A851B2696EA009D34BB /* letrasViewController.h */,
+				9AE45A861B2696EA009D34BB /* letrasViewController.m */,
+				9AE45A8A1B2696EA009D34BB /* numerosViewController.h */,
+				9AE45A8B1B2696EA009D34BB /* numerosViewController.m */,
+				9AE45AA51B2696EA009D34BB /* splashViewController.h */,
+				9AE45AA61B2696EA009D34BB /* splashViewController.m */,
+				9AE45AA71B2696EA009D34BB /* ViewController.h */,
+				9AE45AA81B2696EA009D34BB /* ViewController.m */,
+				9AE45ADA1B269B18009D34BB /* LaunchScreen.xib */,
+				9AE45ADC1B269B18009D34BB /* Main.storyboard */,
+				9AE45A811B2696EA009D34BB /* Images.xcassets */,
 				9A3CCD181ADCA3E6002849AC /* Supporting Files */,
 			);
 			name = ArtKids;
@@ -232,14 +231,14 @@
 		9A3CCD181ADCA3E6002849AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A22FB601B1EC1640015C3CD /* soundtrack.mp3 */,
-				9AD8F1661B1EA9D30018248E /* desenhos.json */,
-				9A22517B1AE7157E00486867 /* comemoracao.mp3 */,
-				9AF2CAFA1AE7168500360F3D /* fail1.mp3 */,
-				9ADF415B1B154EF600A5BE55 /* fontawesome-webfont.ttf */,
-				9AED42CD1AE733EA00D59228 /* Hobo.ttf */,
-				9A3CCD191ADCA3E6002849AC /* Info.plist */,
-				9A3CCD1A1ADCA3E6002849AC /* main.m */,
+				9AE45A761B2696EA009D34BB /* comemoracao.mp3 */,
+				9AE45A771B2696EA009D34BB /* desenhos.json */,
+				9AE45A781B2696EA009D34BB /* fail1.mp3 */,
+				9AE45A7B1B2696EA009D34BB /* fontawesome-webfont.ttf */,
+				9AE45A801B2696EA009D34BB /* Hobo.ttf */,
+				9AE45A821B2696EA009D34BB /* Info.plist */,
+				9AE45A871B2696EA009D34BB /* main.m */,
+				9AE45AA41B2696EA009D34BB /* soundtrack.mp3 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -247,7 +246,7 @@
 		9A3CCD311ADCA3E7002849AC /* ArtKidsTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */,
+				9AE45AD21B2698FA009D34BB /* Jogo_InfantilTests.m */,
 				9A3CCD321ADCA3E7002849AC /* Supporting Files */,
 			);
 			name = ArtKidsTests;
@@ -257,39 +256,39 @@
 		9A3CCD321ADCA3E7002849AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A3CCD331ADCA3E7002849AC /* Info.plist */,
+				9AE45ACF1B2697BB009D34BB /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9AD8F1681B1EAF610018248E /* JSON */ = {
+		9AE45ACC1B2696FD009D34BB /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				9AD8F1691B1EAF790018248E /* NSObject+SBJson.h */,
-				9AD8F16A1B1EAF790018248E /* NSObject+SBJson.m */,
-				9AD8F16B1B1EAF790018248E /* SBJson.h */,
-				9AD8F16C1B1EAF790018248E /* SBJsonParser.h */,
-				9AD8F16D1B1EAF790018248E /* SBJsonParser.m */,
-				9AD8F16E1B1EAF790018248E /* SBJsonStreamParser.h */,
-				9AD8F16F1B1EAF790018248E /* SBJsonStreamParser.m */,
-				9AD8F1701B1EAF790018248E /* SBJsonStreamParserAccumulator.h */,
-				9AD8F1711B1EAF790018248E /* SBJsonStreamParserAccumulator.m */,
-				9AD8F1721B1EAF790018248E /* SBJsonStreamParserAdapter.h */,
-				9AD8F1731B1EAF790018248E /* SBJsonStreamParserAdapter.m */,
-				9AD8F1741B1EAF790018248E /* SBJsonStreamParserState.h */,
-				9AD8F1751B1EAF790018248E /* SBJsonStreamParserState.m */,
-				9AD8F1761B1EAF790018248E /* SBJsonStreamWriter.h */,
-				9AD8F1771B1EAF790018248E /* SBJsonStreamWriter.m */,
-				9AD8F1781B1EAF790018248E /* SBJsonStreamWriterAccumulator.h */,
-				9AD8F1791B1EAF790018248E /* SBJsonStreamWriterAccumulator.m */,
-				9AD8F17A1B1EAF790018248E /* SBJsonStreamWriterState.h */,
-				9AD8F17B1B1EAF790018248E /* SBJsonStreamWriterState.m */,
-				9AD8F17C1B1EAF790018248E /* SBJsonTokeniser.h */,
-				9AD8F17D1B1EAF790018248E /* SBJsonTokeniser.m */,
-				9AD8F17E1B1EAF790018248E /* SBJsonUTF8Stream.h */,
-				9AD8F17F1B1EAF790018248E /* SBJsonUTF8Stream.m */,
-				9AD8F1801B1EAF790018248E /* SBJsonWriter.h */,
-				9AD8F1811B1EAF790018248E /* SBJsonWriter.m */,
+				9AE45A881B2696EA009D34BB /* NSObject+SBJson.h */,
+				9AE45A891B2696EA009D34BB /* NSObject+SBJson.m */,
+				9AE45A8D1B2696EA009D34BB /* SBJson.h */,
+				9AE45A8E1B2696EA009D34BB /* SBJsonParser.h */,
+				9AE45A8F1B2696EA009D34BB /* SBJsonParser.m */,
+				9AE45A901B2696EA009D34BB /* SBJsonStreamParser.h */,
+				9AE45A911B2696EA009D34BB /* SBJsonStreamParser.m */,
+				9AE45A921B2696EA009D34BB /* SBJsonStreamParserAccumulator.h */,
+				9AE45A931B2696EA009D34BB /* SBJsonStreamParserAccumulator.m */,
+				9AE45A941B2696EA009D34BB /* SBJsonStreamParserAdapter.h */,
+				9AE45A951B2696EA009D34BB /* SBJsonStreamParserAdapter.m */,
+				9AE45A961B2696EA009D34BB /* SBJsonStreamParserState.h */,
+				9AE45A971B2696EA009D34BB /* SBJsonStreamParserState.m */,
+				9AE45A981B2696EA009D34BB /* SBJsonStreamWriter.h */,
+				9AE45A991B2696EA009D34BB /* SBJsonStreamWriter.m */,
+				9AE45A9A1B2696EA009D34BB /* SBJsonStreamWriterAccumulator.h */,
+				9AE45A9B1B2696EA009D34BB /* SBJsonStreamWriterAccumulator.m */,
+				9AE45A9C1B2696EA009D34BB /* SBJsonStreamWriterState.h */,
+				9AE45A9D1B2696EA009D34BB /* SBJsonStreamWriterState.m */,
+				9AE45A9E1B2696EA009D34BB /* SBJsonTokeniser.h */,
+				9AE45A9F1B2696EA009D34BB /* SBJsonTokeniser.m */,
+				9AE45AA01B2696EA009D34BB /* SBJsonUTF8Stream.h */,
+				9AE45AA11B2696EA009D34BB /* SBJsonUTF8Stream.m */,
+				9AE45AA21B2696EA009D34BB /* SBJsonWriter.h */,
+				9AE45AA31B2696EA009D34BB /* SBJsonWriter.m */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -377,16 +376,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AF2CAFB1AE7168500360F3D /* fail1.mp3 in Resources */,
-				9AD8F1671B1EA9D30018248E /* desenhos.json in Resources */,
-				9ABD44A81B1C25C500718A26 /* Images.xcassets in Resources */,
-				9A3CCD241ADCA3E6002849AC /* Main.storyboard in Resources */,
-				9A22FB611B1EC1640015C3CD /* soundtrack.mp3 in Resources */,
-				9A8D84751B1FE547001373E6 /* resultado.xib in Resources */,
-				9AD6E8D71AE750FF0070E494 /* Hobo.ttf in Resources */,
-				9A3CCD291ADCA3E6002849AC /* LaunchScreen.xib in Resources */,
-				9ADF415C1B15512300A5BE55 /* fontawesome-webfont.ttf in Resources */,
-				9A22517D1AE7157E00486867 /* comemoracao.mp3 in Resources */,
+				9AE45ADE1B269B18009D34BB /* LaunchScreen.xib in Resources */,
+				9AE45AB51B2696EA009D34BB /* Hobo.ttf in Resources */,
+				9AE45AB21B2696EA009D34BB /* fontawesome-webfont.ttf in Resources */,
+				9AE45AB61B2696EA009D34BB /* Images.xcassets in Resources */,
+				9AE45AAF1B2696EA009D34BB /* desenhos.json in Resources */,
+				9AE45ADF1B269B18009D34BB /* Main.storyboard in Resources */,
+				9AE45AB71B2696EA009D34BB /* Info.plist in Resources */,
+				9AE45AAE1B2696EA009D34BB /* comemoracao.mp3 in Resources */,
+				9AE45AC91B2696EA009D34BB /* soundtrack.mp3 in Resources */,
+				9AE45AD01B2697BB009D34BB /* Info.plist in Resources */,
+				9AE45AB01B2696EA009D34BB /* fail1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,31 +437,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AD8F18A1B1EAF790018248E /* SBJsonStreamWriterState.m in Sources */,
-				9AD8F1881B1EAF790018248E /* SBJsonStreamWriter.m in Sources */,
-				9A88A7561B0574A800322259 /* numerosViewController.m in Sources */,
-				9A3CCD211ADCA3E6002849AC /* ViewController.m in Sources */,
-				9AD8F1851B1EAF790018248E /* SBJsonStreamParserAccumulator.m in Sources */,
-				9AFC47AF1B0AB37D00C5B602 /* carrosViewController.m in Sources */,
-				9AFC47AC1B0AB35E00C5B602 /* formasViewController.m in Sources */,
-				9AD8F1891B1EAF790018248E /* SBJsonStreamWriterAccumulator.m in Sources */,
-				9A3CCD1E1ADCA3E6002849AC /* AppDelegate.m in Sources */,
-				E349C0C51B239AA100992A76 /* splashViewController.m in Sources */,
-				9AD8F18B1B1EAF790018248E /* SBJsonTokeniser.m in Sources */,
-				9AD8F1821B1EAF790018248E /* NSObject+SBJson.m in Sources */,
-				9AD8F1861B1EAF790018248E /* SBJsonStreamParserAdapter.m in Sources */,
-				9A88A75C1B058D6000322259 /* animaisViewController.m in Sources */,
-				9AD8F18D1B1EAF790018248E /* SBJsonWriter.m in Sources */,
-				9AD8F18C1B1EAF790018248E /* SBJsonUTF8Stream.m in Sources */,
-				9AD8F1831B1EAF790018248E /* SBJsonParser.m in Sources */,
-				9AFC47A91B0AB34100C5B602 /* letrasViewController.m in Sources */,
-				9AD8F1841B1EAF790018248E /* SBJsonStreamParser.m in Sources */,
-				9AFC47B21B0AB3A300C5B602 /* floresViewController.m in Sources */,
-				9A9B39C31B0283FE000F2688 /* jogoViewController.m in Sources */,
-				9AD6E8D61AE74AEB0070E494 /* categoriasViewController.m in Sources */,
-				9AD8F1871B1EAF790018248E /* SBJsonStreamParserState.m in Sources */,
-				9A88A7591B057F5E00322259 /* GlobalVars.m in Sources */,
-				9A3CCD1B1ADCA3E6002849AC /* main.m in Sources */,
+				9AE45AC51B2696EA009D34BB /* SBJsonStreamWriterState.m in Sources */,
+				9AE45AC31B2696EA009D34BB /* SBJsonStreamWriter.m in Sources */,
+				9AE45AB31B2696EA009D34BB /* formasViewController.m in Sources */,
+				9AE45AB91B2696EA009D34BB /* letrasViewController.m in Sources */,
+				9AE45AC01B2696EA009D34BB /* SBJsonStreamParserAccumulator.m in Sources */,
+				9AE45AAD1B2696EA009D34BB /* categoriasViewController.m in Sources */,
+				9AE45ACB1B2696EA009D34BB /* ViewController.m in Sources */,
+				9AE45AB11B2696EA009D34BB /* floresViewController.m in Sources */,
+				9AE45AC41B2696EA009D34BB /* SBJsonStreamWriterAccumulator.m in Sources */,
+				9AE45ACA1B2696EA009D34BB /* splashViewController.m in Sources */,
+				9AE45AC61B2696EA009D34BB /* SBJsonTokeniser.m in Sources */,
+				9AE45AB41B2696EA009D34BB /* GlobalVars.m in Sources */,
+				9AE45AC11B2696EA009D34BB /* SBJsonStreamParserAdapter.m in Sources */,
+				9AE45ABC1B2696EA009D34BB /* numerosViewController.m in Sources */,
+				9AE45AC81B2696EA009D34BB /* SBJsonWriter.m in Sources */,
+				9AE45AC71B2696EA009D34BB /* SBJsonUTF8Stream.m in Sources */,
+				9AE45ABE1B2696EA009D34BB /* SBJsonParser.m in Sources */,
+				9AE45AA91B2696EA009D34BB /* animaisViewController.m in Sources */,
+				9AE45ABF1B2696EA009D34BB /* SBJsonStreamParser.m in Sources */,
+				9AE45AB81B2696EA009D34BB /* jogoViewController.m in Sources */,
+				9AE45AAC1B2696EA009D34BB /* carrosViewController.m in Sources */,
+				9AE45ABA1B2696EA009D34BB /* main.m in Sources */,
+				9AE45AC21B2696EA009D34BB /* SBJsonStreamParserState.m in Sources */,
+				9AE45ABB1B2696EA009D34BB /* NSObject+SBJson.m in Sources */,
+				9AE45AAA1B2696EA009D34BB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A3CCD351ADCA3E7002849AC /* Jogo_InfantilTests.m in Sources */,
+				9AE45AD31B2698FA009D34BB /* Jogo_InfantilTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,20 +484,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9A3CCD221ADCA3E6002849AC /* Main.storyboard */ = {
+		9AE45ADA1B269B18009D34BB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9A3CCD231ADCA3E6002849AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A3CCD281ADCA3E6002849AC /* Base */,
+				9AE45ADB1B269B18009D34BB /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		9AE45ADC1B269B18009D34BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AE45ADD1B269B18009D34BB /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -588,7 +588,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "Jogo-Infantil/Info.plist";
+				INFOPLIST_FILE = ArtKids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ArtKids;
 				PROVISIONING_PROFILE = "";
@@ -602,7 +602,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "Jogo-Infantil/Info.plist";
+				INFOPLIST_FILE = ArtKids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ArtKids;
 				PROVISIONING_PROFILE = "";
@@ -621,10 +621,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Jogo-InfantilTests/Info.plist";
+				INFOPLIST_FILE = ArtKidsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = ArtKidsTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jogo-Infantil.app/Jogo-Infantil";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtKids.app/ArtKids";
 			};
 			name = Debug;
 		};
@@ -636,10 +636,10 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Jogo-InfantilTests/Info.plist";
+				INFOPLIST_FILE = ArtKidsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = ArtKidsTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jogo-Infantil.app/Jogo-Infantil";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtKids.app/ArtKids";
 			};
 			name = Release;
 		};
