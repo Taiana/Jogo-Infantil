@@ -813,6 +813,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnDica" destination="SyJ-zp-bPs" id="oWv-j3-UTm"/>
                         <outlet property="btnSound" destination="62M-5Q-bPf" id="DLJ-1D-VSY"/>
                         <outlet property="percentualAcerto" destination="WH2-zd-RyV" id="0tL-cf-hvb"/>
                         <outlet property="topImage" destination="qKS-En-3Dj" id="qE2-kI-k50"/>

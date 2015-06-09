@@ -26,6 +26,9 @@ UITapGestureRecognizer *tapGesture;
 
 NSMutableArray *desenho;
 
+int qtdDicas = 0;
+const int maxDicas = 3;
+
 /*
  Tabela de cores
  0=Branco
@@ -82,6 +85,8 @@ NSString *colorCode;
 - (IBAction)comparaImagem:(id)sender;
 
 - (IBAction)mostraImagem:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnDica;
 
 @property (weak, nonatomic) IBOutlet UILabel *percentualAcerto;
 

@@ -429,6 +429,13 @@ CGFloat delta_y = 0.0;
 - (IBAction)mostraImagem:(id)sender {
     int total = cols * rows;
     UIButton *button;
+    
+    qtdDicas++;
+    if (qtdDicas >= maxDicas) {
+        [self.btnDica setEnabled:false];
+    }
+    
+
     /*
      Tabela de cores
      0=Branco - 1=Preto - 2=Cinza escuro - 3=Cinza claro - 4=Verde claro - 5=Verde escuro - 6=Azul claro
@@ -469,7 +476,10 @@ CGFloat delta_y = 0.0;
         
         [button setAlpha:0.50];
     }
+    
+    //DEFINE A QUANTIDADE DE DICAS MÁXIMA DE 3, desabilita o botão
     [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(voltaTabuleiro:) userInfo:nil repeats:NO];
+    
 }
 
 - (void)comparaArrays {
