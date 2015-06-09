@@ -234,6 +234,7 @@ CGFloat delta_y = 0.0;
 }
 
 - (IBAction)voltar:(id)sender {
+    qtdDicas = 0;
     [self performSegueWithIdentifier:NSStringFromClass([nuVC class]) sender:sender];
 }
 
