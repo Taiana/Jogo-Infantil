@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9A3CCD141ADCA3E6002849AC"
-               BuildableName = "Jogo-Infantil.app"
-               BlueprintName = "Jogo-Infantil"
-               ReferencedContainer = "container:Jogo-Infantil.xcodeproj">
+               BuildableName = "ArtKids.app"
+               BlueprintName = "ArtKids"
+               ReferencedContainer = "container:ArtKids.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9A3CCD2D1ADCA3E7002849AC"
-               BuildableName = "Jogo-InfantilTests.xctest"
-               BlueprintName = "Jogo-InfantilTests"
-               ReferencedContainer = "container:Jogo-Infantil.xcodeproj">
+               BuildableName = "ArtKidsTests.xctest"
+               BlueprintName = "ArtKidsTests"
+               ReferencedContainer = "container:ArtKids.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9A3CCD2D1ADCA3E7002849AC"
-               BuildableName = "Jogo-InfantilTests.xctest"
-               BlueprintName = "Jogo-InfantilTests"
-               ReferencedContainer = "container:Jogo-Infantil.xcodeproj">
+               BuildableName = "ArtKidsTests.xctest"
+               BlueprintName = "ArtKidsTests"
+               ReferencedContainer = "container:ArtKids.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A3CCD141ADCA3E6002849AC"
-            BuildableName = "Jogo-Infantil.app"
-            BlueprintName = "Jogo-Infantil"
-            ReferencedContainer = "container:Jogo-Infantil.xcodeproj">
+            BuildableName = "ArtKids.app"
+            BlueprintName = "ArtKids"
+            ReferencedContainer = "container:ArtKids.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A3CCD141ADCA3E6002849AC"
-            BuildableName = "Jogo-Infantil.app"
-            BlueprintName = "Jogo-Infantil"
-            ReferencedContainer = "container:Jogo-Infantil.xcodeproj">
+            BuildableName = "ArtKids.app"
+            BlueprintName = "ArtKids"
+            ReferencedContainer = "container:ArtKids.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A3CCD141ADCA3E6002849AC"
-            BuildableName = "Jogo-Infantil.app"
-            BlueprintName = "Jogo-Infantil"
-            ReferencedContainer = "container:Jogo-Infantil.xcodeproj">
+            BuildableName = "ArtKids.app"
+            BlueprintName = "ArtKids"
+            ReferencedContainer = "container:ArtKids.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

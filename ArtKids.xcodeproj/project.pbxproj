@@ -63,7 +63,7 @@
 		28AB9231C3899F006BF4D993 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A22517B1AE7157E00486867 /* comemoracao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comemoracao.mp3; sourceTree = "<group>"; };
 		9A22FB601B1EC1640015C3CD /* soundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundtrack.mp3; sourceTree = "<group>"; };
-		9A3CCD151ADCA3E6002849AC /* Jogo-Infantil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jogo-Infantil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3CCD151ADCA3E6002849AC /* ArtKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3CCD191ADCA3E6002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3CCD1A1ADCA3E6002849AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A3CCD1C1ADCA3E6002849AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		9A3CCD201ADCA3E6002849AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9A3CCD231ADCA3E6002849AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A3CCD281ADCA3E6002849AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9A3CCD2E1ADCA3E7002849AC /* Jogo-InfantilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jogo-InfantilTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3CCD2E1ADCA3E7002849AC /* ArtKidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtKidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3CCD331ADCA3E7002849AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jogo_InfantilTests.m; sourceTree = "<group>"; };
 		9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -185,8 +185,8 @@
 		9A3CCD161ADCA3E6002849AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A3CCD151ADCA3E6002849AC /* Jogo-Infantil.app */,
-				9A3CCD2E1ADCA3E7002849AC /* Jogo-InfantilTests.xctest */,
+				9A3CCD151ADCA3E6002849AC /* ArtKids.app */,
+				9A3CCD2E1ADCA3E7002849AC /* ArtKidsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,9 +295,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A3CCD141ADCA3E6002849AC /* Jogo-Infantil */ = {
+		9A3CCD141ADCA3E6002849AC /* ArtKids */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A3CCD381ADCA3E7002849AC /* Build configuration list for PBXNativeTarget "Jogo-Infantil" */;
+			buildConfigurationList = 9A3CCD381ADCA3E7002849AC /* Build configuration list for PBXNativeTarget "ArtKids" */;
 			buildPhases = (
 				7CC444F30EC14517FE62413B /* Check Pods Manifest.lock */,
 				9A3CCD111ADCA3E6002849AC /* Sources */,
@@ -309,14 +309,14 @@
 			);
 			dependencies = (
 			);
-			name = "Jogo-Infantil";
+			name = ArtKids;
 			productName = "Jogo-Infantil";
-			productReference = 9A3CCD151ADCA3E6002849AC /* Jogo-Infantil.app */;
+			productReference = 9A3CCD151ADCA3E6002849AC /* ArtKids.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9A3CCD2D1ADCA3E7002849AC /* Jogo-InfantilTests */ = {
+		9A3CCD2D1ADCA3E7002849AC /* ArtKidsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A3CCD3B1ADCA3E7002849AC /* Build configuration list for PBXNativeTarget "Jogo-InfantilTests" */;
+			buildConfigurationList = 9A3CCD3B1ADCA3E7002849AC /* Build configuration list for PBXNativeTarget "ArtKidsTests" */;
 			buildPhases = (
 				9A3CCD2A1ADCA3E7002849AC /* Sources */,
 				9A3CCD2B1ADCA3E7002849AC /* Frameworks */,
@@ -327,9 +327,9 @@
 			dependencies = (
 				9A3CCD301ADCA3E7002849AC /* PBXTargetDependency */,
 			);
-			name = "Jogo-InfantilTests";
+			name = ArtKidsTests;
 			productName = "Jogo-InfantilTests";
-			productReference = 9A3CCD2E1ADCA3E7002849AC /* Jogo-InfantilTests.xctest */;
+			productReference = 9A3CCD2E1ADCA3E7002849AC /* ArtKidsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -351,7 +351,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9A3CCD101ADCA3E6002849AC /* Build configuration list for PBXProject "Jogo-Infantil" */;
+			buildConfigurationList = 9A3CCD101ADCA3E6002849AC /* Build configuration list for PBXProject "ArtKids" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -364,8 +364,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A3CCD141ADCA3E6002849AC /* Jogo-Infantil */,
-				9A3CCD2D1ADCA3E7002849AC /* Jogo-InfantilTests */,
+				9A3CCD141ADCA3E6002849AC /* ArtKids */,
+				9A3CCD2D1ADCA3E7002849AC /* ArtKidsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -476,7 +476,7 @@
 /* Begin PBXTargetDependency section */
 		9A3CCD301ADCA3E7002849AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A3CCD141ADCA3E6002849AC /* Jogo-Infantil */;
+			target = 9A3CCD141ADCA3E6002849AC /* ArtKids */;
 			targetProxy = 9A3CCD2F1ADCA3E7002849AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -588,7 +588,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Jogo-Infantil/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ArtKids;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -602,7 +602,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Jogo-Infantil/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ArtKids;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -621,7 +621,7 @@
 				);
 				INFOPLIST_FILE = "Jogo-InfantilTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ArtKidsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jogo-Infantil.app/Jogo-Infantil";
 			};
 			name = Debug;
@@ -636,7 +636,7 @@
 				);
 				INFOPLIST_FILE = "Jogo-InfantilTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ArtKidsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jogo-Infantil.app/Jogo-Infantil";
 			};
 			name = Release;
@@ -644,7 +644,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9A3CCD101ADCA3E6002849AC /* Build configuration list for PBXProject "Jogo-Infantil" */ = {
+		9A3CCD101ADCA3E6002849AC /* Build configuration list for PBXProject "ArtKids" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A3CCD361ADCA3E7002849AC /* Debug */,
@@ -653,7 +653,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A3CCD381ADCA3E7002849AC /* Build configuration list for PBXNativeTarget "Jogo-Infantil" */ = {
+		9A3CCD381ADCA3E7002849AC /* Build configuration list for PBXNativeTarget "ArtKids" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A3CCD391ADCA3E7002849AC /* Debug */,
@@ -662,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A3CCD3B1ADCA3E7002849AC /* Build configuration list for PBXNativeTarget "Jogo-InfantilTests" */ = {
+		9A3CCD3B1ADCA3E7002849AC /* Build configuration list for PBXNativeTarget "ArtKidsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A3CCD3C1ADCA3E7002849AC /* Debug */,
