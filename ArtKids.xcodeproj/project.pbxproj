@@ -174,8 +174,8 @@
 			children = (
 				9A8D84761B1FF828001373E6 /* QuartzCore.framework */,
 				9A5E49A81AE75F730080D2C2 /* AVFoundation.framework */,
-				9A3CCD171ADCA3E6002849AC /* Jogo-Infantil */,
-				9A3CCD311ADCA3E7002849AC /* Jogo-InfantilTests */,
+				9A3CCD171ADCA3E6002849AC /* ArtKids */,
+				9A3CCD311ADCA3E7002849AC /* ArtKidsTests */,
 				9A3CCD161ADCA3E6002849AC /* Products */,
 				4BF8F49D2DFA21DD0DC62DC7 /* Pods */,
 				334F2C172960C2D2A7B65414 /* Frameworks */,
@@ -191,7 +191,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A3CCD171ADCA3E6002849AC /* Jogo-Infantil */ = {
+		9A3CCD171ADCA3E6002849AC /* ArtKids */ = {
 			isa = PBXGroup;
 			children = (
 				9AD8F1681B1EAF610018248E /* JSON */,
@@ -225,6 +225,7 @@
 				9A3CCD271ADCA3E6002849AC /* LaunchScreen.xib */,
 				9A3CCD181ADCA3E6002849AC /* Supporting Files */,
 			);
+			name = ArtKids;
 			path = "Jogo-Infantil";
 			sourceTree = "<group>";
 		};
@@ -243,12 +244,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9A3CCD311ADCA3E7002849AC /* Jogo-InfantilTests */ = {
+		9A3CCD311ADCA3E7002849AC /* ArtKidsTests */ = {
 			isa = PBXGroup;
 			children = (
 				9A3CCD341ADCA3E7002849AC /* Jogo_InfantilTests.m */,
 				9A3CCD321ADCA3E7002849AC /* Supporting Files */,
 			);
+			name = ArtKidsTests;
 			path = "Jogo-InfantilTests";
 			sourceTree = "<group>";
 		};
