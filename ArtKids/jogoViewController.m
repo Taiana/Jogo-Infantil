@@ -478,6 +478,8 @@ CGFloat delta_y = 0.0;
         [button setAlpha:0.50];
     }
     
+    [self.dicas setText:[[NSNumber numberWithInt:maxDicas-qtdDicas] stringValue]];
+    
     //DEFINE A QUANTIDADE DE DICAS MÁXIMA DE 3, desabilita o botão
     [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(voltaTabuleiro:) userInfo:nil repeats:NO];
     

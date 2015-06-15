@@ -78,6 +78,8 @@ NSString *colorCode;
 - (IBAction)grayColor:(id)sender;
 - (IBAction)whiteColor:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *dicas;
+
 - (IBAction)limpaTabuleiro:(id)sender;
 
 - (IBAction)toggleSound:(id)sender;
