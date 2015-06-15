@@ -19,6 +19,13 @@
     //CGRect splashscreenmovieclipframe = CGRectMake(0.0f,0.0f,480.0f, 320.0f); //set co-ordinate here i use full screen
     
     //splashscreenmovieclip = [[UIImageView alloc] initWithFrame:splashscreenmovieclipframe];
+    globals = [GlobalVars sharedInstance];
+    
+    if (globals.playSound) {
+        if (![globals.sound isPlaying]){
+            [globals.sound play];
+        }
+    }
     
     // load all the frames of our animation
     _splashImageView.animationImages = [NSArray arrayWithObjects:

@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     globals = [GlobalVars sharedInstance];
 
     if (globals.playSound) {
@@ -26,7 +27,7 @@
     } else {
         self.noSoundImageView.hidden = NO;
     }
-    
+   
 }
 
 

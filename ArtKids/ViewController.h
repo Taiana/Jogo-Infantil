@@ -14,7 +14,7 @@
 GlobalVars *globals;
 
 @interface ViewController : UIViewController {
-//    AVAudioPlayer* sound ;
+
 }
 
 - (IBAction)doSwitchSound:(id)sender;

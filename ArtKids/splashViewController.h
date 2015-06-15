@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import "globalVars.h"
+
+GlobalVars *globals;
 
 @interface splashViewController : UIViewController
 
