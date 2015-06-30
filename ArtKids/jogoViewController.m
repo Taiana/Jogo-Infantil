@@ -28,8 +28,6 @@ NSError *error;
 
 GlobalVars *globals;
 
-int tamanhoQuadrado = 19;
-
 CGFloat delta_x = 0.0;
 CGFloat delta_y = 0.0;
 
@@ -47,7 +45,6 @@ CGFloat delta_y = 0.0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    desenho = [[NSMutableArray alloc] initWithCapacity:1024];
     
     /*
      Tabela de cores
@@ -60,12 +57,25 @@ CGFloat delta_y = 0.0;
     globals = [GlobalVars sharedInstance];
     nuVC = globals.vcOrigem;
     
-    //=============== TENTANDO PEGAR O ARRAY DA IMAGEM SELECIONADA =================
     NSDictionary *dic = globals.imagens;
-//    NSLog(@"imageName: %@", globals.imageName);
     selectedImage = [dic valueForKey:globals.imageName];
-//    NSLog(@"array escolhido: %@", selectedImage);
-    //==============================================================================
+    
+    desenho = [[NSMutableArray alloc] initWithCapacity:[selectedImage count]];
+    
+    if ([selectedImage count] == 4096) {
+        tamanhoQuadrado = 9;
+        qtdQuadrados = 64;
+    }else if ([selectedImage count] == 1024) {
+        tamanhoQuadrado = 19;
+        qtdQuadrados = 32;
+    } else if ([selectedImage count] == 256) {
+        tamanhoQuadrado = 38;
+        qtdQuadrados = 16;
+    }  else if ([selectedImage count] == 64) {
+        tamanhoQuadrado = 76;
+        qtdQuadrados = 8;
+    }
+    
     
     if (globals.image != nil) {
         self.topImage.image = (UIImage *)globals.image;
@@ -87,7 +97,7 @@ CGFloat delta_y = 0.0;
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [self cols:32 rows:32];
+    [self cols:qtdQuadrados rows:qtdQuadrados];
 
 }
 
@@ -458,10 +468,11 @@ CGFloat delta_y = 0.0;
 }
 
 - (void)comparaArrays {
+    int total = cols * rows;
     contaAcertos=0;
     contaPontos=0;
     percentual=0.0;
-    for (int i=0;i<1024;i++) {
+    for (int i=0;i<total;i++) {
 
         if (![(NSString *)[selectedImage objectAtIndex:i] isEqualToString:@"Z"]){
             contaPontos++;

@@ -19,6 +19,8 @@ NSURL* musicFile;
 
 int cols;
 int rows;
+int tamanhoQuadrado;
+int qtdQuadrados;
 
 UIView *buttonView;
 

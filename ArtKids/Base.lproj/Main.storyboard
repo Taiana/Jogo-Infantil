@@ -433,6 +433,30 @@
                                     <action selector="toggleSound:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="kYq-I4-3XY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYf-56-O73">
+                                <rect key="frame" x="103" y="461" width="87" height="30"/>
+                                <animations/>
+                                <state key="normal" title="quadradinho"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="Fh2-8I-0sw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cz8-Fb-fsy">
+                                <rect key="frame" x="112" y="502" width="69" height="30"/>
+                                <animations/>
+                                <state key="normal" title="bolinha64"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="HwL-CT-9W9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzB-xc-CO0">
+                                <rect key="frame" x="266" y="461" width="68" height="30"/>
+                                <animations/>
+                                <state key="normal" title="gato4096"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="kt4-DO-Pi0" eventType="touchUpInside" id="pu1-sS-uwD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1744,14 +1768,14 @@
         <image name="triangulo" width="81" height="81"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TzM-Gg-BfM"/>
-        <segue reference="gJL-a9-0Xg"/>
-        <segue reference="F5j-yb-e5y"/>
-        <segue reference="edf-gJ-YkP"/>
-        <segue reference="MdE-1y-FWg"/>
-        <segue reference="1Vw-xp-geA"/>
+        <segue reference="LXG-7h-KwZ"/>
         <segue reference="nV5-WJ-eWI"/>
+        <segue reference="PC7-bP-0JP"/>
         <segue reference="nxo-J4-sKc"/>
+        <segue reference="edf-gJ-YkP"/>
+        <segue reference="TzM-Gg-BfM"/>
+        <segue reference="F5j-yb-e5y"/>
+        <segue reference="1Vw-xp-geA"/>
         <segue reference="OZe-yp-jGq"/>
     </inferredMetricsTieBreakers>
 </document>
