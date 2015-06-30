@@ -1748,10 +1748,10 @@
         <segue reference="gJL-a9-0Xg"/>
         <segue reference="F5j-yb-e5y"/>
         <segue reference="edf-gJ-YkP"/>
+        <segue reference="MdE-1y-FWg"/>
         <segue reference="1Vw-xp-geA"/>
-        <segue reference="nxo-J4-sKc"/>
         <segue reference="nV5-WJ-eWI"/>
-        <segue reference="OfQ-2t-DIy"/>
+        <segue reference="nxo-J4-sKc"/>
         <segue reference="OZe-yp-jGq"/>
     </inferredMetricsTieBreakers>
 </document>
