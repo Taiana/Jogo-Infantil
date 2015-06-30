@@ -151,45 +151,17 @@ CGFloat delta_y = 0.0;
         // get delta
         CGPoint previousLocation = [touch previousLocationInView:button];
         CGPoint location = [touch locationInView:button];
-        if(location.x > previousLocation.x) {
-            delta_x = delta_x + (location.x - previousLocation.x);
-        } else {
-            delta_x = delta_x - (location.x - previousLocation.x);
-        }
-        if(location.y > previousLocation.y) {
-            delta_y = delta_y + (location.y - previousLocation.y);
-        } else {
-            delta_y = delta_y - (location.y - previousLocation.y);
-        }
-        
-        //NSLog(@"delta x = %f", delta_x);
-        //NSLog(@"delta y = %f", delta_y);
+
+        delta_x = delta_x + (location.x - previousLocation.x);
+        delta_y = delta_y + (location.y - previousLocation.y);
         
         UIButton *newButton;
         // Calcula o número de quadrados a andar na verticar ou na horizontal
         int horizontal = (int)floorf(delta_x/tamanhoQuadrado);
         int vertical = (int)floorf(delta_y/tamanhoQuadrado);
         
-    //    NSLog(@"Horizontal %i", horizontal);
-    //    NSLog(@"Vertical %i", vertical);
-
-        if(location.x > previousLocation.x) {
-            if (location.y > previousLocation.y){
-                //newButton = (UIButton *)[self.view viewWithTag:tag+i+(32*vertical)];
-                tagPintar = tag+(horizontal)+(rows*vertical);
-            } else {
-                //newButton = (UIButton *)[self.view viewWithTag:tag+i-(32*vertical)];
-                tagPintar = tag+(horizontal)-(rows*vertical);
-            }
-        } else {
-            if (location.y > previousLocation.y){
-                //newButton = (UIButton *)[self.view viewWithTag:tag-i+(32*vertical)];
-                tagPintar = tag-(horizontal)+(rows*vertical);
-            } else {
-                //newButton = (UIButton *)[self.view viewWithTag:tag-i-(32*vertical)];
-                tagPintar = tag-(horizontal)-(rows*vertical);
-            }
-        }
+        tagPintar = tag+(horizontal)+(rows*vertical);
+        
         if (tagPintar < cols * rows ) {
     //        NSLog(@"tag pintar %li", tagPintar);
             [desenho replaceObjectAtIndex:tagPintar-1 withObject:colorCode];
